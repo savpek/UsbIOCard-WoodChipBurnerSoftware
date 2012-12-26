@@ -75,7 +75,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 .info {
     color: #00529B;
     background-color: #BDE5F8;
-    background-image: url('info.png');
+    background-image: url('InfoIcon.png');
 }
 .success {
     color: #4F8A10;
@@ -90,5 +90,5 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 .error {
     color: #D8000C;
     background-color: #FFBABA;
-    background-image: url('errorIcon.png');
+    background-image: url('ErrorIcon.png');
 }

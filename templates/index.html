@@ -15,34 +15,36 @@
             <label>Kokonaisviive
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="delay" id="delay" value="{{ delay }}" min="3" required="true"/>
+            <input type="number" name="delay" value="{{ delay }}" min="3" required="true"/>
 
             <label>Ruuvi
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="screwTime" value="{{ screwTime }}" id="screwTime" min="1" required="true"/>
+            <input type="number" name="screwTime" value="{{ screwTime }}" min="1" required="true"/>
 
             <label>Tuuletin
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="fanTime" value="{{ fanTime }}" id="fanTime" min="1" required="true"/>
+            <input type="number" name="fanTime" value="{{ fanTime }}" min="1" required="true"/>
 
-            <label>Laite päällä?
-                <span class="small"></span>
-            </label>
-            <input type="checkbox" name="screwTime" value="false" id="enabled" min="1"/>
+            <label>Laite päälle</label>
+            <input type="radio" name="enabled" value="True" {% if enabled %} checked {% endif %}/>
 
-            <button type="submit">Tallenna</button>
+            <label>Laite pois päältä</label>
+            <input type="radio" name="enabled" value="False" {% if not enabled %} checked {% endif %}/>
+
+            <button type="submit">Päivitä</button>
         </form>
-    
+
+        <div class="spacer"></div>
+
             {% if exceptionMessages != "" %}
                 <div class="error"> {{ exceptionMessages }}</div>
             {% endif %}
 
-            <div class="spacer"></div>
-
-            <p>Laitteen tila</p>
-            <span class="statusText">{{ status }}</span>
+            {% if status != "" %}
+                <div class="info"> {{ status }}</div>
+            {% endif %}
 
     </div>
 {{ message }}
