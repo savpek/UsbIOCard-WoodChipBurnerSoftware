@@ -3,10 +3,40 @@
 <head>
     <meta charset="utf-8" />
     <title>Hakkeenpolttimen kontrollit</title>
+    <LINK href="static/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="HeaderBox">Hakkeenpolttimen ohjaus</div>
-<div id="Controls">Kontrollit</div>
-<div id="Information">Informaatio</div>
+<div id="Controls">
+    <div id="stylized" class="myform">
+        <form id="form" name="form" method="post" action="index.html">
+            <h1>Hakkeenpolttimen ohjain</h1>
+            <p>Asetukset</p>
+
+            <label>Kokonaisviive
+                <span class="small">Sekunttia</span>
+            </label>
+            <input type="number" name="delay" id="name" value="{{ delay }}" min="3" required="true"/>
+
+            <label>Ruuvi
+                <span class="small">Sekunttia</span>
+            </label>
+            <input type="number" name="screwTime" value="{{ delay }}" id="email" min="1" required="true"/>
+
+            <label>Tuuletin
+                <span class="small">Sekunttia</span>
+            </label>
+            <input type="number" name="screwTime" value="{{ delay }}" id="email" min="1" required="true"/>
+
+            <label>Laite päällä?
+                <span class="small"></span>
+            </label>
+            <input type="checkbox" name="screwTime" value="false" id="enabled" min="1" required="true"/>
+
+            <button type="submit">Tallenna</button>
+            <div class="spacer"></div>
+        </form>
+    </div>
+</div>
+{{ message }}
 </body>
 </html>

@@ -9,11 +9,11 @@ class BurnerLogic():
     FanTerminalName = None
 
     _ioCard = None
-    _time = None
+    _sleepFunc = None
 
     def __init__(self, ioCard, time):
         self._ioCard = ioCard
-        self._time = time
+        self._sleepFunc = time
 
     def Execute(self):
         if self.ScrewTime > self.FanTime:
@@ -25,13 +25,13 @@ class BurnerLogic():
             self._ioCard.set_terminal_high(self.FanTerminalName)
             self._ioCard.set_terminal_high(self.ScrewTerminalName)
 
-            self._time.Sleep(self.ScrewTime)
+            self._sleepFunc(self.ScrewTime)
             self._ioCard.set_terminal_low(self.ScrewTerminalName)
 
-            self._time.Sleep(self.FanTime - self.ScrewTime)
+            self._sleepFunc(self.FanTime - self.ScrewTime)
             self._ioCard.set_terminal_low(self.FanTerminalName)
 
-            self._time.Sleep(self.Delay - self.FanTime)
+            self._sleepFunc(self.Delay - self.FanTime)
         except:
             self._ioCard.set_terminal_low(self.FanTerminalName)
             self._ioCard.set_terminal_low(self.ScrewTerminalName)
