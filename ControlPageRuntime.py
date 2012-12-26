@@ -1,32 +1,44 @@
-from flask import Flask, render_template
+from threading import Thread
+import threading
+from flask import Flask, render_template, request
 import time
 from BurnerLogic import BurnerLogic
 from UsbCard import UsbCard
 
 app = Flask(__name__)
 
-ioCard = UsbCard("COM1", 9600)
+ioCard = UsbCard("COM3", 9600)
 burner = BurnerLogic(ioCard, time.sleep)
 
-burner.Delay = 1
-burner.FanTime = 0.2
-burner.ScrewTime = 0.1
+burner.Delay = 3
+burner.FanTime = 1
+burner.ScrewTime = 1
 
-burner.FanTerminalName = "5T1"
-burner.ScrewTerminalName = "3.T2"
+burner.FanTerminalName = "2.T30"
+burner.ScrewTerminalName = "2.T1"
 
-def Routine():
-    pass
+class Runner(threading.Thread):
+    exceptionMsg = ""
+
+    def run(self):
+        while True:
+            try:
+                burner.Execute()
+            except Exception as ex:
+                self.exceptionMsg = ex
+
+
+worker = Runner()
+worker.start()
 
 @app.route('/')
 def hello_world():
-    msg = ""
-    try:
-        burner.Execute()
-    except Exception as ex:
-        msg = ex
+    burner.Delay = float(request.args.get('delay', burner.Delay))
+    burner.ScrewTime = float(request.args.get('screwTime', burner.ScrewTime))
+    burner.FanTime = float(request.args.get('fanTime', burner.FanTime))
 
-    return render_template('index.html', message = msg)
+    return render_template('index.html', delay = burner.Delay, fanTime = burner.FanTime, screwTime = burner.ScrewTime, status = worker.exceptionMsg, exceptionMessages = worker.exceptionMsg)
 
 if __name__ == '__main__':
+    #app.debug = True
     app.run()

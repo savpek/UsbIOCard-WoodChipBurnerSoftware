@@ -15,7 +15,7 @@ class IoCardException(Exception):
 """
 class UsbCard:
     ERROR_KEYWORD = "ERROR:"
-    TIMEOUT = 0.05  # How long input is waited after command.
+    TIMEOUT = 0.10  # How long input is waited after command.
     # This delay is kept after every command call.
     READ_MAX_COUNT = 200
 
@@ -63,4 +63,4 @@ class UsbCard:
 
     def _check_for_error_keyword(self, result):
         if self.ERROR_KEYWORD in result:
-            raise IoCardException("Result contained error keyword:" + self.serial_con.readline())
+            raise IoCardException("Result contained error keyword:" + result)

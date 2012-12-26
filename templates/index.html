@@ -6,37 +6,45 @@
     <LINK href="static/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="Controls">
+
     <div id="stylized" class="myform">
-        <form id="form" name="form" method="post" action="index.html">
+        <form id="form" name="form" method="get" action="">
             <h1>Hakkeenpolttimen ohjain</h1>
             <p>Asetukset</p>
 
             <label>Kokonaisviive
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="delay" id="name" value="{{ delay }}" min="3" required="true"/>
+            <input type="number" name="delay" id="delay" value="{{ delay }}" min="3" required="true"/>
 
             <label>Ruuvi
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="screwTime" value="{{ delay }}" id="email" min="1" required="true"/>
+            <input type="number" name="screwTime" value="{{ screwTime }}" id="screwTime" min="1" required="true"/>
 
             <label>Tuuletin
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="screwTime" value="{{ delay }}" id="email" min="1" required="true"/>
+            <input type="number" name="fanTime" value="{{ fanTime }}" id="fanTime" min="1" required="true"/>
 
             <label>Laite päällä?
                 <span class="small"></span>
             </label>
-            <input type="checkbox" name="screwTime" value="false" id="enabled" min="1" required="true"/>
+            <input type="checkbox" name="screwTime" value="false" id="enabled" min="1"/>
 
             <button type="submit">Tallenna</button>
-            <div class="spacer"></div>
         </form>
+    
+            {% if exceptionMessages != "" %}
+                <div class="error"> {{ exceptionMessages }}</div>
+            {% endif %}
+
+            <div class="spacer"></div>
+
+            <p>Laitteen tila</p>
+            <span class="statusText">{{ status }}</span>
+
     </div>
-</div>
 {{ message }}
 </body>
 </html>
