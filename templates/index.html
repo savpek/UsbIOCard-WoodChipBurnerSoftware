@@ -4,6 +4,23 @@
     <meta charset="utf-8" />
     <title>Hakkeenpolttimen kontrollit</title>
     <LINK href="static/index.css" rel="stylesheet" type="text/css">
+    <script src="static/jquery-1.8.3.js"></script>
+    <script>
+        setInterval(function(){
+            $.ajax({ url: "/messages/", success: function(data){
+                document.getElementById("statusBox").innerHTML = data.status;
+
+                if (data.errors != "") {
+                    document.getElementById("errorBox").innerHTML = data.errors;
+                    document.getElementById("errorBox").style.visibility = 'visible'
+                }
+                else {
+                    document.getElementById("errorBox").style.visibility = 'hidden'
+                }
+
+            }, dataType: "json"});
+        }, 3000);
+    </script>
 </head>
 <body>
 
@@ -37,14 +54,8 @@
         </form>
 
         <div class="spacer"></div>
-
-            {% if exceptionMessages != "" %}
-                <div class="error"> {{ exceptionMessages }}</div>
-            {% endif %}
-
-            {% if status != "" %}
-                <div class="info"> {{ burner.StatusMsg }}</div>
-            {% endif %}
+            <div class="error" id="errorBox"></div>
+            <div class="info" id="statusBox">Waiting for update ...</div>
 
     </div>
 {{ message }}

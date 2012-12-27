@@ -88,6 +88,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
     background-image: url('warning.png');
 }
 .error {
+    visibility: hidden;
     color: #D8000C;
     background-color: #FFBABA;
     background-image: url('ErrorIcon.png');

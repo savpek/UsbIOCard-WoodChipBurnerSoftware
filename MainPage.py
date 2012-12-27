@@ -1,6 +1,7 @@
 import threading
 from flask import Flask, render_template, request
 import time
+import flask
 from BurnerLogic import BurnerLogic
 from UsbCard import UsbCard
 
@@ -29,7 +30,7 @@ class BurnerProcess(threading.Thread):
                 burner.execute()
                 self.exceptionMsg = ""
             except Exception as ex:
-                self.exceptionMsg = ex
+                self.exceptionMsg = ex.message
 
 burner = configure_burner()
 
@@ -46,6 +47,13 @@ def index():
     return render_template('index.html',
         burner = burner,
         exceptionMessages = worker.exceptionMsg)
+
+@app.route('/messages/')
+def messages():
+    try:
+        return flask.jsonify(errors=worker.exceptionMsg, status=burner.StatusMsg)
+    except Exception as ex:
+        return ex
 
 if __name__ == '__main__':
     app.run()
