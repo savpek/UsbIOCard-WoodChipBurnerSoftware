@@ -8,7 +8,11 @@ from UsbCard import UsbCard
 app = Flask(__name__)
 
 def configure_burner():
+<<<<<<< HEAD
     ioCard = UsbCard("/dev/ttyUSB0", 9600) # Define configurations for used IO card port.
+=======
+    ioCard = UsbCard("/def/ttyUSB0", 9600) # Define configurations for used IO card port.
+>>>>>>> e6eb093bbcf755f9aa1ccad43f36ecb10bbe8358
 
     burner = BurnerLogic(ioCard, time.sleep)
 
