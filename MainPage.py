@@ -1,4 +1,3 @@
-from threading import Thread
 import threading
 from flask import Flask, render_template, request
 import time
@@ -7,17 +6,21 @@ from UsbCard import UsbCard
 
 app = Flask(__name__)
 
-ioCard = UsbCard("COM3", 9600)
-burner = BurnerLogic(ioCard, time.sleep)
+def configure_burner():
+    ioCard = UsbCard("COM3", 9600) # Define configurations for used IO card port.
 
-burner.Delay = 10
-burner.FanTime = 5
-burner.ScrewTime = 2
+    burner = BurnerLogic(ioCard, time.sleep)
 
-burner.FanTerminalName = "2.T1"
-burner.ScrewTerminalName = "2.T2"
+    burner.Delay = 10       # Default setting on startup.
+    burner.FanTime = 5      #
+    burner.ScrewTime = 2    #
 
-class Runner(threading.Thread):
+    burner.FanTerminalName = "2.T1"     # Look these from IO card printout.
+    burner.ScrewTerminalName = "2.T2"   #
+
+    return burner
+
+class BurnerProcess(threading.Thread):
     exceptionMsg = ""
 
     def run(self):
@@ -28,24 +31,21 @@ class Runner(threading.Thread):
             except Exception as ex:
                 self.exceptionMsg = ex
 
-worker = Runner()
+burner = configure_burner()
+
+worker = BurnerProcess()
 worker.start()
 
 @app.route('/')
-def hello_world():
+def index():
     burner.Delay = float(request.args.get('delay', burner.Delay))
     burner.ScrewTime = float(request.args.get('screwTime', burner.ScrewTime))
     burner.FanTime = float(request.args.get('fanTime', burner.FanTime))
     burner.Enabled = request.args.get('enabled', burner.Enabled) in ("True", True)
 
     return render_template('index.html',
-        delay = burner.Delay,
-        fanTime = burner.FanTime,
-        screwTime = burner.ScrewTime,
-        status = burner.StatusMsg,
-        exceptionMessages = worker.exceptionMsg,
-        enabled = burner.Enabled)
+        burner = burner,
+        exceptionMessages = worker.exceptionMsg)
 
 if __name__ == '__main__':
-    #app.debug = True
     app.run()

@@ -15,23 +15,23 @@
             <label>Kokonaisviive
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="delay" value="{{ delay }}" min="3" required="true"/>
+            <input type="number" name="delay" value="{{ burner.Delay }}" min="3" max="100" required="true"/>
 
             <label>Ruuvi
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="screwTime" value="{{ screwTime }}" min="1" required="true"/>
+            <input type="number" name="screwTime" value="{{ burner.ScrewTime }}" min="1" max="30" required="true"/>
 
             <label>Tuuletin
                 <span class="small">Sekunttia</span>
             </label>
-            <input type="number" name="fanTime" value="{{ fanTime }}" min="1" required="true"/>
+            <input type="number" name="fanTime" value="{{ burner.FanTime }}" min="1" max="100" required="true"/>
 
             <label>Laite päälle</label>
-            <input type="radio" name="enabled" value="True" {% if enabled %} checked {% endif %}/>
+            <input type="radio" name="enabled" value="True" {% if burner.Enabled %} checked {% endif %}/>
 
             <label>Laite pois päältä</label>
-            <input type="radio" name="enabled" value="False" {% if not enabled %} checked {% endif %}/>
+            <input type="radio" name="enabled" value="False" {% if not burner.Enabled %} checked {% endif %}/>
 
             <button type="submit">Päivitä</button>
         </form>
@@ -43,7 +43,7 @@
             {% endif %}
 
             {% if status != "" %}
-                <div class="info"> {{ status }}</div>
+                <div class="info"> {{ burner.StatusMsg }}</div>
             {% endif %}
 
     </div>
