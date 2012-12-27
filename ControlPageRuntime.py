@@ -10,24 +10,21 @@ app = Flask(__name__)
 ioCard = UsbCard("COM3", 9600)
 burner = BurnerLogic(ioCard, time.sleep)
 
-burner.Delay = 3
-burner.FanTime = 1
-burner.ScrewTime = 1
+burner.Delay = 10
+burner.FanTime = 5
+burner.ScrewTime = 2
 
-burner.FanTerminalName = "2.T0"
-burner.ScrewTerminalName = "2.T1"
+burner.FanTerminalName = "2.T1"
+burner.ScrewTerminalName = "2.T2"
 
 class Runner(threading.Thread):
     exceptionMsg = ""
-    Enabled = False
 
     def run(self):
         while True:
-            time.sleep(0.5)
             try:
-                if self.Enabled:
-                    burner.Execute()
-                    self.exceptionMsg = ""
+                burner.execute()
+                self.exceptionMsg = ""
             except Exception as ex:
                 self.exceptionMsg = ex
 
@@ -39,15 +36,15 @@ def hello_world():
     burner.Delay = float(request.args.get('delay', burner.Delay))
     burner.ScrewTime = float(request.args.get('screwTime', burner.ScrewTime))
     burner.FanTime = float(request.args.get('fanTime', burner.FanTime))
-    worker.Enabled = request.args.get('enabled', worker.Enabled) in ("True", True)
+    burner.Enabled = request.args.get('enabled', burner.Enabled) in ("True", True)
 
     return render_template('index.html',
         delay = burner.Delay,
         fanTime = burner.FanTime,
         screwTime = burner.ScrewTime,
-        status = "Status",
+        status = burner.StatusMsg,
         exceptionMessages = worker.exceptionMsg,
-        enabled = worker.Enabled)
+        enabled = burner.Enabled)
 
 if __name__ == '__main__':
     #app.debug = True
