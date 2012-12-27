@@ -5,14 +5,12 @@ body{
 p, h1, form, button{border:0; margin:0; padding:0;}
 .spacer{clear:both; height:30px;}
 
-/* ----------- My Form ----------- */
 .myform{
     margin:0;
     width:400px;
     padding:14px;
 }
 
-/* ----------- stylized ----------- */
 #stylized{
     border:solid 2px #b7ddf2;
     background:#ebf4fb;
@@ -76,16 +74,6 @@ p, h1, form, button{border:0; margin:0; padding:0;}
     color: #00529B;
     background-color: #BDE5F8;
     background-image: url('InfoIcon.png');
-}
-.success {
-    color: #4F8A10;
-    background-color: #DFF2BF;
-    background-image:url('success.png');
-}
-.warning {
-    color: #9F6000;
-    background-color: #FEEFB3;
-    background-image: url('warning.png');
 }
 .error {
     visibility: hidden;

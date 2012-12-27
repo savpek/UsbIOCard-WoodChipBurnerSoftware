@@ -9,6 +9,7 @@
         setInterval(function(){
             $.ajax({ url: "/messages/", success: function(data){
                 document.getElementById("statusBox").innerHTML = data.status;
+                document.getElementById("fireWatchMeasuredValue").value = data.fireWatch;
 
                 if (data.errors != "") {
                     document.getElementById("errorBox").innerHTML = data.errors;
@@ -30,19 +31,31 @@
             <p>Asetukset</p>
 
             <label>Kokonaisviive
-                <span class="small">Sekunttia</span>
+                <span class="small">Sekuntia</span>
             </label>
             <input type="number" name="delay" value="{{ burner.Delay }}" min="3" max="100" required="true"/>
 
             <label>Ruuvi
-                <span class="small">Sekunttia</span>
+                <span class="small">Sekuntia</span>
             </label>
             <input type="number" name="screwTime" value="{{ burner.ScrewTime }}" min="1" max="30" required="true"/>
 
             <label>Tuuletin
-                <span class="small">Sekunttia</span>
+                <span class="small">Sekuntia</span>
             </label>
             <input type="number" name="fanTime" value="{{ burner.FanTime }}" min="1" max="100" required="true"/>
+
+            <label>Tulivahdin raja
+                <span class="small">ADC palautteen arvo</span>
+            </label>
+            <input type="number" name="fireWatchLimit" value="{{ burner.FireWatchLimit }}" min="0" max="256" required="true"/>
+
+            <label>Tulivahti, mitattu
+                <span class="small">ADC palautteen arvo</span>
+            </label>
+            <input type="number" id="fireWatchMeasuredValue" disabled="true"/>
+
+
 
             <label>Laite päälle</label>
             <input type="radio" name="enabled" value="True" {% if burner.Enabled %} checked {% endif %}/>

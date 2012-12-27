@@ -7,8 +7,12 @@ class BurnerLogic():
 
     ScrewTerminalName = None
     FanTerminalName = None
+    FireWatchTerminalName = None
 
     StatusMsg = ""
+
+    FireWatchLimit = 10
+    FireWatchLastValue = 0
 
     _ioCard = None
     _sleepMethod = None
@@ -27,9 +31,11 @@ class BurnerLogic():
 
         assert self.ScrewTerminalName is not None, "ScrewTerminalName"
         assert self.FanTerminalName is not None, "FanTerminalName"
+        assert self.FireWatchTerminalName is not None, "FireWatchTerminalName"
 
         try:
             if self.Enabled:
+                self._check_and_update_fire_watch()
                 self._screw()
                 self._fan()
                 self._wait()
@@ -66,4 +72,9 @@ class BurnerLogic():
         self._sleepMethod(0.5)
         self.StatusMsg = "Disabled."
 
+    def _check_and_update_fire_watch(self):
+        self.FireWatchLastValue = self._ioCard.adc_of_terminal(self.FireWatchTerminalName)
+
+        if self.FireWatchLastValue < self.FireWatchLimit:
+            raise ValueError("Limit for fire brightness level broken! Expected value to be larger than {0}, but got {1}".format(self.FireWatchLimit, self.FireWatchLastValue))
 

@@ -18,6 +18,7 @@ def configure_burner():
 
     burner.FanTerminalName = "2.T1"     # Look these from IO card printout.
     burner.ScrewTerminalName = "2.T2"   #
+    burner.FireWatchTerminalName = "7.T0.ADC0"   #
 
     return burner
 
@@ -43,6 +44,7 @@ def index():
     burner.ScrewTime = float(request.args.get('screwTime', burner.ScrewTime))
     burner.FanTime = float(request.args.get('fanTime', burner.FanTime))
     burner.Enabled = request.args.get('enabled', burner.Enabled) in ("True", True)
+    burner.FireWatchLimit = float(request.args.get('fireWatchLimit', burner.FireWatchLimit))
 
     return render_template('index.html',
         burner = burner,
@@ -51,7 +53,7 @@ def index():
 @app.route('/messages/')
 def messages():
     try:
-        return flask.jsonify(errors=worker.exceptionMsg, status=burner.StatusMsg)
+        return flask.jsonify(errors=worker.exceptionMsg, status=burner.StatusMsg, fireWatch=burner.FireWatchLastValue)
     except Exception as ex:
         return ex
 
