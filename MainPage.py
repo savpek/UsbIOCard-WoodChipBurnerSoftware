@@ -42,7 +42,6 @@ worker.start()
 def index():
     burner.Delay = float(request.args.get('delay', burner.Delay))
     burner.ScrewTime = float(request.args.get('screwTime', burner.ScrewTime))
-    burner.FanTime = float(request.args.get('fanTime', burner.FanTime))
     burner.Enabled = request.args.get('enabled', burner.Enabled) in ("True", True)
     burner.FireWatchLimit = float(request.args.get('fireWatchLimit', burner.FireWatchLimit))
 

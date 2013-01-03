@@ -1,6 +1,5 @@
 class BurnerLogic():
     ScrewTime = 2 #How long screw runs.
-    FanTime = 9 #How long fan will be on.
     Delay = 20 #Delay in seconds.
 
     Enabled = False
@@ -22,12 +21,9 @@ class BurnerLogic():
         self._sleepMethod = sleepMethod
 
     def execute(self):
-        if self.ScrewTime > self.FanTime:
+        if self.ScrewTime > self.Delay:
             self._disabled()
-            raise ValueError, "ScrewTime should never be more than FanTime!"
-        if self.FanTime > self.Delay:
-            self._disabled()
-            raise ValueError, "FanTime should never be more than Delay!"
+            raise ValueError, "Screw time should never be more than delay!"
 
         assert self.ScrewTerminalName is not None, "ScrewTerminalName"
         assert self.FanTerminalName is not None, "FanTerminalName"
@@ -37,7 +33,6 @@ class BurnerLogic():
             if self.Enabled:
                 self._check_and_update_fire_watch()
                 self._screw()
-                self._fan()
                 self._wait()
             else:
                 self._disabled()
@@ -46,22 +41,15 @@ class BurnerLogic():
             raise
 
     def _screw(self):
-        self.StatusMsg = "Screw and fan are running for {0} seconds.".format(self.ScrewTime)
+        self.StatusMsg = "Screw is running for {0} seconds.".format(self.ScrewTime)
         self._ioCard.set_terminal_high(self.FanTerminalName)
         self._ioCard.set_terminal_high(self.ScrewTerminalName)
 
         self._sleepMethod(self.ScrewTime)
         self._ioCard.set_terminal_low(self.ScrewTerminalName)
 
-    def _fan(self):
-        fanDuration = self.FanTime - self.ScrewTime
-        self.StatusMsg = "Fan is running for {0} seconds.".format(fanDuration)
-
-        self._sleepMethod(fanDuration)
-        self._ioCard.set_terminal_low(self.FanTerminalName)
-
     def _wait(self):
-        waitDuration = self.Delay - self.FanTime
+        waitDuration = self.Delay - self.ScrewTime
         self.StatusMsg = "Waiting next cycle for {0} seconds.".format(waitDuration)
 
         self._sleepMethod(waitDuration)

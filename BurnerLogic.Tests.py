@@ -12,7 +12,6 @@ class UsbIoCardConnection_Tests(unittest.TestCase):
         self._burner = BurnerLogic(self._externalCallsMock, self._externalCallsMock)
 
         self._burner.Delay = 9
-        self._burner.FanTime = 8
         self._burner.ScrewTime = 3
         self._burner.FanTerminalName = "FanTerminal"
         self._burner.ScrewTerminalName = "ScrewTerminal"
@@ -21,26 +20,20 @@ class UsbIoCardConnection_Tests(unittest.TestCase):
     def test_execute_throws_exception_if_properties_are_not_set_correctly_and_disables_outputs(self):
         burner = BurnerLogic(None, None)
         burner._disabled = Mock()
-        burner.Delay = 30
-        burner.FanTime = 10     #This should throw error.
-        burner.ScrewTime = 20   #because it is smaller than ScrewTime!
+        burner.Delay = 10       # This throws exception!
+        burner.ScrewTime = 20   # because it is smaller than ScrewTime!
         self.assertRaises(ValueError, burner.execute)
         burner._disabled.assert_called_once_with()
 
-        burner._disabled = Mock()
-        burner.FanTime = 10     #This should throw error because it is > Delay
-        burner.Delay = 5
-        burner.ScrewTime = 2
-        self.assertRaises(ValueError, burner.execute)
-        burner._disabled.called_once_with()
-
-        # If screwTime < FanTime, and FanTime < Delay. All possible combinations handled.
-
     def test_if_exception_occurs_all_outputs_should_be_set_off(self):
         ioCardMock = MagicMock()
-        ioCardMock.set_terminal_high = Mock(side_effect=IoCardException("Boom"))
+        ioCardMock.adc_of_terminal = Mock(side_effect=IoCardException("Boom"))
         timeMock = Mock()
         self._burner = BurnerLogic(ioCardMock, timeMock)
+        self._burner.FanTerminalName = "FanTerminal"
+        self._burner.ScrewTerminalName = "ScrewTerminal"
+        self._burner.FireWatchTerminalName = "FireWatchTerminal"
+        self._burner.Enabled = True
 
         self.assertRaises(IoCardException, self._burner.execute)
 
@@ -55,24 +48,15 @@ class UsbIoCardConnection_Tests(unittest.TestCase):
                          call.Sleep(3),
                          call.set_terminal_low("ScrewTerminal")]
 
-        self.assertEqual("Screw and fan are running for 3 seconds.", self._burner.StatusMsg)
-        self.assertEqual(self._externalCallsMock.mock_calls, expectedCalls)
-
-    def test_fan_state(self):
-        self._burner._fan()
-
-        expectedCalls = [call.Sleep(5),
-                         call.set_terminal_low("FanTerminal")]
-
-        self.assertEqual("Fan is running for 5 seconds.", self._burner.StatusMsg)
+        self.assertEqual("Screw is running for 3 seconds.", self._burner.StatusMsg)
         self.assertEqual(self._externalCallsMock.mock_calls, expectedCalls)
 
     def test_wait_state(self):
         self._burner._wait()
 
-        expectedCalls = [call.Sleep(1)]
+        expectedCalls = [call.Sleep(6)]
 
-        self.assertEqual("Waiting next cycle for 1 seconds.", self._burner.StatusMsg)
+        self.assertEqual("Waiting next cycle for 6 seconds.", self._burner.StatusMsg)
         self.assertEqual(self._externalCallsMock.mock_calls, expectedCalls)
 
     def test_disabled_state(self):
