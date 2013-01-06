@@ -1,6 +1,7 @@
 class IoCardException(Exception):
     pass
 
+
 class UsbCard:
     ERROR_KEYWORD = "ERROR:"
     TIMEOUT = 0.10  # How long input is waited after command.

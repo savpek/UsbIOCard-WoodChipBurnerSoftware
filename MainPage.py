@@ -22,6 +22,7 @@ def configure_burner():
 
     return burner
 
+
 class BurnerProcess(threading.Thread):
     exceptionMsg = ""
 
@@ -46,15 +47,17 @@ def index():
     burner.FireWatchLimit = float(request.args.get('fireWatchLimit', burner.FireWatchLimit))
 
     return render_template('index.html',
-        burner = burner,
-        exceptionMessages = worker.exceptionMsg)
+        burner=burner,
+        exceptionMessages=worker.exceptionMsg)
+
 
 @app.route('/')
 def index():
     return render_template('settings.html',
-        burner = burner,
-        exceptionMessages = worker.exceptionMsg,
-        pageBody = "Index page.")
+        burner=burner,
+        exceptionMessages=worker.exceptionMsg,
+        pageBody="Index page.")
+
 
 @app.route('/statistics')
 def statistics():
@@ -63,12 +66,14 @@ def statistics():
     except Exception as ex:
         return ex.message
 
+
 @app.route('/simulator')
 def simulator():
     try:
         return render_template('simulator.html')
     except Exception as ex:
         return ex.message
+
 
 @app.route('/messages.read.status')
 def messages():

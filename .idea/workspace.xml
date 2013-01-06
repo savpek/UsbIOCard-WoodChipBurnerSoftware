@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UsbCardSimulator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/settings.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simulator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/statistics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BurnerLogic.py" afterPath="$PROJECT_DIR$/BurnerLogic.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainPage.py" afterPath="$PROJECT_DIR$/MainPage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UsbCard.Tests.py" afterPath="$PROJECT_DIR$/UsbCard.Tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UsbCard.py" afterPath="$PROJECT_DIR$/UsbCard.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UsbCardSimulator.py" afterPath="$PROJECT_DIR$/UsbCardSimulator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/static/css/bootstrap-responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap-responsive.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap-responsive.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.css" afterPath="$PROJECT_DIR$/static/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/jquery-1.8.3.js" afterPath="$PROJECT_DIR$/static/jquery-1.8.3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/settings.html" afterPath="$PROJECT_DIR$/templates/settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/simulator.html" afterPath="$PROJECT_DIR$/templates/simulator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/statistics.html" afterPath="$PROJECT_DIR$/templates/statistics.html" />
     </list>
     <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +47,7 @@
       <file leaf-file-name="MainPage.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="57" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+            <state line="20" column="16" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -74,7 +85,7 @@
       <file leaf-file-name="statistics.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/statistics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.3076923">
+            <state line="2" column="17" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.3076923">
               <folding />
             </state>
           </provider>
@@ -83,7 +94,7 @@
       <file leaf-file-name="settings.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="16" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-17.0">
+            <state line="30" column="20" selection-start="1284" selection-end="1284" vertical-scroll-proportion="2.3076923">
               <folding />
             </state>
           </provider>
@@ -92,7 +103,7 @@
       <file leaf-file-name="simulator.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/simulator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="7" selection-start="943" selection-end="943" vertical-scroll-proportion="-15.038462">
+            <state line="23" column="14" selection-start="1014" selection-end="1014" vertical-scroll-proportion="-15.038462">
               <folding />
             </state>
           </provider>
@@ -101,7 +112,7 @@
       <file leaf-file-name="UsbCardSimulator.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UsbCardSimulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="17" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+            <state line="25" column="17" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,7 +121,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="13" selection-start="955" selection-end="955" vertical-scroll-proportion="-15.038462">
+            <state line="23" column="13" selection-start="955" selection-end="955" vertical-scroll-proportion="2.3076923">
               <folding />
             </state>
           </provider>
@@ -119,7 +130,7 @@
       <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.83835185">
+            <state line="13" column="106" selection-start="483" selection-end="483" vertical-scroll-proportion="0.35023773">
               <folding />
             </state>
           </provider>
@@ -151,10 +162,10 @@
         <option value="$PROJECT_DIR$/templates/test.html" />
         <option value="$PROJECT_DIR$/templates/statistics.html" />
         <option value="$PROJECT_DIR$/UsbCardSimulator.py" />
-        <option value="$PROJECT_DIR$/templates/simulator.html" />
-        <option value="$PROJECT_DIR$/MainPage.py" />
         <option value="$PROJECT_DIR$/templates/settings.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/MainPage.py" />
+        <option value="$PROJECT_DIR$/templates/simulator.html" />
       </list>
     </option>
   </component>
@@ -726,31 +737,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UsbCardSimulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+        <state line="25" column="17" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/statistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/simulator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="7" selection-start="943" selection-end="943" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="57" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,23 +763,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="955" selection-end="955" vertical-scroll-proportion="-15.038462">
+        <state line="30" column="20" selection-start="1284" selection-end="1284" vertical-scroll-proportion="2.3076923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/settings.html">
+    <entry file="file://$PROJECT_DIR$/MainPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-17.0">
+        <state line="20" column="16" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/simulator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="14" selection-start="1014" selection-end="1014" vertical-scroll-proportion="-15.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="955" selection-end="955" vertical-scroll-proportion="2.3076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.83835185">
+        <state line="13" column="106" selection-start="483" selection-end="483" vertical-scroll-proportion="0.35023773">
           <folding />
         </state>
       </provider>

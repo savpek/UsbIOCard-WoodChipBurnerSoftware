@@ -13,6 +13,7 @@ class IoCardException(Exception):
  Throws:
   Throws IO card error if connection works but result is somehow unexcepted.
 """
+
 class UsbCard:
     ERROR_KEYWORD = "ERROR:"
     TIMEOUT = 0.10  # How long input is waited after command.
@@ -31,7 +32,8 @@ class UsbCard:
         self._check_for_error_keyword(result)
 
         if result != "HIGH" and result != "LOW":
-            raise IoCardException("Result should be 'LOW' or 'HIGH', other values are invalid. Returned value: '" + result + "'")
+            raise IoCardException(
+                "Result should be 'LOW' or 'HIGH', other values are invalid. Returned value: '" + result + "'")
 
         return result
 
@@ -54,7 +56,7 @@ class UsbCard:
             raise IoCardException("Invalid value returned from IO card, value returned: " + result)
 
     def _get_result(self, command):
-        self.serial_con.write(command+"\n")
+        self.serial_con.write(command + "\n")
 
         result = self.serial_con.read(self.READ_MAX_COUNT)
 

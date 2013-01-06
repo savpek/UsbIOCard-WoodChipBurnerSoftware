@@ -64,5 +64,7 @@ class BurnerLogic():
         self.FireWatchLastValue = self._ioCard.adc_of_terminal(self.FireWatchTerminalName)
 
         if self.FireWatchLastValue < self.FireWatchLimit:
-            raise ValueError("Limit for fire brightness level broken! Expected value to be larger than {0}, but got {1}".format(self.FireWatchLimit, self.FireWatchLastValue))
+            raise ValueError(
+                "Limit for fire brightness level broken! Expected value to be larger than {0}, but got {1}".format(
+                    self.FireWatchLimit, self.FireWatchLastValue))
 

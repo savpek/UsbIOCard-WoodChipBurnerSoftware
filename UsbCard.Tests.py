@@ -9,13 +9,14 @@ class UsbIoCardConnection_InitTests(unittest.TestCase):
         # Timeout must be set! Otherwise terminal will hang forever.
         self.serial_mock.Serial.assert_called_with("COM1", 9600, timeout=0.05)
 
+
 class UsbIoCardConnection_Tests(unittest.TestCase):
     def setUp(self):
         self.handle_mock = MagicMock()
         self.serial_mock = MagicMock()
         self.serial_mock.Serial = MagicMock(return_value=self.handle_mock)
         self.usb_card = UsbCard("COM1", 9600, serialInterface=self.serial_mock)
-        self.handle_mock.inWaiting(return_value = 10)
+        self.handle_mock.inWaiting(return_value=10)
         self._set_return_value("")
 
     def test_read_terminal_sends_correctly_formatted_message(self):

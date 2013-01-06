@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="no-js">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Hakkeenpolttimen kontrollit</title>
     <LINK href="static/index.css" rel="stylesheet" type="text/css">
     <script src="static/jquery-1.8.3.js"></script>
     <script>
-        setInterval(function(){
-            $.ajax({ url: "/messages/", success: function(data){
+        setInterval(function () {
+            $.ajax({ url:"/messages/", success:function (data) {
                 document.getElementById("statusBox").innerHTML = data.status;
                 document.getElementById("fireWatchMeasuredValue").value = data.fireWatch;
 
@@ -19,53 +19,54 @@
                     document.getElementById("errorBox").style.visibility = 'hidden'
                 }
 
-            }, dataType: "json"});
+            }, dataType:"json"});
         }, 3000);
     </script>
 </head>
 <body>
 
-    <div id="stylized" class="myform">
-        <form id="form" name="form" method="get" action="">
-            <h1>Hakkeenpolttimen ohjain</h1>
-            <p>Asetukset</p>
+<div id="stylized" class="myform">
+    <form id="form" name="form" method="get" action="">
+        <h1>Hakkeenpolttimen ohjain</h1>
 
-            <label>Kokonaisviive
-                <span class="small">Sekuntia</span>
-            </label>
-            <input type="number" name="delay" value="{{ burner.Delay }}" min="3" max="100" required="true"/>
+        <p>Asetukset</p>
 
-            <label>Ruuvi
-                <span class="small">Sekuntia</span>
-            </label>
-            <input type="number" name="screwTime" value="{{ burner.ScrewTime }}" min="1" max="30" required="true"/>
+        <label>Kokonaisviive
+            <span class="small">Sekuntia</span>
+        </label>
+        <input type="number" name="delay" value="{{ burner.Delay }}" min="3" max="100" required="true"/>
 
-            <label>Tulivahdin raja
-                <span class="small">ADC palautteen arvo</span>
-            </label>
-            <input type="number" name="fireWatchLimit" value="{{ burner.FireWatchLimit }}" min="0" max="256" required="true"/>
+        <label>Ruuvi
+            <span class="small">Sekuntia</span>
+        </label>
+        <input type="number" name="screwTime" value="{{ burner.ScrewTime }}" min="1" max="30" required="true"/>
 
-            <label>Tulivahti, mitattu
-                <span class="small">ADC palautteen arvo</span>
-            </label>
-            <input type="number" id="fireWatchMeasuredValue" disabled="true"/>
+        <label>Tulivahdin raja
+            <span class="small">ADC palautteen arvo</span>
+        </label>
+        <input type="number" name="fireWatchLimit" value="{{ burner.FireWatchLimit }}" min="0" max="256"
+               required="true"/>
+
+        <label>Tulivahti, mitattu
+            <span class="small">ADC palautteen arvo</span>
+        </label>
+        <input type="number" id="fireWatchMeasuredValue" disabled="true"/>
 
 
+        <label>Laite päälle</label>
+        <input type="radio" name="enabled" value="True" {% if burner.Enabled %} checked {% endif %}/>
 
-            <label>Laite päälle</label>
-            <input type="radio" name="enabled" value="True" {% if burner.Enabled %} checked {% endif %}/>
+        <label>Laite pois päältä</label>
+        <input type="radio" name="enabled" value="False" {% if not burner.Enabled %} checked {% endif %}/>
 
-            <label>Laite pois päältä</label>
-            <input type="radio" name="enabled" value="False" {% if not burner.Enabled %} checked {% endif %}/>
+        <button type="submit">Päivitä</button>
+    </form>
 
-            <button type="submit">Päivitä</button>
-        </form>
+    <div class="spacer"></div>
+    <div class="error" id="errorBox"></div>
+    <div class="info" id="statusBox">Waiting for update ...</div>
 
-        <div class="spacer"></div>
-            <div class="error" id="errorBox"></div>
-            <div class="info" id="statusBox">Waiting for update ...</div>
-
-    </div>
+</div>
 {{ message }}
 </body>
 </html>
