@@ -2,7 +2,7 @@
 from time import sleep
 
 
-class BurnerLogic():
+class Burner():
     ScrewTime = 2   # How long screw runs.
     Delay = 20      # Delay in seconds.
 

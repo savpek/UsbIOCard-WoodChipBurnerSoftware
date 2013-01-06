@@ -3,7 +3,7 @@ import threading
 from flask import Flask, render_template, request
 import time
 import flask
-from BurnerLogic import BurnerLogic
+from Burner import Burner
 from UsbCard import UsbCard
 from UsbCardSimulator import UsbCardSimulator
 
@@ -13,7 +13,7 @@ app = Flask(__name__)
 def configure_burner():
     ioCard = UsbCardSimulator("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
 
-    burner = BurnerLogic(ioCard, time.sleep)
+    burner = Burner(ioCard, time.sleep)
 
     burner.Delay = 10       # Default setting on startup.
     burner.ScrewTime = 2

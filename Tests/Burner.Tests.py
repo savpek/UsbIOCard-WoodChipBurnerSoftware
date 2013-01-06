@@ -1,17 +1,17 @@
 # coding=utf-8
 import unittest
-from BurnerLogic import BurnerLogic
+from Burner import Burner
 from mock import call, MagicMock, Mock
 from UsbCard import IoCardException
 
 
-class UsbIoCardConnection_Tests(unittest.TestCase):
+class BurnerTests(unittest.TestCase):
     _burner = None
     _externalCallsMock = None
 
     def setUp(self):
         self._externalCallsMock = MagicMock()
-        self._burner = BurnerLogic(self._externalCallsMock, self._externalCallsMock)
+        self._burner = Burner(self._externalCallsMock, self._externalCallsMock)
 
         self._burner.Delay = 9
         self._burner.ScrewTime = 3
@@ -20,7 +20,7 @@ class UsbIoCardConnection_Tests(unittest.TestCase):
         self._burner.FireWatchTerminalName = "FireWatchTerminal"
 
     def test_execute_throws_exception_if_properties_are_not_set_correctly_and_disables_outputs(self):
-        burner = BurnerLogic(None, None)
+        burner = Burner(None, None)
         burner._disabled = Mock()
         burner.Delay = 10       # This throws exception!
         burner.ScrewTime = 20   # because it is smaller than ScrewTime!
@@ -31,7 +31,7 @@ class UsbIoCardConnection_Tests(unittest.TestCase):
         ioCardMock = MagicMock()
         ioCardMock.adc_of_terminal = Mock(side_effect=IoCardException("Boom"))
         timeMock = Mock()
-        self._burner = BurnerLogic(ioCardMock, timeMock)
+        self._burner = Burner(ioCardMock, timeMock)
         self._burner.FanTerminalName = "FanTerminal"
         self._burner.ScrewTerminalName = "ScrewTerminal"
         self._burner.FireWatchTerminalName = "FireWatchTerminal"
