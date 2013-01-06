@@ -4,14 +4,14 @@ from flask import Flask, render_template, request
 import time
 import flask
 from BurnerLogic import BurnerLogic
-#from UsbCard import UsbCard
-from UsbCardSimulator import UsbCard
+from UsbCard import UsbCard
+from UsbCardSimulator import UsbCardSimulator
 
 app = Flask(__name__)
 
 
 def configure_burner():
-    ioCard = UsbCard("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
+    ioCard = UsbCardSimulator("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
 
     burner = BurnerLogic(ioCard, time.sleep)
 

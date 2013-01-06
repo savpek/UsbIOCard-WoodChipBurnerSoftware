@@ -5,7 +5,7 @@ class IoCardException(Exception):
     pass
 
 
-class UsbCard:
+class UsbCardSimulator:
     Log = None
 
     def __init__(self, port, speed, serialInterface=None):
@@ -26,7 +26,7 @@ class UsbCard:
         return 50
 
     def _write_action_log(self, action, terminal_name):
-        self.Log += "{0} Called: {1} with terminal name: {2}\n".format(
+        self.Log = "{0} Called: {1} with terminal name: {2}\n".format(
             datetime.datetime.now().strftime("%d/%m/%y %H:%S"),
             action,
-            terminal_name)
+            terminal_name) + self.Log

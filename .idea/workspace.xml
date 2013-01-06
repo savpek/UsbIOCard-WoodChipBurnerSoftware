@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\.idea\inspectionProfiles\profiles_settings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BurnerLogic.Tests.py" afterPath="$PROJECT_DIR$/BurnerLogic.Tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BurnerLogic.py" afterPath="$PROJECT_DIR$/BurnerLogic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainPage.py" afterPath="$PROJECT_DIR$/MainPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UsbCard.py" afterPath="$PROJECT_DIR$/UsbCard.py" />
+      <change type="MOVED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\MainPage.py" afterPath="$PROJECT_DIR$/Main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UsbCardSimulator.py" afterPath="$PROJECT_DIR$/UsbCardSimulator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/settings.html" afterPath="$PROJECT_DIR$/templates/settings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/simulator.html" afterPath="$PROJECT_DIR$/templates/simulator.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
@@ -21,12 +14,13 @@
     <file path="/Dummy.txt" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357470713995" ignored="false" />
     <file path="$USER_HOME$/.PyCharm20/system/python_stubs/-762174762/__builtin__.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357470808067" ignored="false" />
     <file path="$USER_HOME$/.PyCharm20/system/python_stubs/-762174762/exceptions.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357470808067" ignored="false" />
-    <file path="/UsbCardSimulator.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357480409405" ignored="false" />
+    <file path="/UsbCardSimulator.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357493314908" ignored="false" />
     <file path="/simulator.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357480700834" ignored="false" />
     <file path="/MainPage.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357480660772" ignored="false" />
     <file path="/BurnerLogic.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357473512036" ignored="false" />
     <file path="/settings.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357474382389" ignored="false" />
     <file path="/base.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357480940177" ignored="false" />
+    <file path="/Main.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357493277876" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +42,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainPage.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MainPage.py">
+      <file leaf-file-name="Main.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="40" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.41400304">
               <folding>
                 <element signature="e#15#31#0" expanded="true" />
               </folding>
@@ -98,18 +92,18 @@
       <file leaf-file-name="UsbCardSimulator.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UsbCardSimulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="14" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+            <state line="11" column="21" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BurnerLogic.Tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BurnerLogic.Tests.py">
+      <file leaf-file-name="UsbCard.Tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UsbCard.Tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#15#30#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="31" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.703645">
+            <state line="23" column="18" selection-start="971" selection-end="971" vertical-scroll-proportion="-15.038462">
               <folding />
             </state>
           </provider>
@@ -161,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/BurnerStates.py" />
         <option value="$PROJECT_DIR$/ControlPageRuntime.py" />
         <option value="$PROJECT_DIR$/static/index.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
@@ -173,10 +166,11 @@
         <option value="$PROJECT_DIR$/BurnerLogic.Tests.py" />
         <option value="$PROJECT_DIR$/BurnerLogic.py" />
         <option value="$PROJECT_DIR$/templates/settings.html" />
-        <option value="$PROJECT_DIR$/UsbCardSimulator.py" />
         <option value="$PROJECT_DIR$/MainPage.py" />
         <option value="$PROJECT_DIR$/templates/simulator.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/UsbCardSimulator.py" />
       </list>
     </option>
   </component>
@@ -278,7 +272,7 @@
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MainPage">
+  <component name="RunManager" selected="Python.Main">
     <configuration default="false" name="Unittests in UsbIoCardConnection_Tests.test_execute_throws_exception_if_properties_are_not_set_correctly_and_disables_outputs" type="tests" factoryName="Unittests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -508,7 +502,7 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="false" name="MainPage" type="PythonConfigurationType" factoryName="Python" singleton="true">
+    <configuration default="false" name="Main" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -519,7 +513,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <module name="UsbIOCard-WoodChipBurnerSoftware" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\MainPage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Main.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -528,7 +522,7 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python.MainPage" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Main" />
       <item index="1" class="java.lang.String" itemvalue="Python's test.Unittests in UsbIoCardConnection_Tests.test_execute_throws_exception_if_properties_are_not_set_correctly_and_disables_outputs" />
       <item index="2" class="java.lang.String" itemvalue="Python's test.Unittests in UsbIoCardConnection_Tests" />
       <item index="3" class="java.lang.String" itemvalue="Python's test.Unittests in UsbIoCardConnection_Tests.test_fire_watch_update_last_value_correctly" />
@@ -707,15 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UsbCard.Tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BurnerLogic.Tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
@@ -725,33 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UsbCard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BurnerLogic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UsbCardSimulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="40" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#15#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,8 +747,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.703645">
+        <state line="23" column="18" selection-start="971" selection-end="971" vertical-scroll-proportion="-15.038462">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsbCardSimulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsbCard.Tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UsbCard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.41400304">
+          <folding>
+            <element signature="e#15#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
