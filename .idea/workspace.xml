@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BurnerLogic.Tests.py" afterPath="$PROJECT_DIR$/BurnerLogic.Tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BurnerLogic.py" afterPath="$PROJECT_DIR$/BurnerLogic.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UsbCardSimulator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/settings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simulator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/statistics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainPage.py" afterPath="$PROJECT_DIR$/MainPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +36,7 @@
       <file leaf-file-name="MainPage.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="77" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
+            <state line="15" column="57" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -41,35 +44,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file leaf-file-name="BurnerLogic.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BurnerLogic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1576" selection-end="1576" vertical-scroll-proportion="-9.807693">
+            <state line="16" column="10" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="16" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorIcon.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/ErrorIcon.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfoIcon.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/InfoIcon.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -82,37 +62,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsbCard.Tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UsbCard.Tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="53" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BurnerLogic.Tests.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BurnerLogic.Tests.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BurnerLogic.Tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.9221374">
+            <state line="60" column="0" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BurnerLogic.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BurnerLogic.py">
+      <file leaf-file-name="statistics.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/statistics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="50" selection-start="1501" selection-end="1501" vertical-scroll-proportion="0.0">
+            <state line="2" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.3076923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsbCard.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UsbCard.py">
+      <file leaf-file-name="settings.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="26" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.0">
+            <state line="26" column="16" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-17.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simulator.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/simulator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="7" selection-start="943" selection-end="943" vertical-scroll-proportion="-15.038462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsbCardSimulator.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UsbCardSimulator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="17" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="13" selection-start="955" selection-end="955" vertical-scroll-proportion="-15.038462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="0" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.83835185">
               <folding />
             </state>
           </provider>
@@ -132,21 +139,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/UsbIOCard-WoodChipBurnerSoftware.py" />
-        <option value="$PROJECT_DIR$/BurnerLogic.Core.Tests.py" />
-        <option value="$PROJECT_DIR$/BurnerLogic.Core.py" />
-        <option value="$PROJECT_DIR$/IoCard.py" />
-        <option value="$PROJECT_DIR$/UsbCard.Tests.py" />
-        <option value="$PROJECT_DIR$/templates/index.css" />
-        <option value="$PROJECT_DIR$/UsbCard.py" />
         <option value="$PROJECT_DIR$/templates/status.html" />
         <option value="$PROJECT_DIR$/BurnerStates.py" />
         <option value="$PROJECT_DIR$/ControlPageRuntime.py" />
         <option value="$PROJECT_DIR$/static/index.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/MainPage.py" />
         <option value="$PROJECT_DIR$/BurnerLogic.py" />
         <option value="$PROJECT_DIR$/BurnerLogic.Tests.py" />
+        <option value="$PROJECT_DIR$/templates/burnerSettings.html" />
+        <option value="$PROJECT_DIR$/templates/burner-settings.html" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/templates/statistics.html" />
+        <option value="$PROJECT_DIR$/UsbCardSimulator.py" />
+        <option value="$PROJECT_DIR$/templates/simulator.html" />
+        <option value="$PROJECT_DIR$/MainPage.py" />
+        <option value="$PROJECT_DIR$/templates/settings.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -229,6 +237,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -253,12 +297,16 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\templates" />
+      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware" />
     </key>
   </component>
-  <component name="RunManager" selected="Python's test.Unittests in BurnerLogic.Tests">
+  <component name="RunManager" selected="Python.MainPage">
     <configuration default="false" name="Unittests in UsbIoCardConnection_Tests.test_execute_throws_exception_if_properties_are_not_set_correctly_and_disables_outputs" type="tests" factoryName="Unittests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -564,10 +612,11 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296593" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296593" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.67034066" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.6712598" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3987976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39862204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297244" sideWeight="0.50053364" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874015" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
@@ -575,7 +624,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296593" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -632,75 +680,78 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+    <entry file="file://$PROJECT_DIR$/static/InfoIcon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/mock.py">
+    <entry file="file://C:/Python27/Lib/site-packages/werkzeug-0.8.3-py2.7.egg/werkzeug/local.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2130" column="0" selection-start="67732" selection-end="67762" vertical-scroll-proportion="0.0">
+        <state line="161" column="0" selection-start="4690" selection-end="4690" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/Flask-0.9-py2.7.egg/flask/globals.py">
+    <entry file="file://C:/Python27/Lib/site-packages/Flask-0.9-py2.7.egg/flask/templating.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="663" selection-end="694" vertical-scroll-proportion="0.5931624" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/werkzeug-0.8.3-py2.7.egg/werkzeug/serving.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="0" selection-start="5901" selection-end="5901" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/-762174762/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2927" column="22" selection-start="99913" selection-end="99913" vertical-scroll-proportion="1.0978261">
+        <state line="121" column="0" selection-start="3864" selection-end="3864" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/Flask-0.9-py2.7.egg/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1343" column="0" selection-start="57175" selection-end="57175" vertical-scroll-proportion="0.29658386">
+        <state line="1695" column="19" selection-start="71385" selection-end="71385" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UsbCard.Tests.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="53" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UsbCard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="26" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.css">
+    <entry file="file://$PROJECT_DIR$/UsbCardSimulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="16" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+        <state line="24" column="17" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/ErrorIcon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/templates/statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/InfoIcon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/templates/simulator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="7" selection-start="943" selection-end="943" vertical-scroll-proportion="-15.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="57" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -710,32 +761,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/BurnerLogic.Tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1576" selection-end="1576" vertical-scroll-proportion="-9.807693">
+        <state line="60" column="0" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="77" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BurnerLogic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="50" selection-start="1501" selection-end="1501" vertical-scroll-proportion="0.0">
+        <state line="16" column="10" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BurnerLogic.Tests.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="3050" selection-end="3050" vertical-scroll-proportion="0.9221374">
+        <state line="23" column="13" selection-start="955" selection-end="955" vertical-scroll-proportion="-15.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="16" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-17.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.83835185">
           <folding />
         </state>
       </provider>

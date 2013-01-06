@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="ScrewTime">Paluuarvo tulivahdilta:</label>
+        <div class="controls">
+            <input type="text" id="ScrewTime" placeholder="2">
+        </div>
+    </div>
+    <div class="control-group" data-toggle-name="is_private" data-toggle="buttons-radio" >
+        <label class="control-label">Virhetila</label>
+        <div class="controls">
+            <button type="button" value="0" class="btn" data-toggle="button">Virhe</button>
+            <button type="button" value="1" class="btn" data-toggle="button">Kortti toimii</button>
+            <input type="hidden" name="is_private" value="0" />
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn">Päivitä asetukset</button>
+        </div>
+    </div>
+
+</form>
+{% endblock %}
