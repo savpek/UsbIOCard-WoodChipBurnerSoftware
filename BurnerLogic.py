@@ -1,6 +1,10 @@
+# coding=utf-8
+from time import sleep
+
+
 class BurnerLogic():
-    ScrewTime = 2 #How long screw runs.
-    Delay = 20 #Delay in seconds.
+    ScrewTime = 2   # How long screw runs.
+    Delay = 20      # Delay in seconds.
 
     Enabled = False
 
@@ -21,6 +25,7 @@ class BurnerLogic():
         self._sleepMethod = sleepMethod
 
     def execute(self):
+        sleep(0.1)
         if self.ScrewTime > self.Delay:
             self._disabled()
             raise ValueError, "Screw time should never be more than delay!"
@@ -35,6 +40,7 @@ class BurnerLogic():
                 self._screw()
                 self._wait()
             else:
+                sleep(1)
                 self._disabled()
         except:
             self._disabled()
@@ -67,4 +73,3 @@ class BurnerLogic():
             raise ValueError(
                 "Limit for fire brightness level broken! Expected value to be larger than {0}, but got {1}".format(
                     self.FireWatchLimit, self.FireWatchLastValue))
-

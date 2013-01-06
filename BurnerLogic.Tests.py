@@ -1,7 +1,9 @@
+# coding=utf-8
 import unittest
 from BurnerLogic import BurnerLogic
-from mock import  call, MagicMock, Mock
-from UsbCard import IoCardException, UsbCard
+from mock import call, MagicMock, Mock
+from UsbCard import IoCardException
+
 
 class UsbIoCardConnection_Tests(unittest.TestCase):
     _burner = None
@@ -71,7 +73,7 @@ class UsbIoCardConnection_Tests(unittest.TestCase):
 
     def test_fire_watch_update_last_value_correctly(self):
         self._externalCallsMock.adc_of_terminal = Mock(return_value=100)
-        self._burner.FireWatchLimit = 10 # This is less than 100, so everything is ok.
+        self._burner.FireWatchLimit = 10    # This is less than 100, so everything is ok.
 
         self._burner._check_and_update_fire_watch()
         self.assertEqual(100, self._burner.FireWatchLastValue)
@@ -79,6 +81,6 @@ class UsbIoCardConnection_Tests(unittest.TestCase):
 
     def test_fire_watch_throw_exception_if_read_value_is_below_defined_limit(self):
         self._externalCallsMock.adc_of_terminal = Mock(return_value=100)
-        self._burner.FireWatchLimit = 150 # This is more than 100, so everything is NOT ok.
+        self._burner.FireWatchLimit = 150   # This is more than 100, so everything is NOT ok.
 
         self.assertRaises(ValueError, self._burner._check_and_update_fire_watch)

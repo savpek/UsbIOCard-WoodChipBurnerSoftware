@@ -3,17 +3,15 @@ import serial
 class IoCardException(Exception):
     pass
 
-"""
- Abstraction class to command USB-IO card.
- Example:
-    iocard = UsbCard("COM9", 9600)
-    a = iocard.read_terminal("5.T1")
-    iocard.set_terminal_high("2.T2")
-    b = iocard.adc_of_termina("3.T0")
- Throws:
-  Throws IO card error if connection works but result is somehow unexcepted.
-"""
 
+# Abstraction class to command USB-IO card.
+# Example:
+#    iocard = UsbCard("COM9", 9600)
+#    a = iocard.read_terminal("5.T1")
+#    iocard.set_terminal_high("2.T2")
+#    b = iocard.adc_of_termina("3.T0")
+# Throws:
+#  Throws IO card error if connection works but result is somehow unexcepted.
 class UsbCard:
     ERROR_KEYWORD = "ERROR:"
     TIMEOUT = 0.10  # How long input is waited after command.
@@ -60,7 +58,7 @@ class UsbCard:
 
         result = self.serial_con.read(self.READ_MAX_COUNT)
 
-        result = result.replace(command, "") # Remove echo.
+        result = result.replace(command, "")    # Remove echo.
         return result.strip('\n\r\t ')
 
     def _check_for_error_keyword(self, result):

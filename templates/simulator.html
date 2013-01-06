@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
+    <script>
+        setInterval(function () {
+            $.ajax({ url:"/messages.read.simulator", success:function (data) {
+                document.getElementById("LogContainer").innerHTML = data.iocard_log;
+            }, dataType:"json"});
+        }, 1000);
+    </script>
     <form class="form-horizontal">
         <div class="control-group">
             <label class="control-label" for="ScrewTime">Paluuarvo tulivahdilta:</label>
@@ -23,4 +30,7 @@
             </div>
         </div>
     </form>
+    <pre>
+<span id="LogContainer"></span>
+    </pre>
 {% endblock %}

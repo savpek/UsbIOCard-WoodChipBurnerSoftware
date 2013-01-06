@@ -23,13 +23,17 @@
                 <input type="text" placeholder="Ei arvoa" disabled="true">
             </div>
         </div>
-        <div class="control-group" data-toggle-name="is_private" data-toggle="buttons-radio">
-            <label class="control-label"></label>
-
+        <div class="control-group">
+            <label class="control-label" for="FireWatch"></label>
             <div class="controls">
-                <button type="button" value="0" class="btn" data-toggle="button">Päällä</button>
-                <button type="button" value="1" class="btn" data-toggle="button">Pois päältä</button>
-                <input type="hidden" name="is_private" value="0"/>
+                <label class="radio">
+                    <input type="radio" name="enabled" id="optionsRadios1" value="True" checked>
+                    Laite päällä
+                </label>
+                <label class="radio">
+                    <input type="radio" name="enabled" id="optionsRadios1" value="False">
+                    Laite pois päältä
+                </label>
             </div>
         </div>
         <div class="control-group">

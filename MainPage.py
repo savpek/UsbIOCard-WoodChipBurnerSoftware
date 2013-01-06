@@ -1,3 +1,4 @@
+# coding=utf-8
 import threading
 from flask import Flask, render_template, request
 import time
@@ -8,18 +9,17 @@ from UsbCardSimulator import UsbCard
 
 app = Flask(__name__)
 
+
 def configure_burner():
-    ioCard = UsbCard("/dev/ttyUSB0", 9600) # Define configurations for used IO card port.
+    ioCard = UsbCard("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
 
     burner = BurnerLogic(ioCard, time.sleep)
 
     burner.Delay = 10       # Default setting on startup.
-    burner.ScrewTime = 2    #
-
+    burner.ScrewTime = 2
     burner.FanTerminalName = "2.T1"     # Look these from IO card printout.
-    burner.ScrewTerminalName = "2.T2"   #
-    burner.FireWatchTerminalName = "7.T0.ADC0"   #
-
+    burner.ScrewTerminalName = "2.T2"
+    burner.FireWatchTerminalName = "7.T0.ADC0"
     return burner
 
 
@@ -34,35 +34,23 @@ class BurnerProcess(threading.Thread):
             except Exception as ex:
                 self.exceptionMsg = ex.message
 
+
 burner = configure_burner()
 
 worker = BurnerProcess()
 worker.start()
 
-#@app.route('/')
-def index():
-    burner.Delay = float(request.args.get('delay', burner.Delay))
-    burner.ScrewTime = float(request.args.get('screwTime', burner.ScrewTime))
-    burner.Enabled = request.args.get('enabled', burner.Enabled) in ("True", True)
-    burner.FireWatchLimit = float(request.args.get('fireWatchLimit', burner.FireWatchLimit))
-
-    return render_template('index.html',
-        burner=burner,
-        exceptionMessages=worker.exceptionMsg)
-
 
 @app.route('/')
 def index():
-    return render_template('settings.html',
-        burner=burner,
-        exceptionMessages=worker.exceptionMsg,
-        pageBody="Index page.")
+    burner.Enabled = request.args.get('enabled', burner.Enabled) in ("True", True)
+    return render_template('settings.html')
 
 
 @app.route('/statistics')
 def statistics():
     try:
-        return render_template('statistics.html')
+        return render_template('statistics.html', log=burner._ioCard.get_log_as_string())
     except Exception as ex:
         return ex.message
 
@@ -70,7 +58,7 @@ def statistics():
 @app.route('/simulator')
 def simulator():
     try:
-        return render_template('simulator.html')
+        return render_template('simulator.html', log=burner._ioCard.Log)
     except Exception as ex:
         return ex.message
 
@@ -79,6 +67,14 @@ def simulator():
 def messages():
     try:
         return flask.jsonify(errors=worker.exceptionMsg, status=burner.StatusMsg, fireWatch=burner.FireWatchLastValue)
+    except Exception as ex:
+        return ex
+
+
+@app.route('/messages.read.simulator')
+def simulator_read():
+    try:
+        return flask.jsonify(iocard_log=burner._ioCard.Log)
     except Exception as ex:
         return ex
 
