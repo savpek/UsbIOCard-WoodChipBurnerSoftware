@@ -79,3 +79,4 @@ class Burner():
 
     def firewatch_value(self):
         pass
+
