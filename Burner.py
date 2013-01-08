@@ -73,3 +73,9 @@ class Burner():
             raise ValueError(
                 "Limit for fire brightness level broken! Expected value to be larger than {0}, but got {1}".format(
                     self.FireWatchLimit, self.FireWatchLastValue))
+
+    def _stopped(self):
+        pass
+
+    def firewatch_value(self):
+        pass
