@@ -4,8 +4,7 @@ from flask import Flask, render_template, request
 import time
 import flask
 from Burner import Burner
-from UsbCard import UsbCard
-from UsbCardSimulator import UsbCardSimulator
+from Burner.IO import UsbCardSimulator
 
 app = Flask(__name__)
 

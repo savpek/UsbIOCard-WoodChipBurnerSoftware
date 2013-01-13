@@ -3,7 +3,6 @@ import serial
 class IoCardException(Exception):
     pass
 
-
 # Abstraction class to command USB-IO card.
 # Example:
 #    iocard = UsbCard("COM9", 9600)
