@@ -6,6 +6,7 @@ class BurnerProcess(threading.Thread):
 
     ScrewSec = 0
     DelaySec = 0
+    Enabled = False
 
     Status = "Not initialized."
 
@@ -21,15 +22,11 @@ class BurnerProcess(threading.Thread):
         try:
             self._controller.fire_value_tick()
             self._controller.screw_tick()
-            if self._controller.delay_tick() is False:
+            if self._controller.delay_tick() is False and self.Enabled is True:
                 self._controller.screw_start(self.ScrewSec)
-                self._controller.delay_start(self.DelaySec)
+                self._controller.delay_start(self.DelaySec+self.ScrewSec)
         except Exception, e:
             self.Status = "Error: " + e.message
-
-    def set_routine(self, screw_sec, delay_sec):
-        self.GetScrewSec = screw_sec
-        self.GetDelaySec = delay_sec
 
     def get_fire_value(self):
         return self._controller.fire_value()

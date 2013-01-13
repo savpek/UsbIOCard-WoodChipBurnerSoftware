@@ -17,7 +17,9 @@ class BurnerTests(unittest.TestCase):
         self._burnerController.fire_value_tick.assert_called_once_with()
 
     def test_if_device_is_enabled_should_run_correct_routines(self):
-        self._burnerProcess.set_routine(screw_sec=1, delay_sec=2) # This enables device. 1 sec screw, 1 sec delay.
+        self._burnerProcess.ScrewSec = 1
+        self._burnerProcess.DelaySec = 1
+        self._burnerProcess.Enabled = True
 
         # On first tick screw and fan should go on.
         self._burnerController.screw_tick.return_value = False
@@ -47,3 +49,12 @@ class BurnerTests(unittest.TestCase):
         self._burnerController.screw_tick.side_effect = exception
         self._burnerProcess._execute()
         self.assertEqual(self._burnerProcess.Status, "Error: Test error!")
+
+    def test_if_device_is_disabled_stop_after_routine(self):
+        self._burnerProcess.Enabled = False
+
+        self._burnerController.reset_mock()
+        self._burnerController.screw_tick.return_value = False  # Now screw is stopped.
+        self._burnerController.delay_tick.return_value = False  # Now delay is over.
+        self._burnerProcess._execute()
+        self.assertEqual(self._burnerController.method_calls, [call.fire_value_tick(), call.screw_tick(), call.delay_tick()])
