@@ -17,9 +17,9 @@ def configure_burner():
 
     burner.Delay = 10       # Default setting on startup.
     burner.ScrewTime = 2
-    burner.FanTerminalName = "2.T1"     # Look these from IO card printout.
-    burner.ScrewTerminalName = "2.T2"
-    burner.FireWatchTerminalName = "7.T0.ADC0"
+    burner._fan_terminal = "2.T1"     # Look these from IO card printout.
+    burner._screw_terminal = "2.T2"
+    burner._fire_watch_terminal = "7.T0.ADC0"
     return burner
 
 

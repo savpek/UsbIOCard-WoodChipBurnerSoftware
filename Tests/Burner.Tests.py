@@ -11,11 +11,7 @@ class BurnerTests(unittest.TestCase):
 
     def setUp(self):
         self._iocard = Mock(spec=UsbCard)
-        self._burner = Burner(self._iocard)
-
-        self._burner.FanTerminalName = "FanTerminal"
-        self._burner.ScrewTerminalName = "ScrewTerminal"
-        self._burner.FireWatchTerminalName = "FireWatchTerminal"
+        self._burner = Burner(self._iocard, "ScrewTerminal", "FanTerminal", "FireWatchTerminal")
 
     def test_wait_state_should_enable_fan_and_disable_screw(self):
         self._burner.waiting()
