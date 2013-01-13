@@ -17,12 +17,22 @@ def get_burner_process():
 burnerProcess = get_burner_process()
 burnerProcess.start()
 
-
 @app.route('/')
 def index():
-    burnerProcess.Enabled = request.args.get('enabled', burnerProcess.Enabled) in ("True", True)
-    return render_template('settings.html')
+    try:
+        burnerProcess.ScrewSec = _get_float('ScrewTime', burnerProcess.ScrewSec)
+        burnerProcess.DelaySec = _get_float('Delay', burnerProcess.DelaySec)
+        burnerProcess.FireLimit = _get_float('FireWatch', burnerProcess.FireLimit)
+        burnerProcess.Enabled = request.args.get('enabled', burnerProcess.Enabled) in ("True", True)
+        return render_template('settings.html', burnerProcess=burnerProcess)
+    except Exception, e:
+        return e
 
+def _get_float(name, default):
+    try:
+        return float(request.args.get(name, default))
+    except ValueError:
+        return default
 
 @app.route('/statistics')
 def statistics():

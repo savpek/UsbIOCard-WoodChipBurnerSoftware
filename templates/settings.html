@@ -1,25 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="GET">
         <div class="control-group">
-            <label class="control-label" for="ScrewTime">Viive (sekunttia):</label>
+            <label class="control-label" for="Delay">Viive (sekunttia):</label>
 
             <div class="controls">
-                <input type="number" id="Delay" placeholder="2" min="1" max="100">
+                <input type="number" name="Delay" id="Delay" placeholder="{{ burnerProcess.DelaySec }}" min="1" max="100">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="ScrewTime">Ruuvi päällä (sekunttia):</label>
 
             <div class="controls">
-                <input type="number" id="ScrewTime" placeholder="2" min="1" max="10">
+                <input type="number" name="ScrewTime" id="ScrewTime" placeholder="{{ burnerProcess.ScrewSec }}" min="1" max="10">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="FireWatch">Tulivahdin raja:</label>
 
             <div class="controls">
-                <input type="number" id="FireWatch" placeholder="2" min="0" max="256">
+                <input type="number" name="FireWatch" id="FireWatch" placeholder="{{ burnerProcess.FireLimit }}" min="0" max="256">
                 <input type="text" placeholder="Ei arvoa" disabled="true">
             </div>
         </div>
