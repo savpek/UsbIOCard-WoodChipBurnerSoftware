@@ -18,20 +18,20 @@ class BurnerControllerTests(unittest.TestCase):
 
     def test_firevalue_tick_gets_fireburner_value_and_adds_it_to_history(self):
         self._burner.firewatch_value = Mock(return_value=40) # AVG should be 2, because 40+40+40 = 120.
-        self._burnerController._firevalue_tick()  # Reads one value and adds it to history.
-        self._burnerController._firevalue_tick()
-        self._burnerController._firevalue_tick()
+        self._burnerController.fire_value_tick()  # Reads one value and adds it to history.
+        self._burnerController.fire_value_tick()
+        self._burnerController.fire_value_tick()
         self.assertEquals(self._burnerController.fire_value(), 2)
 
     def test_screw_start_and_screw_ticks_work_together_correctly(self):
-        self._burnerController._screw_start(screw_ticks=2)
+        self._burnerController.screw_start(screw_ticks=2)
         self.assertEquals(self._burner.mock_calls, [call._screw()])
-        self._burnerController._screw_tick()
+        self._burnerController.screw_tick()
         self.assertEquals(self._burner.mock_calls, [call._screw()])
-        self._burnerController._screw_tick() # 2 seconds (2 ticks) done.
+        self._burnerController.screw_tick() # 2 seconds (2 ticks) done.
         self.assertEquals(self._burner.mock_calls, [call._screw(), call._stopped()])
 
     def test_delay_tick_works_correctly(self):
-        self._burnerController._delay_start(delay_ticks=2)
-        self.assertEquals(self._burnerController._delay_tick(), False)
-        self.assertEquals(self._burnerController._delay_tick(), True) # This can be used to trigger new cycle etc...
+        self._burnerController.delay_start(delay_ticks=2)
+        self.assertEquals(self._burnerController.delay_tick(), False)
+        self.assertEquals(self._burnerController.delay_tick(), True) # This can be used to trigger new cycle etc...
