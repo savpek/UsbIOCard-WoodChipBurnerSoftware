@@ -1,55 +1,33 @@
 # coding=utf-8
-import threading
-from flask import Flask, render_template, request
-import time
-import flask
-from Burner import Burner
-from Burner.IO import UsbCardSimulator
+from flask import Flask, render_template, request, jsonify
+from Burner.Burner import Burner
+from Burner.BurnerProcess import BurnerProcess
+from Burner.IO.UsbCardSimulator import UsbCardSimulator
 
 app = Flask(__name__)
 
-
-def configure_burner():
+def get_burner_process():
     ioCard = UsbCardSimulator("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
 
-    burner = Burner(ioCard, time.sleep)
+    burner = Burner(ioCard, ScrewTerminal="2.T2", FanTerminal="2.T1", FireWatchTerminal="7.T0.ADC0")
 
-    burner.Delay = 10       # Default setting on startup.
-    burner.ScrewTime = 2
-    burner._fan_terminal = "2.T1"     # Look these from IO card printout.
-    burner._screw_terminal = "2.T2"
-    burner._fire_watch_terminal = "7.T0.ADC0"
-    return burner
+    burnerProcess = BurnerProcess(burner)
+    return burnerProcess
 
-
-class BurnerProcess(threading.Thread):
-    exceptionMsg = ""
-
-    def run(self):
-        while True:
-            try:
-                burner.execute()
-                self.exceptionMsg = ""
-            except Exception as ex:
-                self.exceptionMsg = ex.message
-
-
-burner = configure_burner()
-
-worker = BurnerProcess()
-worker.start()
+burnerProcess = get_burner_process()
+burnerProcess.start()
 
 
 @app.route('/')
 def index():
-    burner.Enabled = request.args.get('enabled', burner.Enabled) in ("True", True)
+    burnerProcess.Enabled = request.args.get('enabled', burnerProcess.Enabled) in ("True", True)
     return render_template('settings.html')
 
 
 @app.route('/statistics')
 def statistics():
     try:
-        return render_template('statistics.html', log=burner._ioCard.get_log_as_string())
+        return render_template('statistics.html')
     except Exception as ex:
         return ex.message
 
@@ -57,7 +35,7 @@ def statistics():
 @app.route('/simulator')
 def simulator():
     try:
-        return render_template('simulator.html', log=burner._ioCard.Log)
+        return render_template('simulator.html')
     except Exception as ex:
         return ex.message
 
@@ -65,7 +43,7 @@ def simulator():
 @app.route('/messages.read.status')
 def messages():
     try:
-        return flask.jsonify(errors=worker.exceptionMsg, status=burner.StatusMsg, fireWatch=burner.FireWatchLastValue)
+        return jsonify(enabled=burnerProcess.Enabled, status=burnerProcess.StatusMsg, fireWatch=burnerProcess.get_fire_value())
     except Exception as ex:
         return ex
 
@@ -73,7 +51,7 @@ def messages():
 @app.route('/messages.read.simulator')
 def simulator_read():
     try:
-        return flask.jsonify(iocard_log=burner._ioCard.Log)
+        return jsonify(iocard_log=BurnerProcess._controller._ioCard.Log)
     except Exception as ex:
         return ex
 
