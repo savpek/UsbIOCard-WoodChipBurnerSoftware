@@ -43,4 +43,4 @@ class BurnerController:
         return sum(self._fireValue)/self.VALUE_BUFFER_SIZE
 
     def disable(self):
-        self._burner.disable()
+        self._burner.disabled()

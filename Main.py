@@ -1,6 +1,7 @@
 # coding=utf-8
 from flask import Flask, render_template, request, jsonify
 from Burner.Burner import Burner
+from Burner.BurnerController import BurnerController
 from Burner.BurnerProcess import BurnerProcess
 from Burner.IO.UsbCardSimulator import UsbCardSimulator
 
@@ -8,10 +9,9 @@ app = Flask(__name__)
 
 def get_burner_process():
     ioCard = UsbCardSimulator("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
-
     burner = Burner(ioCard, ScrewTerminal="2.T2", FanTerminal="2.T1", FireWatchTerminal="7.T0.ADC0")
-
-    burnerProcess = BurnerProcess(burner)
+    burnerController = BurnerController(burner)
+    burnerProcess = BurnerProcess(burnerController)
     return burnerProcess
 
 burnerProcess = get_burner_process()
@@ -52,18 +52,12 @@ def simulator():
 
 @app.route('/messages.read.status')
 def messages():
-    try:
-        return jsonify(enabled=burnerProcess.Enabled, status=burnerProcess.StatusMsg, fireWatch=burnerProcess.get_fire_value())
-    except Exception as ex:
-        return ex
-
+    fireWatch=burnerProcess.get_fire_value()
+    return jsonify(enabled=burnerProcess.Enabled, status=burnerProcess.Status, fireWatch=burnerProcess.get_fire_value())
 
 @app.route('/messages.read.simulator')
 def simulator_read():
-    try:
-        return jsonify(iocard_log=BurnerProcess._controller._ioCard.Log)
-    except Exception as ex:
-        return ex
+    return jsonify(iocard_log=burnerProcess._controller._ioCard.Log)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
