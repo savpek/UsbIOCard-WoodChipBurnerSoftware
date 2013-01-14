@@ -2,7 +2,7 @@
 
 class BurnerController:
     VALUE_BUFFER_SIZE = 60
-    APROX_TICK_TIME_SEC = 1
+    APPROX_TICK_TIME_SEC = 1
 
     _screw_ticks = 0
     _delay_ticks = 0

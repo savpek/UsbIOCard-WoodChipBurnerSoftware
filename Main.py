@@ -52,12 +52,11 @@ def simulator():
 
 @app.route('/messages.read.status')
 def messages():
-    fireWatch=burnerProcess.get_fire_value()
     return jsonify(enabled=burnerProcess.Enabled, status=burnerProcess.Status, fireWatch=burnerProcess.get_fire_value())
 
 @app.route('/messages.read.simulator')
 def simulator_read():
-    return jsonify(iocard_log=burnerProcess._controller._ioCard.Log)
+    return jsonify(iocard_log=burnerProcess._controller._burner._ioCard.Log)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

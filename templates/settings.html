@@ -20,7 +20,7 @@
 
             <div class="controls">
                 <input type="number" name="FireWatch" id="FireWatch" placeholder="{{ burnerProcess.FireLimit }}" min="0" max="256">
-                <input type="text" placeholder="Ei arvoa" disabled="true">
+                <input type="text" placeholder="{{ burnerProcess.get_fire_value() }}" disabled="true">
             </div>
         </div>
         <div class="control-group">
