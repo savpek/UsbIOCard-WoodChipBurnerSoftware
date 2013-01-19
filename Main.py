@@ -45,6 +45,7 @@ def statistics():
 @app.route('/simulator')
 def simulator():
     try:
+        burnerProcess._controller._burner._ioCard.AdcValue = _get_float('FireWatch', burnerProcess._controller._burner._ioCard.AdcValue)
         return render_template('simulator.html')
     except Exception as ex:
         return ex.message

@@ -19,6 +19,11 @@
                     document.getElementById("message-box").className = "alert alert-success"
                 }
 
+                if (document.getElementById('CurrentFireWatchValue'))
+                {
+                    document.getElementById('CurrentFireWatchValue').value = Math.round(data.fireWatch)
+                }
+
             }, dataType:"json"});
         }, 1000);
     </script>

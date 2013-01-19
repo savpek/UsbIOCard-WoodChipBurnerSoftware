@@ -5,23 +5,6 @@
     <title>Hakkeenpolttimen kontrollit</title>
     <LINK href="static/index.css" rel="stylesheet" type="text/css">
     <script src="static/jquery-1.8.3.js"></script>
-    <script>
-        setInterval(function () {
-            $.ajax({ url:"/messages/", success:function (data) {
-                document.getElementById("statusBox").innerHTML = data.status;
-                document.getElementById("fireWatchMeasuredValue").value = data.fireWatch;
-
-                if (data.errors != "") {
-                    document.getElementById("errorBox").innerHTML = data.errors;
-                    document.getElementById("errorBox").style.visibility = 'visible'
-                }
-                else {
-                    document.getElementById("errorBox").style.visibility = 'hidden'
-                }
-
-            }, dataType:"json"});
-        }, 3000);
-    </script>
 </head>
 <body>
 

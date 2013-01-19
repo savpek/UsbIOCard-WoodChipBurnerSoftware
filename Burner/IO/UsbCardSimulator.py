@@ -7,6 +7,7 @@ class IoCardException(Exception):
 
 class UsbCardSimulator:
     Log = None
+    AdcValue = 50
 
     def __init__(self, port, speed, serialInterface=None):
         self.Log = ""
@@ -23,7 +24,7 @@ class UsbCardSimulator:
 
     def adc_of_terminal(self, terminal_name):
         self._write_action_log("acd_of_terminal", terminal_name)
-        return 50
+        return self.AdcValue
 
     def _write_action_log(self, action, terminal_name):
         self.Log = "{0} Called: {1} with terminal name: {2}\n".format(
