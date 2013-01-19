@@ -19,23 +19,20 @@ class BurnerController:
         self._valueTicks += 1
         self._fireValue[self._valueTicks % self.VALUE_BUFFER_SIZE] = self._burner.get_fire_value()
 
-    def screw_start(self, screw_ticks):
-        self._burner.running()
+    def start_cycle(self, screw_ticks, delay_ticks):
+        self._delay_ticks = screw_ticks + delay_ticks
         self._screw_ticks = screw_ticks
+        self._burner.running()
 
-    def screw_tick(self):
+    def tick(self):
         self._screw_ticks -= 1
+        self._delay_ticks -= 1
+        if self._screw_ticks <= 0 and self._delay_ticks <= 0:
+            self._burner.disabled()
+            return False;
         if self._screw_ticks <= 0:
             self._burner.waiting()
-
-    def delay_start(self, delay_ticks):
-        self._delay_ticks = delay_ticks
-
-    def delay_tick(self):
-        self._delay_ticks -= 1
-        if self._delay_ticks <= 0:
-            return True
-        return False
+        return True
 
     def fire_value(self):
         if sum(self._fireValue) is 0:

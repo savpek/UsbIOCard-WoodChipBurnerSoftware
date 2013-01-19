@@ -1,6 +1,4 @@
 # coding=utf-8
-from time import sleep
-
 
 class Burner():
     _screw_terminal = None

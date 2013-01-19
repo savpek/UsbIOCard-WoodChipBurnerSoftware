@@ -25,17 +25,15 @@ class BurnerProcess(threading.Thread):
     def _execute(self):
         try:
             self._controller.fire_value_tick()
-            self._controller.screw_tick()
 
-            if self._controller.delay_tick() is False and self.Enabled is True:
-                self._controller.screw_start(self.ScrewSec)
-                self._controller.delay_start(self.DelaySec+self.ScrewSec)
-
-            if self._controller.fire_value() < self.FireLimit:
-                raise ValueError("Fire value limit is over feedback!")
+            if self._controller.tick() is False and self.Enabled is True:
+                self._controller.start_cycle(self.ScrewSec, self.DelaySec)
 
             if self.Enabled is False:
                 self._controller.disable()
+
+            if self._controller.fire_value() < self.FireLimit:
+                raise ValueError("Fire value limit is over feedback!")
 
             self.Status = "Device status is OK!"
         except Exception, e:

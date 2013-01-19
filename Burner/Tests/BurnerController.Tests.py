@@ -23,18 +23,13 @@ class BurnerControllerTests(unittest.TestCase):
         self._burnerController.fire_value_tick()
         self.assertEquals(self._burnerController.fire_value(), 2)
 
-    def test_screw_start_and_screw_ticks_work_together_correctly(self):
-        self._burnerController.screw_start(screw_ticks=2)
+    def test_tick_works_correctly(self):
+        self._burnerController.start_cycle(screw_ticks=1, delay_ticks=1)
         self.assertEquals(self._burner.mock_calls, [call.running()])
-        self._burnerController.screw_tick()
-        self.assertEquals(self._burner.mock_calls, [call.running()])
-        self._burnerController.screw_tick() # 2 seconds (2 ticks) done.
+        self.assertEqual(self._burnerController.tick(), True) # Device is running.
         self.assertEquals(self._burner.mock_calls, [call.running(), call.waiting()])
-
-    def test_delay_tick_works_correctly(self):
-        self._burnerController.delay_start(delay_ticks=2)
-        self.assertEquals(self._burnerController.delay_tick(), False)
-        self.assertEquals(self._burnerController.delay_tick(), True) # This can be used to trigger new cycle etc...
+        self.assertEqual(self._burnerController.tick(), False) # Device is not running anymore.
+        self.assertEquals(self._burner.mock_calls, [call.running(), call.waiting(), call.disabled()])
 
     def test_disable_calls_burner_disable(self):
         self._burnerController.disable()
