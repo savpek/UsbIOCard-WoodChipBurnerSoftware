@@ -15,7 +15,7 @@ class BurnerController:
         self._burner = burner
         self._fireValue = [0] * self.VALUE_BUFFER_SIZE
 
-    def fire_value_tick(self):
+    def _fire_value_tick(self):
         self._valueTicks += 1
         self._fireValue[self._valueTicks % self.VALUE_BUFFER_SIZE] = self._burner.get_fire_value()
 
@@ -27,6 +27,7 @@ class BurnerController:
     def tick(self):
         self._screw_ticks -= 1
         self._delay_ticks -= 1
+        self._fire_value_tick()
         if self._screw_ticks <= 0 and self._delay_ticks <= 0:
             self._burner.disabled()
             return False;

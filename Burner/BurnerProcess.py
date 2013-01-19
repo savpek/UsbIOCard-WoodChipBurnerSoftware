@@ -24,8 +24,6 @@ class BurnerProcess(threading.Thread):
 
     def _execute(self):
         try:
-            self._controller.fire_value_tick()
-
             if self._controller.tick() is False and self.Enabled is True:
                 self._controller.start_cycle(self.ScrewSec, self.DelaySec)
 

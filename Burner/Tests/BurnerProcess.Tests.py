@@ -12,10 +12,6 @@ class BurnerTests(unittest.TestCase):
         self._burnerController = Mock(spec=BurnerController)
         self._burnerProcess = BurnerProcess(self._burnerController)
 
-    def test_firevalue_tick_will_be_called_once(self):
-        self._burnerProcess._execute()
-        self._burnerController.fire_value_tick.assert_called_once_with()
-
     def test_if_device_is_enabled_should_run_correct_routines(self):
         self._burnerProcess.ScrewSec = 1
         self._burnerProcess.DelaySec = 2
@@ -24,25 +20,25 @@ class BurnerTests(unittest.TestCase):
         # On first tick screw and fan should go on.
         self._burnerController.tick.return_value = False
         self._burnerProcess._execute()
-        self._burnerController.assert_has_calls([call.fire_value_tick(), call.tick(), call.start_cycle(1, 2), call.fire_value()])
+        self._burnerController.assert_has_calls([call.tick(), call.start_cycle(1, 2), call.fire_value()])
 
         # Second tick. Screw stops now.
         self._burnerController.reset_mock()
         self._burnerController.tick.return_value = True  # Now screw is stopped.
         self._burnerProcess._execute()
-        self._burnerController.assert_has_calls([call.fire_value_tick(), call.tick()])
+        self._burnerController.assert_has_calls([call.tick()])
 
         # Third tick, everything keeps going.
         self._burnerController.reset_mock()
         self._burnerController.tick.return_value = True
         self._burnerProcess._execute()
-        self._burnerController.assert_has_calls([call.fire_value_tick(), call.tick()])
+        self._burnerController.assert_has_calls([call.tick()])
 
         # Fourth tick. Screw should start again because delay is over.
         self._burnerController.reset_mock()
         self._burnerController.tick.return_value = False  # Now screw is stopped.
         self._burnerProcess._execute()
-        self._burnerController.assert_has_calls([call.fire_value_tick(), call.tick(), call.start_cycle(1, 2), call.fire_value()])
+        self._burnerController.assert_has_calls([call.tick(), call.start_cycle(1, 2), call.fire_value()])
 
     def test_before_any_calls_process_status_is_not_initialized(self):
         self.assertEqual(self._burnerProcess.Status, "Not initialized.")
@@ -56,10 +52,9 @@ class BurnerTests(unittest.TestCase):
         self._burnerProcess.Enabled = False
 
         self._burnerController.reset_mock()
-        self._burnerController.screw_tick.return_value = False  # Now screw is stopped.
-        self._burnerController.delay_tick.return_value = False  # Now delay is over.
+        self._burnerController.tick.return_value = True
         self._burnerProcess._execute()
-        self.assertEqual(self._burnerController.method_calls, [call.fire_value_tick(), call.tick(), call.disable(), call.fire_value()])
+        self.assertEqual(self._burnerController.method_calls, [call.tick(), call.disable(), call.fire_value()])
 
     def test_device_is_automatically_set_as_disabled_if_error_occurs(self):
         self._burnerProcess.Enabled = True
