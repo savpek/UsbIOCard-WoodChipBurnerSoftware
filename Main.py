@@ -57,7 +57,10 @@ def messages():
 
 @app.route('/messages.read.simulator')
 def simulator_read():
-    return jsonify(iocard_log=burnerProcess._controller._burner._ioCard.Log)
+    return jsonify(
+        Log=burnerProcess._controller._burner._ioCard.Log,
+        FanState=burnerProcess._controller._burner._ioCard.FanState,
+        ScrewState=burnerProcess._controller._burner._ioCard.ScrewState)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

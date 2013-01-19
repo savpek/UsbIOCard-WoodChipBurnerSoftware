@@ -3,7 +3,9 @@
     <script>
         setInterval(function () {
             $.ajax({ url:"/messages.read.simulator", success:function (data) {
-                document.getElementById("LogContainer").innerHTML = data.iocard_log;
+                document.getElementById("LogContainer").innerHTML = data.Log;
+                document.getElementById("ScrewState").value = data.ScrewState;
+                document.getElementById("FanState").value = data.FanState;
             }, dataType:"json"});
         }, 1000);
     </script>
@@ -15,13 +17,18 @@
                 <input type="text" id="FireWatch" placeholder="{{ burnerProcess._controller._burner._ioCard.AdcValue }}" name="FireWatch">
             </div>
         </div>
-        <div class="control-group" data-toggle-name="is_private" data-toggle="buttons-radio">
-            <label class="control-label">Virhetila</label>
+        <div class="control-group">
+            <label class="control-label" for="ScrewState">Ruuvin tila:</label>
 
             <div class="controls">
-                <button type="button" value="0" class="btn" data-toggle="button">Virhe</button>
-                <button type="button" value="1" class="btn" data-toggle="button">Kortti toimii</button>
-                <input type="hidden" name="is_private" value="0"/>
+                <input type="text" id="ScrewState" name="FireWatch">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FanState">Tuulettimen tila:</label>
+
+            <div class="controls">
+                <input type="text" id="FanState" name="FireWatch">
             </div>
         </div>
         <div class="control-group">
