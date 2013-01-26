@@ -28,11 +28,11 @@
             <label class="control-label" for="FireWatch"></label>
             <div class="controls">
                 <label class="radio">
-                    <input type="radio" name="enabled" id="optionsRadios1" value="True" checked>
+                    <input type="radio" name="enabled" id="optionsRadios1" value="True" {% if  burnerProcess.Enabled %} checked {% endif %}>
                     Laite päällä
                 </label>
                 <label class="radio">
-                    <input type="radio" name="enabled" id="optionsRadios1" value="False">
+                    <input type="radio" name="enabled" id="optionsRadios1" value="False" {% if not burnerProcess.Enabled %} checked {% endif %}>
                     Laite pois päältä
                 </label>
             </div>

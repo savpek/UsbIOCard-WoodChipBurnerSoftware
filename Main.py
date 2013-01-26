@@ -4,6 +4,7 @@ from Burner.Burner import Burner
 from Burner.BurnerController import BurnerController
 from Burner.BurnerProcess import BurnerProcess
 from Burner.IO.UsbCardSimulator import UsbCardSimulator
+from Burner.StatisticsProcess import StatisticsProcess
 
 app = Flask(__name__)
 
@@ -12,10 +13,14 @@ def get_burner_process():
     burner = Burner(ioCard, ScrewTerminal="2.T2", FanTerminal="2.T1", FireWatchTerminal="7.T0.ADC0")
     burnerController = BurnerController(burner)
     burnerProcess = BurnerProcess(burnerController)
+    burnerProcess.ScrewSec = 1
+    burnerProcess.DelaySec = 4
     return burnerProcess
 
 burnerProcess = get_burner_process()
 burnerProcess.start()
+
+statisticsProcess = StatisticsProcess(burnerProcess)
 
 @app.route('/')
 def index():
