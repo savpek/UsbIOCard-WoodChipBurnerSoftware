@@ -1,5 +1,6 @@
 # coding=utf-8
-from flask import Flask, render_template, request, jsonify, url_for, send_from_directory
+from flask import Flask, render_template, jsonify
+from flask.ext import restful
 from Burner.Burner import Burner
 from Burner.BurnerController import BurnerController
 from Burner.BurnerProcess import BurnerProcess
@@ -8,8 +9,8 @@ from Burner.StatisticsProcess import StatisticsProcess
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
+restApi = restful.Api(app)
 
-FLATPAGES_EXTENSION = '.html'
 
 def get_burner_process():
     ioCard = UsbCardSimulator("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
@@ -19,6 +20,7 @@ def get_burner_process():
     burnerProcess.ScrewSec = 1
     burnerProcess.DelaySec = 4
     return burnerProcess
+
 
 burnerProcess = get_burner_process()
 burnerProcess.start()
@@ -30,9 +32,11 @@ statisticsProcess = StatisticsProcess(burnerProcess)
 def index():
     return render_template('index.html')
 
+
 @app.route('/messages.read.status')
 def messages():
     return jsonify(enabled=burnerProcess.Enabled, status=burnerProcess.Status, fireWatch=burnerProcess.get_fire_value())
+
 
 @app.route('/messages.read.simulator')
 def simulator_read():
@@ -40,6 +44,25 @@ def simulator_read():
         Log=burnerProcess._controller._burner._ioCard.Log,
         FanState=burnerProcess._controller._burner._ioCard.FanState,
         ScrewState=burnerProcess._controller._burner._ioCard.ScrewState)
+
+
+class SimulatorState(restful.Resource):
+    def get(self):
+        return {'Log': burnerProcess._controller._burner._ioCard.Log,
+                'FanState': burnerProcess._controller._burner._ioCard.FanState,
+                'ScrewState': burnerProcess._controller._burner._ioCard.ScrewState}
+
+
+class SettingsState(restful.Resource):
+    def get(self):
+        return {'ScrewTimeInSeconds': burnerProcess.ScrewSec,
+                'DelayTimeInSeconds' : burnerProcess.DelaySec,
+                'CurrentFireLimit' : burnerProcess.FireLimit,
+                'IsEnabled' :burnerProcess.Enabled}
+
+
+restApi.add_resource(SimulatorState, '/get/simulator')
+restApi.add_resource(SettingsState, '/get/values')
 
 if __name__ == '__main__':
     app.run()
