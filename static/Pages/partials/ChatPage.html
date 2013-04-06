@@ -1,0 +1,9 @@
+<form>
+    <input type="text" ng-model="$parent.firstName"/>
+    <input type="text" ng-model="$parent.currentMessage"/>
+    <button ng-click="send()">Send message</button>
+</form>
+
+<ul class="messages">
+    <li ng-repeat="message in $parent.messages">{{ message }}</li>      
+</ul>

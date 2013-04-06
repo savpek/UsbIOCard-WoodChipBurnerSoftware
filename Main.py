@@ -7,9 +7,8 @@ from Burner.IO.UsbCardSimulator import UsbCardSimulator
 from Burner.StatisticsProcess import StatisticsProcess
 
 app = Flask(__name__)
+app.config['DEBUG'] = True
 
-DEBUG = True
-FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.html'
 
 def get_burner_process():
@@ -25,6 +24,7 @@ burnerProcess = get_burner_process()
 burnerProcess.start()
 
 statisticsProcess = StatisticsProcess(burnerProcess)
+
 
 @app.route('/')
 def index():
