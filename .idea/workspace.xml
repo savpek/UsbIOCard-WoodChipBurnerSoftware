@@ -5,30 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\ErrorIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\InfoIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\Scripts\jquery-1.6.4-vsdoc.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\Scripts\jquery-1.6.4.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\Scripts\jquery-1.6.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\Scripts\jquery.signalR-1.0.1.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\Scripts\jquery.signalR-1.0.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\css\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\css\app.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\img\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\js\app.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\js\controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\js\directives.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\js\filters.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\js\services.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\partials\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\Pages\partials\ChatPage.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\index.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\templates\settings.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\templates\simulator.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\templates\statistics.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/__init__.py" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\css\bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\css\bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\js\controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\js\directives.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\js\filters.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\js\services.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\partials\settings.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\partials\simulator.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\partials\statistics.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\templates\index.html" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Main.py" afterPath="$PROJECT_DIR$/app/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
@@ -50,6 +43,7 @@
     <file path="/controllers.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365242346738" ignored="false" />
     <file path="/index.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365256135945" ignored="false" />
     <file path="$PROJECT_DIR$/static/Pages/lib/angular/angular.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365255411168" ignored="false" />
+    <file path="/app.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365256622914" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +70,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/controllers.js">
+        <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
               <folding />
@@ -85,7 +79,7 @@
         </entry>
       </file>
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/app.js">
+        <entry file="file://$PROJECT_DIR$/app/static/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="6" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
               <folding />
@@ -94,7 +88,7 @@
         </entry>
       </file>
       <file leaf-file-name="statistics.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/partials/statistics.html">
+        <entry file="file://$PROJECT_DIR$/app/static/partials/statistics.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -103,7 +97,7 @@
         </entry>
       </file>
       <file leaf-file-name="simulator.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/partials/simulator.html">
+        <entry file="file://$PROJECT_DIR$/app/static/partials/simulator.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="29" selection-start="453" selection-end="453" vertical-scroll-proportion="-5.8846154">
               <folding />
@@ -111,19 +105,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="46" selection-start="809" selection-end="809" vertical-scroll-proportion="0.6507177">
+            <state line="24" column="12" selection-start="775" selection-end="775" vertical-scroll-proportion="-15.692307">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main.py">
+      <file leaf-file-name="app.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="23" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
+            <state line="25" column="0" selection-start="905" selection-end="905" vertical-scroll-proportion="0.32312405">
               <folding>
                 <element signature="e#15#103#0" expanded="true" />
               </folding>
@@ -150,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Burner/IO/UsbCardSimulator.py" />
         <option value="$PROJECT_DIR$/templates/settings.html" />
         <option value="$PROJECT_DIR$/Burner/StatisticsProcess.py" />
         <option value="$PROJECT_DIR$/templates/simulator.html" />
@@ -166,6 +159,7 @@
         <option value="$PROJECT_DIR$/static/partials/simulator.html" />
         <option value="$PROJECT_DIR$/static/js/app.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/app/app.py" />
       </list>
     </option>
   </component>
@@ -229,35 +223,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Burner" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,14 +266,14 @@
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\lib" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\IO" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\IO\Tests" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner" />
-      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.app">
     <configuration default="false" name="Unittests in BurnerControllerTests" type="tests" factoryName="Unittests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -537,7 +503,7 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="false" name="Main" type="PythonConfigurationType" factoryName="Python" singleton="true">
+    <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -548,7 +514,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <module name="UsbIOCard-WoodChipBurnerSoftware" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\app.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -557,7 +523,7 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python.Main" />
+      <item index="0" class="java.lang.String" itemvalue="Python.app" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in BurnerControllerTests" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in BurnerTests.test_if_device_is_enabled_should_run_correct_routines" />
       <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in BurnerControllerTests.test_tick_gets_burner_value_and_adds_it_to_history" />
@@ -622,7 +588,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874015" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.6689587" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.33235005" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15688367" sideWeight="0.66830707" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15688367" sideWeight="0.66830707" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39763778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.32743362" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32940018" sideWeight="0.50053364" order="7" side_tool="true" content_ui="tabs" />
@@ -693,13 +659,8 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Main.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/static/js/controllers.js</url>
+          <url>file://$PROJECT_DIR$/app/static/js/controllers.js</url>
           <line>3</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
@@ -708,21 +669,21 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/js/directives.js">
+    <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/filters.js">
+    <entry file="file://$PROJECT_DIR$/app/static/js/filters.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/lib/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/app/static/lib/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
@@ -731,47 +692,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#15#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/partials/statistics.html">
+    <entry file="file://$PROJECT_DIR$/app/static/partials/statistics.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/partials/simulator.html">
+    <entry file="file://$PROJECT_DIR$/app/static/partials/simulator.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="29" selection-start="453" selection-end="453" vertical-scroll-proportion="-5.8846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/app.js">
+    <entry file="file://$PROJECT_DIR$/app/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="6" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="46" selection-start="809" selection-end="809" vertical-scroll-proportion="0.6507177">
+        <state line="24" column="12" selection-start="775" selection-end="775" vertical-scroll-proportion="-15.692307">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="905" selection-end="905" vertical-scroll-proportion="0.32312405">
+          <folding>
+            <element signature="e#15#103#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
