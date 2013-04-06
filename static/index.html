@@ -73,13 +73,19 @@
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong><span id="status-message"></span></strong>
     </div>
+    <div ng-view>
 
-    {% block content %}{% endblock %}
-
+    </div>
 </div>
 <!-- /container -->
 
-<script src="static/jquery-1.8.3.js"></script>
-<script src="static/js/bootstrap.js"></script>
+<script src="static/lib/jquery-1.8.3.js"></script>
+<script src="static/lib/bootstrap.js"></script>
+<script src="static/lib/angular.js"></script>
+<script src="static/js/app.js"></script>
+<script src="static/js/services.js"></script>
+<script src="static/js/controllers.js"></script>
+<script src="static/js/filters.js"></script>
+<script src="static/js/directives.js"></script>
 </body>
 </html>

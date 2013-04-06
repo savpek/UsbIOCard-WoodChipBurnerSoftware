@@ -1,5 +1,5 @@
 # coding=utf-8
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, url_for, send_from_directory
 from Burner.Burner import Burner
 from Burner.BurnerController import BurnerController
 from Burner.BurnerProcess import BurnerProcess
@@ -7,6 +7,10 @@ from Burner.IO.UsbCardSimulator import UsbCardSimulator
 from Burner.StatisticsProcess import StatisticsProcess
 
 app = Flask(__name__)
+
+DEBUG = True
+FLATPAGES_AUTO_RELOAD = DEBUG
+FLATPAGES_EXTENSION = '.html'
 
 def get_burner_process():
     ioCard = UsbCardSimulator("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
@@ -24,37 +28,7 @@ statisticsProcess = StatisticsProcess(burnerProcess)
 
 @app.route('/')
 def index():
-    try:
-        burnerProcess.ScrewSec = _get_float('ScrewTime', burnerProcess.ScrewSec)
-        burnerProcess.DelaySec = _get_float('Delay', burnerProcess.DelaySec)
-        burnerProcess.FireLimit = _get_float('FireWatch', burnerProcess.FireLimit)
-        burnerProcess.Enabled = request.args.get('enabled', burnerProcess.Enabled) in ("True", True)
-        return render_template('settings.html', burnerProcess=burnerProcess)
-    except Exception, e:
-        return e
-
-def _get_float(name, default):
-    try:
-        return float(request.args.get(name, default))
-    except ValueError:
-        return default
-
-@app.route('/statistics')
-def statistics():
-    try:
-        return render_template('statistics.html')
-    except Exception as ex:
-        return ex.message
-
-
-@app.route('/simulator')
-def simulator():
-    try:
-        burnerProcess._controller._burner._ioCard.AdcValue = _get_float('FireWatch', burnerProcess._controller._burner._ioCard.AdcValue)
-        return render_template('simulator.html', burnerProcess=burnerProcess)
-    except Exception as ex:
-        return ex.message
-
+    return render_template('index.html')
 
 @app.route('/messages.read.status')
 def messages():
@@ -68,4 +42,4 @@ def simulator_read():
         ScrewState=burnerProcess._controller._burner._ioCard.ScrewState)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run()
