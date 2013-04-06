@@ -1,16 +1,10 @@
 'use strict';
 
-/* Services */
+angular.module('myApp.services', ['ngResource']).
+    factory('BurnerSettings', function($resource){
+        var settings = $resource('/get/settings', { },{
+                'get' : { method: 'GET', isArray : false }
+        })
 
-
-// Demonstrate how to register services
-// In this case it is a simple value service.
-angular.module('myApp.services', [], function ($provide) {
-    $provide.factory("baari", [function () {
-        var baari = $.connection.bar;
-        $.connection.hub.start();
-        return baari;
-    }]);
-});
-
-
+        return settings;
+    });

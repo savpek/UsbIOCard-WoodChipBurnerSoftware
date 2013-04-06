@@ -62,7 +62,7 @@ class SettingsState(restful.Resource):
 
 
 restApi.add_resource(SimulatorState, '/get/simulator')
-restApi.add_resource(SettingsState, '/get/values')
+restApi.add_resource(SettingsState, '/get/settings')
 
 if __name__ == '__main__':
     app.run()
