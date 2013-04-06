@@ -12,21 +12,21 @@
             <label class="control-label" for="FireWatch">Paluuarvo tulivahdilta:</label>
 
             <div class="controls">
-                <input type="text" id="FireWatch" placeholder="{{ burnerProcess._controller._burner._ioCard.AdcValue }}" name="FireWatch">
+                <input type="text" id="FireWatch" ng-model="simulatedLightSensorValue" name="FireWatch">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="ScrewState">Ruuvin tila:</label>
 
             <div class="controls">
-                <input type="text" id="ScrewState" name="FireWatch">
+                <input type="text" id="ScrewState" name="FireWatch" ng-model="screwState">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="FanState">Tuulettimen tila:</label>
 
             <div class="controls">
-                <input type="text" id="FanState" name="FireWatch">
+                <input type="text" id="FanState" name="FireWatch" ng-model="fanState">
             </div>
         </div>
         <div class="control-group">

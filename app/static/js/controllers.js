@@ -13,3 +13,15 @@ function ChangeSettingsController($scope, BurnerSettings) {
     };
 }
 ChangeSettingsController.$inject = ['$scope', 'BurnerSettings'];
+
+function SimulatorController($scope, SimulatorValues) {
+    SimulatorValues.get(function(results) {
+        $scope.simulatedLightSensorValue = results.DelayTimeInSeconds;
+        $scope.screwState = results.FanState;
+        $scope.fanState = results.ScrewState;
+    });
+
+    $scope.save = function () {
+    };
+}
+ChangeSettingsController.$inject = ['$scope', 'SimulatorValues'];

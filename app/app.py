@@ -48,8 +48,7 @@ def simulator_read():
 
 class SimulatorState(restful.Resource):
     def get(self):
-        return {'Log': burnerProcess._controller._burner._ioCard.Log,
-                'FanState': burnerProcess._controller._burner._ioCard.FanState,
+        return {'FanState': burnerProcess._controller._burner._ioCard.FanState,
                 'ScrewState': burnerProcess._controller._burner._ioCard.ScrewState}
 
 
