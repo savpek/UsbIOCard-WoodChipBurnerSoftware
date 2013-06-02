@@ -28,7 +28,6 @@ burnerProcess.start()
 
 statisticsProcess = StatisticsProcess(burnerProcess)
 
-
 @app.route('/')
 def index():
     return render_template('index.html')
