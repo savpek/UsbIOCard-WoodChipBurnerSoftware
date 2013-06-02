@@ -1,4 +1,3 @@
-# coding=utf-8
 from flask import Flask, render_template, jsonify
 from flask.ext import restful
 import parser
