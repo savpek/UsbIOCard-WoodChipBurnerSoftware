@@ -1,6 +1,7 @@
 # coding=utf-8
 from flask import Flask, render_template, jsonify
 from flask.ext import restful
+import parser
 from Burner.Burner import Burner
 from Burner.BurnerController import BurnerController
 from Burner.BurnerProcess import BurnerProcess
@@ -52,16 +53,23 @@ class SimulatorState(restful.Resource):
                 'ScrewState': burnerProcess._controller._burner._ioCard.ScrewState}
 
 
-class SettingsState(restful.Resource):
+class SettingsViaRest(restful.Resource):
     def get(self):
         return {'ScrewTimeInSeconds': burnerProcess.ScrewSec,
                 'DelayTimeInSeconds' : burnerProcess.DelaySec,
                 'CurrentFireLimit' : burnerProcess.FireLimit,
                 'IsEnabled' :burnerProcess.Enabled}
 
+    def put(self):
+        args = parser.parse_args()
+        burnerProcess.FireLimit = args['lightSensorLimit']
+        burnerProcess.DelaySec = args['screwDelay']
+        burnerProcess.DelaySec = args['screwTime']
+        return '', 200
 
+
+restApi.add_resource(SettingsViaRest, '/get/settings')
 restApi.add_resource(SimulatorState, '/get/simulator')
-restApi.add_resource(SettingsState, '/get/settings')
 
 if __name__ == '__main__':
     app.run()
