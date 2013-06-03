@@ -60,8 +60,8 @@ class SettingsState(restful.Resource):
                 'IsEnabled' :burnerProcess.Enabled}
 
 
-restApi.add_resource(SimulatorState, '/get/simulator')
-restApi.add_resource(SettingsState, '/get/settings')
+restApi.add_resource(SimulatorState, '/rest/simulator')
+restApi.add_resource(SettingsState, '/rest/settings')
 
 if __name__ == '__main__':
     app.run()

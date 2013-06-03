@@ -1,11 +1,19 @@
 'use strict';
 
 var controllers = {};
-controllers.BurnerSettingsController = function ($scope, BurnerApiFactory) {
-    $scope.currentLightSensorValue = 33;
+controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory) {
+    BurnerSettingsApiFactory.get({}, function(settings) {
+        $scope.screwDelay = settings.DelayTimeInSeconds;
+        $scope.screwTime = settings.ScrewTimeInSeconds;
+        $scope.lightSensorLimit = settings.CurrentFireLimit;
+        $scope.isEnabled = settings.isEnabled;
+    });
+
     $scope.updateSettings = function() {
-        BurnerApiFactory.get({}, function(settings) {
-            $scope.currentLightSensorValue = settings.ScrewTimeInSeconds;
+        BurnerSettingsApiFactory.get({}, function(settings) {
+            $scope.screwDelay = settings.DelayTimeInSeconds;
+            $scope.screwTime = settings.ScrewTimeInSeconds;
+            $scope.isEnabled = settings.isEnabled;
         });
     }
 };
