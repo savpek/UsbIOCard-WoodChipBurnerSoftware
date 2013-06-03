@@ -1,15 +1,11 @@
 'use strict';
 
-angular.module('myApp.services', ['ngResource']).
-    factory('BurnerSettings', function($resource){
-        return $resource('/get/settings', { },{
-                'get' : { method: 'GET', isArray : false }
-        })
-});
+var factories = {};
 
-angular.module('myApp.services', ['ngResource']).
-    factory('SimulatorValues', function($resource){
-        return $resource('/get/simulator', { },{
-            'get' : { method: 'GET', isArray : false }
-        })
-    });
+factories.BurnerApiFactory = function($resource) {
+    var factory = $resource('/get/settings', {}, {
+        get: {method:"GET"}, isArray:false});
+    return factory;
+};
+
+burnerApp.factory(factories);
