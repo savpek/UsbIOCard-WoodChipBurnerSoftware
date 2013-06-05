@@ -1,28 +1,51 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" data-ng-app="burnerApp">
 <head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="static/app/css/app.css"/>
+    <meta charset="utf-8">
+    <title>Hakkeenpolttimen kontrollit</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
 
-  <div ng-view></div>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="#/test">Polttimen asetukset</a></li>
+                    <li class="active"><a href="#/statistics">Statistiikka</a></li>
+                    <li class="active"><a href="#/simulator">Simulaattori</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <div>Angular seed app: v <span app-version></span></div>
+<div data-ng-view class="container">
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-  -->
-  <script src="static/app/lib/angular/angular.js"></script>
-  <script src="static/app/js/app.js"></script>
-  <script src="static/app/js/services.js"></script>
-  <script src="static/app/js/controllers.js"></script>
-  <script src="static/app/js/filters.js"></script>
-  <script src="static/app/js/directives.js"></script>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="static/lib/bootstrap.js"></script>
+
+<script src="static/lib/angular.js"></script>
+<script src="static/lib/angular-resource.js"></script>
+<script src="static/lib/angular-strap.min.js"></script>
+
+<script src="static/js/app.js"></script>
+<script src="static/js/services.js"></script>
+<script src="static/js/controllers.js"></script>
+<script src="static/js/filters.js"></script>
+<script src="static/js/directives.js"></script>
 </body>
 </html>

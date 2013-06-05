@@ -1,0 +1,34 @@
+    <form class="form-horizontal" method="GET">
+        <div class="control-group">
+            <label class="control-label" for="Delay">Viive (sekunttia):</label>
+
+            <div class="controls">
+                <input type="number" name="Delay" id="Delay" data-ng-model="ScrewTimeInSeconds" min="1" max="100">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ScrewTime">Ruuvi päällä (sekunttia):</label>
+
+            <div class="controls">
+                <input type="number" name="ScrewTime" id="ScrewTime" data-ng-model="DelayTimeInSeconds" min="1" max="10">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="FireWatch">Tulivahdin raja:</label>
+                <input type="number" name="FireWatch" id="FireWatch" data-ng-model="CurrentFireLimit" min="0" max="256">
+                <input type="text" id="CurrentFireWatchValue" data-ng-model="currentLightSensorValue" disabled="true">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="IsEnabled"></label>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" ng-model="IsEnabled" btn-radio="true">On</button>
+        <button type="button" class="btn btn-primary" ng-model="IsEnabled" btn-radio="false">Off</button>
+    </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button data-ng-click="updateSettings()">Päivitä asetukset</button>
+            </div>
+        </div>
+    </form>
