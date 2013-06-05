@@ -4,7 +4,9 @@ var factories = {};
 
 factories.BurnerSettingsApiFactory = function($resource) {
     var factory = $resource('/rest/settings', {}, {
-        get: {method:"GET"}, isArray:false});
+        get: {method:"GET"},
+        update: {method:"PUT"},
+        isArray:false});
     return factory;
 };
 

@@ -3,36 +3,28 @@
             <label class="control-label" for="Delay">Viive (sekunttia):</label>
 
             <div class="controls">
-                <input type="number" name="Delay" id="Delay" data-ng-model="screwDelay" min="1" max="100">
+                <input type="number" name="Delay" id="Delay" data-ng-model="ScrewTimeInSeconds" min="1" max="100">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="ScrewTime">Ruuvi päällä (sekunttia):</label>
 
             <div class="controls">
-                <input type="number" name="ScrewTime" id="ScrewTime" data-ng-model="screwTime" min="1" max="10">
+                <input type="number" name="ScrewTime" id="ScrewTime" data-ng-model="DelayTimeInSeconds" min="1" max="10">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="FireWatch">Tulivahdin raja:</label>
-
-            <div class="controls">
-                <input type="number" name="FireWatch" id="FireWatch" data-ng-model="lightSensorLimit" min="0" max="256">
+                <input type="number" name="FireWatch" id="FireWatch" data-ng-model="CurrentFireLimit" min="0" max="256">
                 <input type="text" id="CurrentFireWatchValue" data-ng-model="currentLightSensorValue" disabled="true">
             </div>
         </div>
         <div class="control-group">
-            <label class="control-label" for="FireWatch"></label>
-            <div class="controls">
-                <label class="radio">
-                    <input type="radio" name="enabled" id="optionsRadios1" value="True" {% if  burnerProcess.Enabled %} checked {% endif %}>
-                    Laite päällä
-                </label>
-                <label class="radio">
-                    <input type="radio" name="enabled" id="optionsRadios1" value="False" {% if not burnerProcess.Enabled %} checked {% endif %}>
-                    Laite pois päältä
-                </label>
-            </div>
+            <label class="control-label" for="IsEnabled"></label>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" ng-model="IsEnabled" btn-radio="true">On</button>
+        <button type="button" class="btn btn-primary" ng-model="IsEnabled" btn-radio="false">Off</button>
+    </div>
         </div>
         <div class="control-group">
             <div class="controls">
