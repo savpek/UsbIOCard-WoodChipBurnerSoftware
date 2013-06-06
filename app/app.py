@@ -16,7 +16,6 @@ burnerProcess = get_burner_process()
 burnerProcess.start()
 
 
-
 class SimulatorRestApi(restful.Resource):
     def get(self):
         return {'FanState': burnerProcess._controller._burner._ioCard.FanState,
@@ -45,7 +44,7 @@ class SettingsRestApi(restful.Resource):
         return args, 201
 
 @app.route('/')
-def home():
+def home(any=None):
     return render_template('index.html')
 
 restApi.add_resource(SimulatorRestApi, '/rest/simulator')
