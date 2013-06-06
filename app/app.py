@@ -1,58 +1,28 @@
 # coding=utf-8
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template
 from flask.ext import restful
-from flask.ext.restful import reqparse
 from flask.ext.restful.reqparse import RequestParser
-from Burner.Burner import Burner
-from Burner.BurnerController import BurnerController
-from Burner.BurnerProcess import BurnerProcess
-from Burner.IO.UsbCardSimulator import UsbCardSimulator
-from Burner.StatisticsProcess import StatisticsProcess
+
+# Cannot use flask internal web server due performance issues...
+from tornado.wsgi import WSGIContainer
+from tornado.httpserver import HTTPServer
+from tornado.ioloop import IOLoop
+from factories import get_burner_process
 
 app = Flask(__name__)
-app.debug = False
 restApi = restful.Api(app)
-
-def get_burner_process():
-    ioCard = UsbCardSimulator("/dev/ttyUSB0", 9600)  # Define configurations for used IO card port.
-    burner = Burner(ioCard, ScrewTerminal="2.T2", FanTerminal="2.T1", FireWatchTerminal="7.T0.ADC0")
-    burnerController = BurnerController(burner)
-    burnerProcess = BurnerProcess(burnerController)
-    burnerProcess.ScrewSec = 1
-    burnerProcess.DelaySec = 4
-    return burnerProcess
-
 
 burnerProcess = get_burner_process()
 burnerProcess.start()
 
-statisticsProcess = StatisticsProcess(burnerProcess)
-
-@app.route('/')
-def home():
-    return render_template('index.html')
 
 
-@app.route('/messages.read.status')
-def messages():
-    return jsonify(enabled=burnerProcess.Enabled, status=burnerProcess.Status, fireWatch=burnerProcess.get_fire_value())
-
-
-@app.route('/messages.read.simulator')
-def simulator_read():
-    return jsonify(
-        Log=burnerProcess._controller._burner._ioCard.Log,
-        FanState=burnerProcess._controller._burner._ioCard.FanState,
-        ScrewState=burnerProcess._controller._burner._ioCard.ScrewState)
-
-
-class SimulatorState(restful.Resource):
+class SimulatorRestApi(restful.Resource):
     def get(self):
         return {'FanState': burnerProcess._controller._burner._ioCard.FanState,
                 'ScrewState': burnerProcess._controller._burner._ioCard.ScrewState}
 
-
-class SettingsState(restful.Resource):
+class SettingsRestApi(restful.Resource):
     def __init__(self):
         self.parser = RequestParser()
         self.parser.add_argument('ScrewTimeInSeconds', required=True, location='json', type=int)
@@ -74,9 +44,14 @@ class SettingsState(restful.Resource):
         burnerProcess.Enabled = args['IsEnabled']
         return args, 201
 
+@app.route('/')
+def home():
+    return render_template('index.html')
 
-restApi.add_resource(SimulatorState, '/rest/simulator')
-restApi.add_resource(SettingsState, '/rest/settings')
+restApi.add_resource(SimulatorRestApi, '/rest/simulator')
+restApi.add_resource(SettingsRestApi, '/rest/settings')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=12345)
+    http_server = HTTPServer(WSGIContainer(app))
+    http_server.listen(5000)
+    IOLoop.instance().start()

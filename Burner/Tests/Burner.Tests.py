@@ -1,8 +1,8 @@
 # coding=utf-8
 import unittest
-import Burner.Burner
+import burner.burner
 from mock import call, Mock
-from Burner.IO.UsbCard import UsbCard
+from burner.io.usbcard import UsbCard
 
 class BurnerTests(unittest.TestCase):
     _burner = None
@@ -10,7 +10,7 @@ class BurnerTests(unittest.TestCase):
 
     def setUp(self):
         self._iocard = Mock(spec=UsbCard)
-        self._burner = Burner.Burner.Burner(self._iocard, "ScrewTerminal", "FanTerminal", "FireWatchTerminal")
+        self._burner = burner.burner.Burner(self._iocard, "ScrewTerminal", "FanTerminal", "FireWatchTerminal")
 
     def test_wait_state_should_enable_fan_and_disable_screw(self):
         self._burner.waiting()
