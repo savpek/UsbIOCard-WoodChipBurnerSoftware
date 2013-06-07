@@ -2,7 +2,9 @@
 
 var controllers = {};
 controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory) {
-    BurnerSettingsApiFactory.get({}, function(settings) {
+    var settings = BurnerSettingsApiFactory;
+
+    settings.get({}, function(settings) {
         $scope.DelayTimeInSeconds = settings.DelayTimeInSeconds;
         $scope.ScrewTimeInSeconds = settings.ScrewTimeInSeconds;
         $scope.CurrentFireLimit = settings.CurrentFireLimit;
@@ -10,7 +12,7 @@ controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactor
     });
 
     $scope.updateSettings = function() {
-        BurnerSettingsApiFactory.update({
+        settings.update({
             ScrewTimeInSeconds: $scope.ScrewTimeInSeconds,
             DelayTimeInSeconds: $scope.DelayTimeInSeconds,
             CurrentFireLimit: $scope.CurrentFireLimit,

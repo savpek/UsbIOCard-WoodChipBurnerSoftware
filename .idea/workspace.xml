@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/partials/settings.html" afterPath="$PROJECT_DIR$/app/static/partials/settings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/img/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/js/controllers.js" afterPath="$PROJECT_DIR$/app/static/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/index.html" afterPath="$PROJECT_DIR$/app/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370535597678" ignored="false" />
+    <file path="/Dummy.txt" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370548190408" ignored="false" />
     <file path="$USER_HOME$/.PyCharm20/system/python_stubs/-762174762/exceptions.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1364021450837" ignored="false" />
     <file path="/UsbCardSimulator.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357493314908" ignored="false" />
     <file path="/simulator.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370545043510" ignored="false" />
@@ -22,8 +25,8 @@
     <file path="/BurnerProcess.Tests.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357676484126" ignored="false" />
     <file path="/Burner.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357673527058" ignored="false" />
     <file path="/BurnerController.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357676305537" ignored="false" />
-    <file path="/controllers.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370455271909" ignored="false" />
-    <file path="/index.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370545342268" ignored="false" />
+    <file path="/controllers.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370548281700" ignored="false" />
+    <file path="/index.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370627412976" ignored="false" />
     <file path="$PROJECT_DIR$/static/Pages/lib/angular/angular.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365255411168" ignored="false" />
     <file path="/app.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370544916333" ignored="false" />
     <file path="/start_script.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365257796290" ignored="false" />
@@ -65,25 +68,23 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="9" selection-start="737" selection-end="737" vertical-scroll-proportion="-12.423077">
+            <state line="11" column="47" selection-start="340" selection-end="340" vertical-scroll-proportion="-7.1923075">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
+      <file leaf-file-name="favicon.ico" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/static/img/favicon.ico">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="20" column="5" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,19 +93,28 @@
       <file leaf-file-name="settings.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.3076923">
+            <state line="2" column="20" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="burnerprocess.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="burnerprocess.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/burner/burnerprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1004" selection-end="1051" vertical-scroll-proportion="0.717608">
+            <state line="24" column="23" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#15#31#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,9 +123,7 @@
         <entry file="file://$PROJECT_DIR$/app/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="45" column="15" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#15#55#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +140,7 @@
       <file leaf-file-name="statistics.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/partials/statistics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0">
+            <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,19 +149,8 @@
       <file leaf-file-name="simulator.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/partials/simulator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="-0.0">
+            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factories.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/factories.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="24" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#23#55#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -180,7 +177,6 @@
         <option value="$PROJECT_DIR$/app/static/js/services.js" />
         <option value="C:/Python27/Lib/site-packages/flask/globals.py" />
         <option value="C:/Python27/Lib/site-packages/flask_restful/reqparse.py" />
-        <option value="$PROJECT_DIR$/app/static/js/controllers.js" />
         <option value="$PROJECT_DIR$/abc.py" />
         <option value="$PROJECT_DIR$/app/abc.py" />
         <option value="$PROJECT_DIR$/Burner/IO/UsbCardSimulator.py" />
@@ -191,8 +187,9 @@
         <option value="$PROJECT_DIR$/app/static/partials/simulator.html" />
         <option value="$PROJECT_DIR$/app/static/js/app.js" />
         <option value="$PROJECT_DIR$/app/app.py" />
-        <option value="$PROJECT_DIR$/app/templates/index.html" />
         <option value="$PROJECT_DIR$/app/static/partials/settings.html" />
+        <option value="$PROJECT_DIR$/app/static/js/controllers.js" />
+        <option value="$PROJECT_DIR$/app/templates/index.html" />
       </list>
     </option>
   </component>
@@ -288,46 +285,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -350,7 +307,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,14 +320,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="267" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="296" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="289" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="289" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="297" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="964" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="971" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="964" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="290" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="288" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -403,18 +360,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\partials" />
+      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\img" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static" />
+      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\partials" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\static\partials" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware" />
-      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\img" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static" />
-      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\app\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Python.app">
@@ -571,29 +528,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UsbIOCard-WoodChipBurnerSoftware" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -615,6 +549,29 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UsbIOCard-WoodChipBurnerSoftware" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -748,7 +705,6 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874015" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853025" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.66830707" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.33235005" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15416667" sideWeight="0.6032661" order="0" side_tool="false" content_ui="combo" />
@@ -760,9 +716,10 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853025" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6715831" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297244" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6715831" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3996063" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -831,13 +788,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/burner/io/usbcard_simulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/burner/io/usbcard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="63" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.0">
@@ -861,16 +811,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/applications.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="29" selection-start="4809" selection-end="4809" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="223" column="29" selection-start="4809" selection-end="4809" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
@@ -883,9 +824,7 @@
     <entry file="file://$PROJECT_DIR$/app/factories.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="24" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#23#55#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +842,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="15" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burner/burnerprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="23" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#15#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -917,36 +879,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.py">
+    <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="15" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#15#55#0" expanded="true" />
-          </folding>
+        <state line="20" column="5" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="9" selection-start="737" selection-end="737" vertical-scroll-proportion="-12.423077">
+        <state line="11" column="47" selection-start="340" selection-end="340" vertical-scroll-proportion="-7.1923075">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burner/burnerprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1004" selection-end="1051" vertical-scroll-proportion="0.717608">
-          <folding>
-            <element signature="e#15#31#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/app/static/img/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
