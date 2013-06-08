@@ -28,14 +28,7 @@
         </div>
     <div class="control-group">
         <div class="controls">
-            <div class="btn-group">
-                <button type="button" class="btn btn-success" data-ng-model="IsEnabled" data-btn-radio="true">On</button>
-                <button type="button" class="btn" data-ng-model="IsEnabled" data-btn-radio="false">Off</button>
-            </div>
-        </div>
-        <div class="btn-group" data-toggle="buttons-radio">
-            <button type="button" class="btn btn-primary" data-btn-stuff="true" data-ng-model="Jorma">On</button>
-            <button type="button" class="btn btn-primary" data-btn-stuff="false" data-ng-model="Jorma">Off</button>
+            <toggle-button variable="IsEnabled"/>
         </div>
     </div>
     <div class="control-group">
@@ -43,5 +36,6 @@
             <button data-ng-click="updateSettings()" class="btn">Päivitä asetukset</button>
         </div>
     </div>
-    <toggle-button/>
+
+    <input type="text" data-ng-model="IsEnabled" disabled="true">
 </form>

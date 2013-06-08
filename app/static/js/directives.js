@@ -12,22 +12,34 @@ directives.helloWorld = function () {
 };
 
 directives.toggleButton = function () {
-    return {
+    var buttonOff = function(scope) {
+        scope.buttonClass = "btn btn-danger";
+        scope.buttonText = "Off";
+    };
+
+    var buttonOn = function(scope) {
+        scope.buttonClass = "btn btn-success";
+        scope.buttonText = "On";
+    };
+
+    var directive = {
         restrict: 'E',
-        template: '<input type="button" ng-click="toggle()" class="{{buttonClass}}">ToggleButton</input>',
-        scope: {},
-        replace: false,
+        template: '<input type="button" ng-click="toggle()" class="{{buttonClass}}" value="{{buttonText}}" />',
+        scope: {
+            toggleValue: '@variable'
+        },
+        replace: true,
         controller: ['$scope', '$element', '$attrs', '$transclude', function ($scope, $element, $attrs, $transclude) {
             $scope.toggleValue = false;
-            $scope.buttonClass = "btn btn-success";
+            buttonOff($scope);
         }],
-        link: function (scope, elem, attrs) {
-            scope.$watch('toggleValue', function (oldValue, newValue) {
-                if(newValue) {
-                    scope.buttonClass = "btn btn-success";
+        link: function (scope) {
+            scope.$watch('toggleValue', function () {
+                if (scope.toggleValue) {
+                    buttonOn(scope);
                 }
                 else {
-                    scope.buttonClass = "btn btn-failure";
+                    buttonOff(scope);
                 }
             });
 
@@ -36,6 +48,8 @@ directives.toggleButton = function () {
             };
         }
     };
+
+    return directive;
 };
 
 burnerApp.directive(directives);
