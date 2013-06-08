@@ -24,23 +24,23 @@ class SimulatorRestApi(restful.Resource):
 class SettingsRestApi(restful.Resource):
     def __init__(self):
         self.parser = RequestParser()
-        self.parser.add_argument('ScrewTimeInSeconds', required=True, location='json', type=int)
-        self.parser.add_argument('DelayTimeInSeconds', required=True, location='json', type=int)
-        self.parser.add_argument('CurrentFireLimit', required=True, location='json', type=int)
-        self.parser.add_argument('IsEnabled', required=True, location='json')
+        self.parser.add_argument('screwSec', required=True, location='json', type=int)
+        self.parser.add_argument('delaySec', required=True, location='json', type=int)
+        self.parser.add_argument('lightSensor', required=True, location='json', type=int)
+        self.parser.add_argument('isEnabled', required=True, location='json', type=bool)
 
     def get(self):
-        return {'ScrewTimeInSeconds': burnerProcess.ScrewSec,
-                'DelayTimeInSeconds' : burnerProcess.DelaySec,
-                'CurrentFireLimit' : burnerProcess.FireLimit,
-                'IsEnabled' :burnerProcess.Enabled}
+        return {'screwSec': burnerProcess.ScrewSec,
+                'delaySec' : burnerProcess.DelaySec,
+                'lightSensor' : burnerProcess.LightSensor,
+                'isEnabled' :burnerProcess.Enabled}
 
     def put(self):
         args = self.parser.parse_args()
-        burnerProcess.ScrewSec = args['ScrewTimeInSeconds']
-        burnerProcess.DelaySec = args['DelayTimeInSeconds']
-        burnerProcess.FireLimit = args['CurrentFireLimit']
-        burnerProcess.Enabled = args['IsEnabled']
+        burnerProcess.ScrewSec = args['screwSec']
+        burnerProcess.DelaySec = args['delaySec']
+        burnerProcess.FireLimit = args['lightSensor']
+        burnerProcess.Enabled = args['isEnabled']
         return args, 201
 
 @app.route('/')

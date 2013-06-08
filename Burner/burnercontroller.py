@@ -1,5 +1,6 @@
 # coding=utf-8
 
+
 class BurnerController:
     VALUE_BUFFER_SIZE = 60
     APPROX_TICK_TIME_SEC = 1
@@ -35,10 +36,10 @@ class BurnerController:
             self._burner.waiting()
         return True
 
-    def fire_value(self):
+    def light_sensor(self):
         if sum(self._fireValue) is 0:
             return 0
-        return sum(self._fireValue)/self.VALUE_BUFFER_SIZE
+        return sum(self._fireValue) / self.VALUE_BUFFER_SIZE
 
     def disable(self):
         self._burner.disabled()

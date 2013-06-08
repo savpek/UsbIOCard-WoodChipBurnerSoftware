@@ -9,8 +9,7 @@ class BurnerProcess(threading.Thread):
     ScrewSec = 0
     DelaySec = 0
     Enabled = False
-    FireLimit = 0
-    Status = "Not initialized."
+    LightSensor = 0
 
     def _do_nothing(self, message):
         pass
@@ -21,7 +20,6 @@ class BurnerProcess(threading.Thread):
         super(BurnerProcess, self).__init__()
         self._controller = burner
         pass
-
 
     def run(self):
         while True:
@@ -36,14 +34,11 @@ class BurnerProcess(threading.Thread):
             if self.Enabled is False:
                 self._controller.disable()
 
-            if self._controller.fire_value() < self.FireLimit:
+            if self._controller.light_sensor() < self.LightSensor:
                 raise ValueError("Fire value limit is over feedback!")
-
-            self.Status = "Device status is OK!"
         except Exception, e:
-            self.Status = "Error: " + e.message
             self.Enabled = False
             self.ErrorOccurredEvent(e.message)
 
     def get_fire_value(self):
-        return self._controller.fire_value()
+        return self._controller.light_sensor()
