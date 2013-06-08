@@ -1,5 +1,5 @@
 # coding=utf-8
-from flask import Flask, render_template
+from flask import Flask, render_template, json
 from flask.ext import restful
 from flask.ext.restful.reqparse import RequestParser
 
@@ -8,6 +8,8 @@ from tornado.wsgi import WSGIContainer
 from tornado.httpserver import HTTPServer
 from tornado.ioloop import IOLoop
 from factories import get_burner_process
+
+from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
 restApi = restful.Api(app)
@@ -47,10 +49,21 @@ class SettingsRestApi(restful.Resource):
 def home():
     return render_template('index.html')
 
+def handle_websocket(ws):
+    while True:
+        message = ws.receive()
+        if message is None:
+            break
+        else:
+            message = json.loads(message)
+
+            r  = "I have received this message from you : %s" % message
+            r += "<br>Glad to be your webserver."
+            ws.send(json.dumps({'output': r}))
+
 restApi.add_resource(SimulatorRestApi, '/rest/simulator')
 restApi.add_resource(SettingsRestApi, '/rest/settings')
 
 if __name__ == '__main__':
-    http_server = HTTPServer(WSGIContainer(app))
-    http_server.listen(5000)
-    IOLoop.instance().start()
+    http_server = WSGIServer(('',5000), app, handler_class=handle_websocket)
+    http_server.serve_forever()

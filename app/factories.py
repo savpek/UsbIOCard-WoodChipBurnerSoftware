@@ -3,7 +3,7 @@ __author__ = 'savpek'
 from burner.burner import Burner
 from burner.burnercontroller import BurnerController
 from burner.burnerprocess import BurnerProcess
-from burner.io.usbcard_simulator import UsbCardSimulator
+from burner.usbcard_simulator import UsbCardSimulator
 
 
 def get_burner_process():

@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\IO\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\IO\usbcard.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests\Burner.Tests.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests\BurnerController.Tests.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests\BurnerProcess.Tests.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests\UsbCard.Tests.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests\__init__.py" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\IO\usbcard_simulator.py" afterPath="$PROJECT_DIR$/burner/usbcard_simulator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.py" afterPath="$PROJECT_DIR$/app/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/js/controllers.js" afterPath="$PROJECT_DIR$/app/static/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/js/services.js" afterPath="$PROJECT_DIR$/app/static/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/partials/settings.html" afterPath="$PROJECT_DIR$/app/static/partials/settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/factories.py" afterPath="$PROJECT_DIR$/app/factories.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370684495008" ignored="false" />
+    <file path="/Dummy.txt" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370710278914" ignored="false" />
     <file path="$USER_HOME$/.PyCharm20/system/python_stubs/-762174762/exceptions.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1364021450837" ignored="false" />
     <file path="/UsbCardSimulator.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357493314908" ignored="false" />
     <file path="/simulator.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370545043510" ignored="false" />
@@ -28,7 +35,7 @@
     <file path="/controllers.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370708643378" ignored="false" />
     <file path="/index.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370685453169" ignored="false" />
     <file path="$PROJECT_DIR$/static/Pages/lib/angular/angular.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365255411168" ignored="false" />
-    <file path="/app.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370706667065" ignored="false" />
+    <file path="/app.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370709996213" ignored="false" />
     <file path="/start_script.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365257796290" ignored="false" />
     <file path="/a.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365257815874" ignored="false" />
     <file path="/services.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370708362770" ignored="false" />
@@ -41,6 +48,7 @@
     <file path="/burnerprocess.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370704196269" ignored="false" />
     <file path="/directives.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370691644116" ignored="false" />
     <file path="/.jshintrc" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370684755044" ignored="false" />
+    <file path="/burner.tests.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370713253623" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,15 +77,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,10 +89,19 @@
       <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="86" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+            <state line="24" column="0" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#15#55#0" expanded="true" />
+                <element signature="e#15#61#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="factories.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/factories.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="156" selection-end="209" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,14 +109,52 @@
       <file leaf-file-name="burnerprocess.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/burner/burnerprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="52" selection-start="848" selection-end="901" vertical-scroll-proportion="0.0">
+            <state line="42" column="29" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/lib/angular.js">
+      <file leaf-file-name="burnercontrollertests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/burner.tests/burnercontrollertests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="5" selection-start="59" selection-end="91" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usbcardtests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/burner.tests/usbcardtests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="burnertests.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/burner.tests/burnertests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="39" selection-start="266" selection-end="266" vertical-scroll-proportion="0.32324842">
+              <folding>
+                <element signature="e#15#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usbcard.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/burner/usbcard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="14" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usbcard_simulator.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/burner/usbcard_simulator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -116,46 +162,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="34" selection-start="695" selection-end="695" vertical-scroll-proportion="0.53782666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="20" selection-start="844" selection-end="844" vertical-scroll-proportion="-15.692307">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="burner.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/burner/burner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="12" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="burnercontroller.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/burner/burnercontroller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
+            <state line="20" column="6" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -180,11 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/burner/io/usbcard_simulator.py" />
-        <option value="$PROJECT_DIR$/app/factories.py" />
-        <option value="$PROJECT_DIR$/app/static/partials/statistics.html" />
-        <option value="$PROJECT_DIR$/app/static/partials/simulator.html" />
-        <option value="$PROJECT_DIR$/.jshintrc" />
         <option value="$PROJECT_DIR$/app/static/js/directives.js" />
         <option value="$PROJECT_DIR$/app/templates/index.html" />
         <option value="$PROJECT_DIR$/app/static/js/app.js" />
@@ -193,9 +198,14 @@
         <option value="$PROJECT_DIR$/burner/tests/burnerprocess.tests.py" />
         <option value="$PROJECT_DIR$/burner/burnercontroller.py" />
         <option value="$PROJECT_DIR$/app/static/partials/settings.html" />
-        <option value="$PROJECT_DIR$/app/app.py" />
         <option value="$PROJECT_DIR$/app/static/js/services.js" />
         <option value="$PROJECT_DIR$/app/static/js/controllers.js" />
+        <option value="$PROJECT_DIR$/app/app.py" />
+        <option value="$PROJECT_DIR$/burner/tests/burner.tests.py" />
+        <option value="$PROJECT_DIR$/burner.tests/usbcard.tests.py" />
+        <option value="$PROJECT_DIR$/burner/usbcard.py" />
+        <option value="$PROJECT_DIR$/burner.tests/burner.tests.py" />
+        <option value="$PROJECT_DIR$/burner.tests/burnertests.py" />
       </list>
     </option>
   </component>
@@ -259,6 +269,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -287,25 +298,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="burner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="burner.tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,106 +313,25 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="267" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="296" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="289" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="289" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/burner.tests" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="297" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="964" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="971" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="964" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="290" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="288" />
@@ -432,7 +344,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="Settings.JavaScript.Linters.JSHint" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -460,140 +372,111 @@
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware" />
+      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\burner" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\img" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests" />
       <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app" />
-      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware" />
-      <recent name="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
-    <configuration default="false" name="Unittest BurnerTests.test_if_device_is_enabled_should_run_correct_routines" type="tests" factoryName="Unittests" temporary="true">
+  <component name="RunManager" selected="Python tests.RunBurnerTests">
+    <configuration default="false" name="Unittests in burnercontrollertests" type="tests" factoryName="Unittests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burner.tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="UsbIOCard-WoodChipBurnerSoftware" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests\burnerprocess.tests.py" />
-      <option name="CLASS_NAME" value="BurnerTests" />
-      <option name="METHOD_NAME" value="test_if_device_is_enabled_should_run_correct_routines" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest BurnerControllerTests.test_tick_gets_burner_value_and_adds_it_to_history" type="tests" factoryName="Unittests" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UsbIOCard-WoodChipBurnerSoftware" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests\burnercontroller.tests.py" />
-      <option name="CLASS_NAME" value="BurnerControllerTests" />
-      <option name="METHOD_NAME" value="test_tick_gets_burner_value_and_adds_it_to_history" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest BurnerControllerTests.test_tick_works_correctly" type="tests" factoryName="Unittests" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UsbIOCard-WoodChipBurnerSoftware" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\Burner\Tests\burnercontroller.tests.py" />
-      <option name="CLASS_NAME" value="BurnerControllerTests" />
-      <option name="METHOD_NAME" value="test_tick_works_correctly" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest BurnerTests.test_on_error_execute_error_event" type="tests" factoryName="Unittests" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burner/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UsbIOCard-WoodChipBurnerSoftware" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/burner/tests/burnerprocess.tests.py" />
-      <option name="CLASS_NAME" value="BurnerTests" />
-      <option name="METHOD_NAME" value="test_on_error_execute_error_event" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in BurnerTests" type="tests" factoryName="Unittests" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burner/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UsbIOCard-WoodChipBurnerSoftware" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/burner/tests/burnerprocess.tests.py" />
-      <option name="CLASS_NAME" value="BurnerTests" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/burner.tests/burnercontrollertests.py" />
+      <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in burnerprocesstests" type="tests" factoryName="Unittests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burner.tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UsbIOCard-WoodChipBurnerSoftware" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/burner.tests/burnerprocesstests.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in usbcardtests" type="tests" factoryName="Unittests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burner.tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UsbIOCard-WoodChipBurnerSoftware" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/burner.tests/usbcardtests.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in burnertests" type="tests" factoryName="Unittests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burner.tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UsbIOCard-WoodChipBurnerSoftware" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/burner.tests/burnertests.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -650,29 +533,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="UsbIOCard-WoodChipBurnerSoftware" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -694,6 +554,29 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UsbIOCard-WoodChipBurnerSoftware" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -730,6 +613,31 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
+    <configuration default="false" name="RunBurnerTests" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/burner.tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UsbIOCard-WoodChipBurnerSoftware" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/burner/tests/burnercontroller.tests.py" />
+      <option name="CLASS_NAME" value="BurnerControllerTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$/burner.tests" />
+      <option name="TEST_TYPE" value="TEST_FOLDER" />
+      <option name="PATTERN" value=".*" />
+      <option name="USE_PATTERN" value="true" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -752,17 +660,20 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python.app" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest BurnerTests.test_if_device_is_enabled_should_run_correct_routines" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest BurnerControllerTests.test_tick_gets_burner_value_and_adds_it_to_history" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest BurnerControllerTests.test_tick_works_correctly" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest BurnerTests.test_on_error_execute_error_event" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in BurnerTests" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.RunBurnerTests" />
+      <item index="1" class="java.lang.String" itemvalue="Python.app" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in burnercontrollertests" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in burnerprocesstests" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in usbcardtests" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in burnertests" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in BurnerTests" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest BurnerTests.test_on_error_execute_error_event" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in burnertests" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in burnertests" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in usbcardtests" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in burnerprocesstests" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in burnercontrollertests" />
       </list>
     </recent_temporary>
   </component>
@@ -814,25 +725,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874015" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853025" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.66830707" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.33235005" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15416667" sideWeight="0.72334296" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27665707" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15416667" sideWeight="0.6282421" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27665707" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.32743362" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3967339" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37175792" sideWeight="0.4953125" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37175792" sideWeight="0.4953125" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297244" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6715831" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6715831" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3996063" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -899,73 +810,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/burner/tests/usbcard.tests.py</url>
+          <url>file://$PROJECT_DIR$/burner.tests/usbcardtests.py</url>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="120" />
+      <option name="time" value="122" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.jshintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="1529" selection-end="1529" vertical-scroll-proportion="19.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="54" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-17.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/factories.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burner/tests/burner.tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burner/tests/burnercontroller.tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="28" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burner/tests/burnerprocess.tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burner/burner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/static/lib/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burner/burnerprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="52" selection-start="848" selection-end="901" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -979,17 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="844" selection-end="844" vertical-scroll-proportion="-15.692307">
+        <state line="24" column="20" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="86" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#15#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,8 +862,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="695" selection-end="695" vertical-scroll-proportion="0.53782666">
+        <state line="20" column="6" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/gevent/hub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="128" selection-end="128" vertical-scroll-proportion="0.11691885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burner/burnerprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="29" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burner.tests/usbcardtests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burner/usbcard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="14" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burner/usbcard_simulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#15#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/factories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="156" selection-end="209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burner.tests/burnercontrollertests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="59" selection-end="91" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burner.tests/burnertests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="39" selection-start="266" selection-end="266" vertical-scroll-proportion="0.32324842">
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

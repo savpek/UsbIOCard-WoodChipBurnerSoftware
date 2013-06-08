@@ -1,13 +1,13 @@
 import unittest
 from mock import MagicMock
-from burner.io.usbcard import UsbCard, IoCardException
+from burner.usbcard import UsbCard, IoCardException
 
 class UsbIoCardConnection_InitTests(unittest.TestCase):
     def test_connection_is_opened_with_correct_arguments(self):
         self.serial_mock = MagicMock()
         UsbCard("COM1", 9600, serialInterface=self.serial_mock)
         # Timeout must be set! Otherwise terminal will hang forever.
-        self.serial_mock.Serial.assert_called_with("COM1", 9600, timeout=0.05)
+        self.serial_mock.Serial.assert_called_with("COM1", 9600, timeout=0.1)
 
 
 class UsbIoCardConnection_Tests(unittest.TestCase):

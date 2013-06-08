@@ -1,7 +1,9 @@
 import serial
 
+
 class IoCardException(Exception):
     pass
+
 
 # Abstraction class to command USB-IO card.
 # Example:
