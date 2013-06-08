@@ -2,18 +2,7 @@
 
 var directives = {};
 
-directives.helloWorld = function () {
-    return {
-            restrict: 'A',
-            link: function postLink (scope, iElement, iAttrs, controller) {
-                var foo = 3;
-            }
-        };
-};
-
 directives.toggleButton = function () {
-
-
     var directive = {
         restrict: 'E',
         template: '<input type="button" ng-click="toggle()" class="{{buttonClass}}" value="{{buttonText}}" />',
