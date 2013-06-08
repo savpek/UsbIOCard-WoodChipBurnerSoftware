@@ -7,9 +7,6 @@
     // [1]: http://www.jshint.com/
     // [2]: https://github.com/jshint/node-jshint/blob/master/example/config.json
     // [3]: https://github.com/oryband/dotfiles/blob/master/jshintrc
-    //
-    // @author http://michael.haschke.biz/
-    // @license http://unlicense.org/
 
     // These options tell JSHint to be more strict towards your code. Use
     // them if you want to allow only a safe subset of JavaScript, very
@@ -45,7 +42,7 @@
     "evil"          : false,    // Tolerate use of `eval`.
     "expr"          : false,    // Tolerate `ExpressionStatement` as Programs.
     "funcscope"     : false,    // Tolerate declarations of variables inside of control structures while accessing them later from the outside.
-    "globalstrict"  : false,    // Allow global "use strict" (also enables 'strict').
+    "globalstrict"  : true,    // Allow global "use strict" (also enables 'strict').
     "iterator"      : false,    // Allow usage of __iterator__ property.
     "lastsemic"     : false,    // Tolerat missing semicolons when the it is omitted for the last statement in a one-line block.
     "laxbreak"      : false,    // Tolerate unsafe line breaks e.g. `return [\n] x` without semicolons.
@@ -68,7 +65,7 @@
     
     "browser"       : true,     // Standard browser globals e.g. `window`, `document`.
     "couch"         : false,    // Enable globals exposed by CouchDB.
-    "devel"         : false,    // Allow development statements e.g. `console.log();`.
+    "devel"         : true,    // Allow development statements e.g. `console.log();`.
     "dojo"          : false,    // Enable globals exposed by Dojo Toolkit.
     "jquery"        : false,    // Enable globals exposed by jQuery JavaScript library.
     "mootools"      : false,    // Enable globals exposed by MooTools JavaScript framework.
