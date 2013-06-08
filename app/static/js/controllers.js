@@ -5,18 +5,18 @@ controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactor
     var settings = BurnerSettingsApiFactory;
 
     settings.get({}, function(settings) {
-        $scope.ScrewTimeInSeconds = settings.screwSec;
-        $scope.DelayTimeInSeconds = settings.delaySec;
-        $scope.CurrentFireLimit = settings.lightSensor;
-        $scope.IsEnabled = settings.isEnabled;
+        $scope.screwSec = settings.screwSec;
+        $scope.delaySec = settings.delaySec;
+        $scope.lightSensor = settings.lightSensor;
+        $scope.isEnabled = settings.isEnabled;
     });
 
     $scope.updateSettings = function () {
         settings.update({
-            screwSec: $scope.ScrewTimeInSeconds,
-            delaySec: $scope.DelayTimeInSeconds,
-            lightSensor: $scope.CurrentFireLimit,
-            isEnabled: $scope.IsEnabled
+            screwSec: $scope.screwSec,
+            delaySec: $scope.delaySec,
+            lightSensor: $scope.lightSensor,
+            isEnabled: $scope.isEnabled
         });
     };
 };

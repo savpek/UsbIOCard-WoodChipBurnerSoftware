@@ -39,7 +39,7 @@ class SettingsRestApi(restful.Resource):
         args = self.parser.parse_args()
         burnerProcess.ScrewSec = args['screwSec']
         burnerProcess.DelaySec = args['delaySec']
-        burnerProcess.FireLimit = args['lightSensor']
+        burnerProcess.LightSensor = args['lightSensor']
         burnerProcess.Enabled = args['isEnabled']
         return args, 201
 

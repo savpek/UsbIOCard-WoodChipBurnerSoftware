@@ -8,6 +8,7 @@ factories.BurnerSettingsApiFactory = function($resource) {
         update: {method:"PUT"},
         isArray:false
     });
+
     return factory;
 };
 
