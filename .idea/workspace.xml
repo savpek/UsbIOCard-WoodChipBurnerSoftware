@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/js/controllers.js" afterPath="$PROJECT_DIR$/app/static/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/js/directives.js" afterPath="$PROJECT_DIR$/app/static/js/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/index.html" afterPath="$PROJECT_DIR$/app/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/partials/settings.html" afterPath="$PROJECT_DIR$/app/static/partials/settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,14 +18,14 @@
     <file path="/simulator.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370545043510" ignored="false" />
     <file path="/MainPage.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357480660772" ignored="false" />
     <file path="/BurnerLogic.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357473512036" ignored="false" />
-    <file path="/settings.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370690642545" ignored="false" />
+    <file path="/settings.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370692024410" ignored="false" />
     <file path="/base.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365243959203" ignored="false" />
     <file path="/Main.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365253901143" ignored="false" />
     <file path="/BurnerProcess.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357676536572" ignored="false" />
     <file path="/BurnerProcess.Tests.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357676484126" ignored="false" />
     <file path="/Burner.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357673527058" ignored="false" />
     <file path="/BurnerController.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357676305537" ignored="false" />
-    <file path="/controllers.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370548281700" ignored="false" />
+    <file path="/controllers.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370691825633" ignored="false" />
     <file path="/index.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370685453169" ignored="false" />
     <file path="$PROJECT_DIR$/static/Pages/lib/angular/angular.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365255411168" ignored="false" />
     <file path="/app.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370544916333" ignored="false" />
@@ -38,7 +39,7 @@
     <file path="/statistics.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370545026615" ignored="false" />
     <file path="/burnerprocess.tests.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370669607463" ignored="false" />
     <file path="/burnerprocess.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370632746058" ignored="false" />
-    <file path="/directives.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370690454626" ignored="false" />
+    <file path="/directives.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370691644116" ignored="false" />
     <file path="/.jshintrc" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370684755044" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="9" selection-start="818" selection-end="818" vertical-scroll-proportion="-15.038462">
+            <state line="27" column="0" selection-start="853" selection-end="890" vertical-scroll-proportion="-11.807693">
               <folding />
             </state>
           </provider>
@@ -86,15 +87,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="30" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,22 +96,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".jshintrc" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.jshintrc">
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="1529" selection-end="1529" vertical-scroll-proportion="-13.730769">
+            <state line="46" column="40" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.py">
+      <file leaf-file-name="angular-strap.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/lib/angular-strap.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="50" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#15#55#0" expanded="true" />
-              </folding>
+            <state line="397" column="32" selection-start="14011" selection-end="14011" vertical-scroll-proportion="-25.44">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,7 +135,7 @@
       <file leaf-file-name="settings.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="14" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.8145286">
+            <state line="28" column="31" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.5780525">
               <folding />
             </state>
           </provider>
@@ -188,11 +187,11 @@
         <option value="$PROJECT_DIR$/app/app.py" />
         <option value="$PROJECT_DIR$/burner/tests/burnerprocess.tests.py" />
         <option value="$PROJECT_DIR$/burner/burnerprocess.py" />
-        <option value="$PROJECT_DIR$/app/static/js/controllers.js" />
         <option value="$PROJECT_DIR$/app/static/js/app.js" />
         <option value="$PROJECT_DIR$/app/static/js/services.js" />
         <option value="$PROJECT_DIR$/.jshintrc" />
         <option value="$PROJECT_DIR$/app/templates/index.html" />
+        <option value="$PROJECT_DIR$/app/static/js/controllers.js" />
         <option value="$PROJECT_DIR$/app/static/js/directives.js" />
         <option value="$PROJECT_DIR$/app/static/partials/settings.html" />
       </list>
@@ -912,30 +911,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/lib/angular-strap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="22" selection-start="12724" selection-end="12724" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -970,20 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="9" selection-start="818" selection-end="818" vertical-scroll-proportion="-15.038462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="30" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/static/partials/simulator.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
@@ -998,9 +962,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/lib/angular-strap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="397" column="32" selection-start="14011" selection-end="14011" vertical-scroll-proportion="-25.44">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="853" selection-end="890" vertical-scroll-proportion="-11.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="40" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.8145286">
+        <state line="28" column="31" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.5780525">
           <folding />
         </state>
       </provider>

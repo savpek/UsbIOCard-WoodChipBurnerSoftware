@@ -8,7 +8,7 @@ controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactor
         $scope.DelayTimeInSeconds = settings.DelayTimeInSeconds;
         $scope.ScrewTimeInSeconds = settings.ScrewTimeInSeconds;
         $scope.CurrentFireLimit = settings.CurrentFireLimit;
-        $scope.IsEnabled = settings.IsEnabled;
+        $scope.IsEnabled = settings.IsEnabled === "True";
     });
 
     $scope.updateSettings = function () {

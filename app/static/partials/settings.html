@@ -6,29 +6,30 @@
 
 <form class="form-horizontal">
     <div class="control-group">
-        <label class="control-label" for="Delay">Viive (sekunttia):</label>
+        <label class="control-label">Viive (sekunttia):</label>
 
         <div class="controls">
-            <input type="number" name="Delay" id="Delay" data-ng-model="ScrewTimeInSeconds" min="1" max="100">
+            <input type="number" data-ng-model="ScrewTimeInSeconds" min="1" max="100">
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label" for="ScrewTime">Ruuvi päällä (sekunttia):</label>
+        <label class="control-label">Ruuvi päällä (sekunttia):</label>
 
         <div class="controls">
-            <input type="number" name="ScrewTime" id="ScrewTime" data-ng-model="DelayTimeInSeconds" min="1" max="10">
+            <input type="number" data-ng-model="DelayTimeInSeconds" min="1" max="10">
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label" for="FireWatch">Tulivahdin raja:</label>
+        <label class="control-label">Tulivahdin raja:</label>
             <div class="controls">
-                <input type="number" name="FireWatch" id="FireWatch" data-ng-model="CurrentFireLimit" min="0" max="256">
-                <input type="text" id="CurrentFireWatchValue" data-ng-model="currentLightSensorValue" disabled="true">
+                <input type="number" data-ng-model="CurrentFireLimit" min="0" max="256">
+                <input type="text" data-ng-model="currentLightSensorValue" disabled="true">
             </div>
         </div>
     <div class="control-group">
+        <label class="control-label">Aseta tila:</label>
         <div class="controls">
-            <toggle-button variable="IsEnabled"/>
+            <toggle-button for-variable="IsEnabled"/>
         </div>
     </div>
     <div class="control-group">
@@ -36,6 +37,4 @@
             <button data-ng-click="updateSettings()" class="btn">Päivitä asetukset</button>
         </div>
     </div>
-
-    <input type="text" data-ng-model="IsEnabled" disabled="true">
 </form>
