@@ -44,7 +44,7 @@ class SettingsRestApi(restful.Resource):
         return args, 201
 
 @app.route('/')
-def home(any=None):
+def home():
     return render_template('index.html')
 
 restApi.add_resource(SimulatorRestApi, '/rest/simulator')

@@ -91,3 +91,11 @@ class BurnerTests(unittest.TestCase):
         self._burnerProcess._execute()
         self._burnerController.assert_has_calls(call.disable())
 
+    def _event_result_collector(self, message):
+        self.message = message
+
+    def test_on_error_execute_error_event(self):
+        self._burnerProcess.ErrorOccurredEvent = self._event_result_collector
+        self._burnerController.tick.side_effect = ValueError("Error occurred!")
+        self._burnerProcess._execute()
+        self.assertEquals(self.message, "Error occurred!")

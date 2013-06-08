@@ -9,13 +9,19 @@ class BurnerProcess(threading.Thread):
     DelaySec = 0
     Enabled = False
     FireLimit = 0
-
     Status = "Not initialized."
+
+    def _do_nothing(self, message):
+        pass
+
+    ErrorOccurredEvent = _do_nothing
+
 
     def __init__(self, burner):
         super(BurnerProcess, self).__init__()
         self._controller = burner
         pass
+
 
     def run(self):
         while True:
@@ -37,6 +43,7 @@ class BurnerProcess(threading.Thread):
         except Exception, e:
             self.Status = "Error: " + e.message
             self.Enabled = False
+            self.ErrorOccurredEvent(e.message)
 
     def get_fire_value(self):
         return self._controller.fire_value()
