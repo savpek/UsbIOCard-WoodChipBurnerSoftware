@@ -5,39 +5,43 @@
 </div>
 
 <form class="form-horizontal">
-        <div class="control-group">
-            <label class="control-label" for="Delay">Viive (sekunttia):</label>
+    <div class="control-group">
+        <label class="control-label" for="Delay">Viive (sekunttia):</label>
 
-            <div class="controls">
-                <input type="number" name="Delay" id="Delay" data-ng-model="ScrewTimeInSeconds" min="1" max="100">
-            </div>
+        <div class="controls">
+            <input type="number" name="Delay" id="Delay" data-ng-model="ScrewTimeInSeconds" min="1" max="100">
         </div>
-        <div class="control-group">
-            <label class="control-label" for="ScrewTime">Ruuvi päällä (sekunttia):</label>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="ScrewTime">Ruuvi päällä (sekunttia):</label>
 
+        <div class="controls">
+            <input type="number" name="ScrewTime" id="ScrewTime" data-ng-model="DelayTimeInSeconds" min="1" max="10">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="FireWatch">Tulivahdin raja:</label>
             <div class="controls">
-                <input type="number" name="ScrewTime" id="ScrewTime" data-ng-model="DelayTimeInSeconds" min="1" max="10">
+                <input type="number" name="FireWatch" id="FireWatch" data-ng-model="CurrentFireLimit" min="0" max="256">
+                <input type="text" id="CurrentFireWatchValue" data-ng-model="currentLightSensorValue" disabled="true">
             </div>
         </div>
-        <div class="control-group">
-            <label class="control-label" for="FireWatch">Tulivahdin raja:</label>
-                <div class="controls">
-                    <input type="number" name="FireWatch" id="FireWatch" data-ng-model="CurrentFireLimit" min="0" max="256">
-                    <input type="text" id="CurrentFireWatchValue" data-ng-model="currentLightSensorValue" disabled="true">
-                </div>
+    <div class="control-group">
+        <div class="controls">
+            <div class="btn-group">
+                <button type="button" class="btn btn-success" data-ng-model="IsEnabled" data-btn-radio="true">On</button>
+                <button type="button" class="btn" data-ng-model="IsEnabled" data-btn-radio="false">Off</button>
             </div>
         </div>
-        <div class="control-group">
-            <div class="controls">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-success" ng-model="IsEnabled" btn-radio="true">On</button>
-                    <button type="button" class="btn" ng-model="IsEnabled" btn-radio="false">Off</button>
-                </div>
-            </div>
+        <div class="btn-group" data-toggle="buttons-radio">
+            <button type="button" class="btn btn-primary" data-btn-stuff="true" data-ng-model="Jorma">On</button>
+            <button type="button" class="btn btn-primary" data-btn-stuff="false" data-ng-model="Jorma">Off</button>
         </div>
-        <div class="control-group">
-            <div class="controls">
-                <button data-ng-click="updateSettings()" class="btn btn-primary">Päivitä asetukset</button>
-            </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <button data-ng-click="updateSettings()" class="btn">Päivitä asetukset</button>
         </div>
-    </form>
+    </div>
+    <div fundoo-rating></div>
+</form>

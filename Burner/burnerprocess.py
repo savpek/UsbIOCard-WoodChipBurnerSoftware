@@ -2,6 +2,7 @@
 import threading
 import time
 
+
 class BurnerProcess(threading.Thread):
     _controller = None
 
@@ -15,7 +16,6 @@ class BurnerProcess(threading.Thread):
         pass
 
     ErrorOccurredEvent = _do_nothing
-
 
     def __init__(self, burner):
         super(BurnerProcess, self).__init__()

@@ -1,5 +1,6 @@
 'use strict';
 
+
 var burnerApp = angular.module('burnerApp', ['ngResource', 'ui.bootstrap']);
 
 burnerApp.config(function ($routeProvider) {
@@ -8,3 +9,4 @@ burnerApp.config(function ($routeProvider) {
     $routeProvider.when('/statistics', {templateUrl: 'static/partials/statistics.html', controller: 'BurnerSettingsController'});
     $routeProvider.otherwise({redirectTo: '/settings'});
   });
+

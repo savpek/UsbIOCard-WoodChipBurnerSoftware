@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-ng-app="burnerApp">
+<html lang="en" ng-app="burnerApp">
 <head>
     <meta charset="utf-8">
     <title>Hakkeenpolttimen kontrollit</title>
@@ -24,10 +24,10 @@
     </ul>
   </div>
 </div>
+  Rating is {{rating}} <br/>
+  <div stars-rating rating-value="rating"></div>
+<div ng-view class="container"></div>
 
-<div data-ng-view class="container">
-
-</div>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="static/lib/bootstrap.js"></script>
 

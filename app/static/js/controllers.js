@@ -11,14 +11,14 @@ controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactor
         $scope.IsEnabled = settings.IsEnabled;
     });
 
-    $scope.updateSettings = function() {
+    $scope.updateSettings = function () {
         settings.update({
             ScrewTimeInSeconds: $scope.ScrewTimeInSeconds,
             DelayTimeInSeconds: $scope.DelayTimeInSeconds,
             CurrentFireLimit: $scope.CurrentFireLimit,
             IsEnabled: $scope.IsEnabled
         });
-    }
+    };
 };
 
 burnerApp.controller(controllers);
