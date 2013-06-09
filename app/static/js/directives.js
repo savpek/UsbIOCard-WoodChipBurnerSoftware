@@ -38,6 +38,30 @@ directives.toggleButton = function () {
             };
         }
     };
+    return directive;
+};
+
+directives.errorMessage = function () {
+    var directive = {
+        restrict: 'E',
+        template: '<div class="alert {{ visible }}">' +
+                  '<strong>Tapahtui virhe!</strong> Virheviesti: {{ errorMessage }}' +
+                  '</div>',
+        scope: {
+            errorMessage:'=errorSource'
+        },
+        replace: true,
+        link: function (scope) {
+            scope.$watch('errorMessage', function () {
+                if (scope.errorMessage === undefined) {
+                    scope.visible = "ng-cloak";
+                }
+                else {
+                    scope.visible = "";
+                }
+            });
+        }
+    };
 
     return directive;
 };
