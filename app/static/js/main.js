@@ -4,7 +4,7 @@ addMessage = function(text) {
 }
 
 $(document).ready(function() {
-    var socket = io.connect('/shouts');
+    var socket = io.connect('/errors');
     socket.on('connect', function() {
         console.log("socket connected");
     });
