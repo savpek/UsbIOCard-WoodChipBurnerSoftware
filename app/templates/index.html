@@ -23,11 +23,16 @@
     </ul>
   </div>
 </div>
+<div id="target">
+    <!-- messages we receive through sockets will be here -->
+</div>
 <!-- Mainview -->
+
 <div ng-view class="container"></div>
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="static/lib/bootstrap.js"></script>
+<script type="text/javascript" src="/static/lib/socket.io.js"></script>
 
 <script src="static/lib/angular.js"></script>
 <script src="static/lib/angular-resource.js"></script>
@@ -36,5 +41,7 @@
 <script src="static/js/services.js"></script>
 <script src="static/js/controllers.js"></script>
 <script src="static/js/directives.js"></script>
+
+<script type="text/javascript" src="/static/js/main.js"></script>
 </body>
 </html>
