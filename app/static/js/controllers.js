@@ -3,12 +3,6 @@
 var controllers = {};
 controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory, Sockets) {
     var settings = BurnerSettingsApiFactory;
-    var sockets = Sockets;
-
-    sockets.on('message', function (message) {
-        console.log("Got message:", message);
-        $scope.jorma = message;
-    });
 
     settings.get({}, function(settings) {
         $scope.screwSec = settings.screwSec;
@@ -25,6 +19,20 @@ controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactor
             isEnabled: $scope.isEnabled
         });
     };
+};
+
+controllers.IoLogController = function ($scope, Sockets) {
+    var sockets = Sockets;
+    $scope.ioLog = [];
+
+    sockets.on('message', function (message) {
+        console.log("Got message:", message);
+        $scope.ioLog.unshift(message);
+
+        if($scope.ioLog.length > 30) {
+            $scope.ioLog.pop();
+        }
+    });
 };
 
 burnerApp.controller(controllers);
