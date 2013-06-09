@@ -1,10 +1,6 @@
-addMessage = function(text) {
-    var div = $("<div>").addClass("msg").text(text);
-    $("#target").prepend(div);
-}
-
+/*
 $(document).ready(function() {
-    var socket = io.connect('/iologs');
+    var socket = io.connect('/sockets');
     socket.on('connect', function() {
         console.log("socket connected");
     });
@@ -14,6 +10,5 @@ $(document).ready(function() {
 
     socket.on('message', function(data) {
         console.log("Got message:", data);
-        addMessage(data);
     });
-});
+});*/

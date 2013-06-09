@@ -82,7 +82,7 @@
  
     "maxerr"        : 100,      // Maximum errors before stopping.
     "predef"        : [
-        "angular", "burnerApp"
+        "angular", "burnerApp", "io"
     ],
     "indent"        : 4         // Specify indentation spacing
 }

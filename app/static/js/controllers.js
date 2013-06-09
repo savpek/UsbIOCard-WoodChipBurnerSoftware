@@ -1,8 +1,14 @@
 'use strict';
 
 var controllers = {};
-controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory) {
+controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory, Sockets) {
     var settings = BurnerSettingsApiFactory;
+    var sockets = Sockets;
+
+    sockets.on('message', function (message) {
+        console.log("Got message:", message);
+        $scope.jorma = message;
+    });
 
     settings.get({}, function(settings) {
         $scope.screwSec = settings.screwSec;

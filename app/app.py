@@ -65,24 +65,6 @@ restApi.add_resource(SettingsRestApi, '/rest/settings')
 def hello():
     return render_template("index.html")
 
-
-class ErrorsSpace(BaseNamespace):
-    sockets = {}
-
-    def recv_connect(self):
-        self.sockets[id(self)] = self
-
-    def disconnect(self, *args, **kwargs):
-        if id(self) in self.sockets:
-            del self.sockets[id(self)]
-        super(ErrorsSpace, self).disconnect(*args, **kwargs)
-
-    @classmethod
-    def broadcast(cls, event, message):
-        for ws in cls.sockets.values():
-            ws.emit(event, message)
-
-
 class IoLogSpace(BaseNamespace):
     sockets = {}
 
@@ -101,12 +83,8 @@ class IoLogSpace(BaseNamespace):
 
 @app.route('/socket.io/<path:rest>')
 def push_stream(rest):
-    socketio_manage(request.environ, {'/errors': ErrorsSpace,
-                                      '/iologs': IoLogSpace}, request)
+    socketio_manage(request.environ, {'/sockets': IoLogSpace}, request)
     return Response()
-
-def error_messenger(message):
-    ErrorsSpace.broadcast('message', message)
 
 def log_messenger(message):
     IoLogSpace.broadcast('message', message)
