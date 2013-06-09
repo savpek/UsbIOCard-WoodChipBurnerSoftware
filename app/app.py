@@ -101,7 +101,8 @@ class IoLogSpace(BaseNamespace):
 
 @app.route('/socket.io/<path:rest>')
 def push_stream(rest):
-    socketio_manage(request.environ, {'/errors': ErrorsSpace}, request)
+    socketio_manage(request.environ, {'/errors': ErrorsSpace,
+                                      '/iologs': IoLogSpace}, request)
     return Response()
 
 def error_messenger(message):
@@ -110,8 +111,8 @@ def error_messenger(message):
 def log_messenger(message):
     IoLogSpace.broadcast('message', message)
 
-burnerProcess.ErrorOccurredEvent = error_messenger
-iocard.CardActionInvoked = error_messenger
+burnerProcess.ErrorOccurredEvent = log_messenger
+iocard.CardActionInvoked = log_messenger
 
 def run_dev_server():
     app.debug = True
