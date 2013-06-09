@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\js\main.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/js/app.js" afterPath="$PROJECT_DIR$/app/static/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.py" afterPath="$PROJECT_DIR$/app/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/js/controllers.js" afterPath="$PROJECT_DIR$/app/static/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/index.html" afterPath="$PROJECT_DIR$/app/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/partials/iolog.html" afterPath="$PROJECT_DIR$/app/static/partials/iolog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/partials/settings.html" afterPath="$PROJECT_DIR$/app/static/partials/settings.html" />
     </list>
     <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,17 +17,17 @@
     <file path="/simulator.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370545043510" ignored="false" />
     <file path="/MainPage.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357480660772" ignored="false" />
     <file path="/BurnerLogic.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357473512036" ignored="false" />
-    <file path="/settings.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370706602602" ignored="false" />
+    <file path="/settings.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370786013144" ignored="false" />
     <file path="/base.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365243959203" ignored="false" />
     <file path="/Main.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365253901143" ignored="false" />
     <file path="/BurnerProcess.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357676536572" ignored="false" />
     <file path="/BurnerProcess.Tests.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357676484126" ignored="false" />
     <file path="/Burner.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357673527058" ignored="false" />
     <file path="/BurnerController.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1357676305537" ignored="false" />
-    <file path="/controllers.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370785523303" ignored="false" />
+    <file path="/controllers.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370786461668" ignored="false" />
     <file path="/index.html" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370785684264" ignored="false" />
     <file path="$PROJECT_DIR$/static/Pages/lib/angular/angular.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365255411168" ignored="false" />
-    <file path="/app.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370784478810" ignored="false" />
+    <file path="/app.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370786094973" ignored="false" />
     <file path="/start_script.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365257796290" ignored="false" />
     <file path="/a.py" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1365257815874" ignored="false" />
     <file path="/services.js" changelist="84bfc104-b9fe-4c50-b0ad-20fcfb67086a" time="1370784720359" ignored="false" />
@@ -76,15 +73,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="34" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.730769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="statistics.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/partials/statistics.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,19 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="47" selection-start="2749" selection-end="2757" vertical-scroll-proportion="0.7733333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="9" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
+            <state line="88" column="29" selection-start="2849" selection-end="2849" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,10 +100,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".jshintrc" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.jshintrc">
+      <file leaf-file-name="version.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/lib/version.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="47" selection-start="5787" selection-end="5787" vertical-scroll-proportion="-17.153847">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/lib/angular.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="burner.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/burner/burner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,7 +130,7 @@
       <file leaf-file-name="settings.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="223" selection-end="223" vertical-scroll-proportion="-3.2692308">
+            <state line="6" column="11" selection-start="207" selection-end="207" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -142,25 +139,25 @@
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="35" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0">
+            <state line="12" column="11" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/js/app.js">
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="56" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
+            <state line="34" column="9" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="16" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+            <state line="23" column="17" selection-start="681" selection-end="681" vertical-scroll-proportion="0.52133334">
               <folding />
             </state>
           </provider>
@@ -192,15 +189,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/burner/burnerprocess.py" />
         <option value="$PROJECT_DIR$/burner/usbcard_simulator.py" />
-        <option value="$PROJECT_DIR$/app/app.py" />
         <option value="$PROJECT_DIR$/app/static/js/main.js" />
         <option value="$PROJECT_DIR$/app/static/js/services.js" />
         <option value="$PROJECT_DIR$/.jshintrc" />
-        <option value="$PROJECT_DIR$/app/static/partials/settings.html" />
         <option value="$PROJECT_DIR$/app/static/js/app.js" />
-        <option value="$PROJECT_DIR$/app/static/js/controllers.js" />
         <option value="$PROJECT_DIR$/app/static/partials/iolog.html" />
         <option value="$PROJECT_DIR$/app/templates/index.html" />
+        <option value="$PROJECT_DIR$/app/static/partials/settings.html" />
+        <option value="$PROJECT_DIR$/app/app.py" />
+        <option value="$PROJECT_DIR$/app/static/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -771,12 +768,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in burnercontrollertests" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in burnerprocesstests" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in usbcardtests" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in burnertests" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.RunBurnerTests" />
-      <item index="5" class="java.lang.String" itemvalue="Python.app" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.RunBurnerTests" />
+      <item index="1" class="java.lang.String" itemvalue="Python.app" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in burnercontrollertests" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in burnerprocesstests" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in usbcardtests" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in burnertests" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -846,7 +843,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2706767" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.32743362" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3967339" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37175792" sideWeight="0.4953125" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37124062" sideWeight="0.4953125" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -925,31 +922,10 @@
           <option name="timeStamp" value="118" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="170" />
+      <option name="time" value="172" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/burner/burnercontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burner/burnerprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="113" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burner/usbcard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/burner/usbcard_simulator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="44" selection-start="1316" selection-end="1324" vertical-scroll-proportion="0.0">
@@ -975,23 +951,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.jshintrc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="47" selection-start="5787" selection-end="5787" vertical-scroll-proportion="-17.153847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1003,6 +965,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burner/burner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="29" selection-start="2849" selection-end="2849" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/static/partials/statistics.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1010,16 +1007,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
+    <entry file="file://$PROJECT_DIR$/app/static/lib/version.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="223" selection-end="223" vertical-scroll-proportion="-3.2692308">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/app/static/lib/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1031,16 +1028,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/app/static/partials/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="789" selection-end="789" vertical-scroll-proportion="-13.730769">
+        <state line="6" column="11" selection-start="207" selection-end="207" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.py">
+    <entry file="file://$PROJECT_DIR$/app/static/js/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="47" selection-start="2749" selection-end="2757" vertical-scroll-proportion="0.7733333">
+        <state line="23" column="17" selection-start="681" selection-end="681" vertical-scroll-proportion="0.52133334">
           <folding />
         </state>
       </provider>

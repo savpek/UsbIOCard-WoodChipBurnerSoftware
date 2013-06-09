@@ -65,7 +65,7 @@ restApi.add_resource(SettingsRestApi, '/rest/settings')
 def hello():
     return render_template("index.html")
 
-class IoLogSpace(BaseNamespace):
+class BurnerNameSpace(BaseNamespace):
     sockets = {}
 
     def recv_connect(self):
@@ -74,7 +74,7 @@ class IoLogSpace(BaseNamespace):
     def disconnect(self, *args, **kwargs):
         if id(self) in self.sockets:
             del self.sockets[id(self)]
-        super(IoLogSpace, self).disconnect(*args, **kwargs)
+        super(BurnerNameSpace, self).disconnect(*args, **kwargs)
 
     @classmethod
     def broadcast(cls, event, message):
@@ -83,13 +83,16 @@ class IoLogSpace(BaseNamespace):
 
 @app.route('/socket.io/<path:rest>')
 def push_stream(rest):
-    socketio_manage(request.environ, {'/sockets': IoLogSpace}, request)
+    socketio_manage(request.environ, {'/sockets': BurnerNameSpace}, request)
     return Response()
 
-def log_messenger(message):
-    IoLogSpace.broadcast('message', message)
+def error_messenger(message):
+    BurnerNameSpace.broadcast('error', message)
 
-burnerProcess.ErrorOccurredEvent = log_messenger
+def log_messenger(message):
+    BurnerNameSpace.broadcast('iolog', message)
+
+burnerProcess.ErrorOccurredEvent = error_messenger
 iocard.CardActionInvoked = log_messenger
 
 def run_dev_server():

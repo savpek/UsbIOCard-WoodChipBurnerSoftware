@@ -3,6 +3,14 @@
 var controllers = {};
 controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory, Sockets) {
     var settings = BurnerSettingsApiFactory;
+    var sockets = Sockets;
+
+    sockets.on('error', function (message) {
+            if ($scope.error === undefined) {
+                $scope.isEnabled = false;
+            }
+            $scope.error = message;
+        });
 
     settings.get({}, function(settings) {
         $scope.screwSec = settings.screwSec;
@@ -12,11 +20,13 @@ controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactor
     });
 
     $scope.updateSettings = function () {
+        $scope.error = undefined;
+
         settings.update({
             screwSec: $scope.screwSec,
             delaySec: $scope.delaySec,
             lightSensor: $scope.lightSensor,
-            isEnabled: $scope.isEnabled
+            isEnabled: $scope.isEnabled,
         });
     };
 };
@@ -25,8 +35,7 @@ controllers.IoLogController = function ($scope, Sockets) {
     var sockets = Sockets;
     $scope.ioLog = [];
 
-    sockets.on('message', function (message) {
-        console.log("Got message:", message);
+    sockets.on('iolog', function (message) {
         $scope.ioLog.unshift(message);
 
         if($scope.ioLog.length > 30) {
