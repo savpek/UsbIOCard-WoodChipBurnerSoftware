@@ -4,6 +4,9 @@ from flask.ext import restful
 from flask.ext.restful.reqparse import RequestParser
 from factories import get_burner_process
 
+from gevent.pywsgi import WSGIServer
+from geventwebsocket.handler import WebSocketHandler
+
 app = Flask(__name__)
 restApi = restful.Api(app)
 
@@ -39,24 +42,35 @@ class SettingsRestApi(restful.Resource):
         return args, 201
 
 @app.route('/')
-def home():
+def index():
     return render_template('index.html')
 
-@app.route('/api')
-def api():
-    if request.environ.get('wsgi.websocket'):
-        ws = request.environ['wsgi.websocket']
-        while True:
-            message = ws.wait()
-            ws.send(message)
-    return
+
+def my_app(environ, start_response):
+    path = environ["PATH_INFO"]
+    if path == "/websocket":
+        handle_websocket(environ["wsgi.websocket"])
+    else:
+        return app(environ, start_response)
+
+
+def handle_websocket(ws):
+    while True:
+        message = ws.receive()
+        if message is None:
+            break
+        else:
+            message = json.loads(message)
+
+            r  = "I have received this message from you : %s" % message
+            r += "<br>Glad to be your webserver."
+            ws.send(json.dumps({'output': r}))
+
 
 restApi.add_resource(SimulatorRestApi, '/rest/simulator')
 restApi.add_resource(SettingsRestApi, '/rest/settings')
 
-from gevent import pywsgi
-from geventwebsocket.handler import WebSocketHandler
 
-server = pywsgi.WSGIServer(("", 5000), app,
-    handler_class=WebSocketHandler)
-server.serve_forever()
+if __name__ == '__main__':
+    http_server = WSGIServer(('',5000), my_app, handler_class=WebSocketHandler)
+    http_server.serve_forever()
