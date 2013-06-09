@@ -1,15 +1,8 @@
 # coding=utf-8
-from flask import Flask, render_template, json
+from flask import Flask, render_template, json, request
 from flask.ext import restful
 from flask.ext.restful.reqparse import RequestParser
-
-# Cannot use flask internal web server due performance issues...
-from tornado.wsgi import WSGIContainer
-from tornado.httpserver import HTTPServer
-from tornado.ioloop import IOLoop
 from factories import get_burner_process
-
-from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
 restApi = restful.Api(app)
@@ -49,21 +42,21 @@ class SettingsRestApi(restful.Resource):
 def home():
     return render_template('index.html')
 
-def handle_websocket(ws):
-    while True:
-        message = ws.receive()
-        if message is None:
-            break
-        else:
-            message = json.loads(message)
-
-            r  = "I have received this message from you : %s" % message
-            r += "<br>Glad to be your webserver."
-            ws.send(json.dumps({'output': r}))
+@app.route('/api')
+def api():
+    if request.environ.get('wsgi.websocket'):
+        ws = request.environ['wsgi.websocket']
+        while True:
+            message = ws.wait()
+            ws.send(message)
+    return
 
 restApi.add_resource(SimulatorRestApi, '/rest/simulator')
 restApi.add_resource(SettingsRestApi, '/rest/settings')
 
-if __name__ == '__main__':
-    http_server = WSGIServer(('',5000), app, handler_class=handle_websocket)
-    http_server.serve_forever()
+from gevent import pywsgi
+from geventwebsocket.handler import WebSocketHandler
+
+server = pywsgi.WSGIServer(("", 5000), app,
+    handler_class=WebSocketHandler)
+server.serve_forever()
