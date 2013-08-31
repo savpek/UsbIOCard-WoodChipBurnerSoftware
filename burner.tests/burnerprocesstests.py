@@ -81,11 +81,17 @@ class BurnerTests(unittest.TestCase):
         self._burnerProcess._execute()
         self._burnerController.assert_has_calls(call.disable())
 
-    def _event_result_collector(self, message):
-        self.message = message
-
     def test_on_error_execute_error_event(self):
-        self._burnerProcess.ErrorOccurredEvent = self._event_result_collector
+        event = Mock()
+        self._burnerProcess.ErrorOccurredEvent = event
         self._burnerController.tick.side_effect = ValueError("Error occurred!")
         self._burnerProcess._execute()
-        self.assertEquals(self.message, "Error occurred!")
+        event.assert_called_once_with("Error occurred!")
+
+    def test_on_success_execute_thread_executed_event(self):
+        event = Mock()
+        self._burnerProcess.Enabled = True
+        self._burnerController.light_sensor.return_value = 200
+        self._burnerProcess.ThreadExecutedEvent = event
+        self._burnerProcess._execute()
+        event.assert_called_once_with(True, 200)

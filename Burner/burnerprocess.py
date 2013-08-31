@@ -11,10 +11,11 @@ class BurnerProcess(threading.Thread):
     Enabled = False
     LightSensor = 0
 
-    def _do_nothing(self, message):
+    def _do_nothing(self, *args):
         pass
 
     ErrorOccurredEvent = _do_nothing
+    ThreadExecutedEvent = _do_nothing
 
     def __init__(self, burner):
         super(BurnerProcess, self).__init__()
@@ -34,8 +35,12 @@ class BurnerProcess(threading.Thread):
             if self.Enabled is False:
                 self._controller.disable()
 
-            if self._controller.light_sensor() < self.LightSensor:
+            lightSensorValue = self._controller.light_sensor()
+
+            if lightSensorValue < self.LightSensor:
                 raise ValueError("Light sensor value limit is over feedback!")
+
+            self.ThreadExecutedEvent(self.Enabled, lightSensorValue)
         except Exception, e:
             self.Enabled = False
             self.ErrorOccurredEvent(e.message)

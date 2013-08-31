@@ -12,6 +12,10 @@ controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactor
             $scope.error = message;
         });
 
+    sockets.on('lightSensorMeasured', function (message) {
+            $scope.lightSensorMeasured = message;
+        });
+
     settings.get({}, function(settings) {
         $scope.screwSec = settings.screwSec;
         $scope.delaySec = settings.delaySec;
@@ -26,7 +30,7 @@ controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactor
             screwSec: $scope.screwSec,
             delaySec: $scope.delaySec,
             lightSensor: $scope.lightSensor,
-            isEnabled: $scope.isEnabled,
+            isEnabled: $scope.isEnabled
         });
     };
 };

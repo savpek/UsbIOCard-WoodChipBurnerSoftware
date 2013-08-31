@@ -86,14 +86,22 @@ def push_stream(rest):
     socketio_manage(request.environ, {'/sockets': BurnerNameSpace}, request)
     return Response()
 
+
 def error_messenger(message):
     BurnerNameSpace.broadcast('error', message)
+
 
 def log_messenger(message):
     BurnerNameSpace.broadcast('iolog', message)
 
+
+def lightsensor_messenger(enabled, lightSensorValue):
+    BurnerNameSpace.broadcast('lightSensorMeasured', lightSensorValue)
+
 burnerProcess.ErrorOccurredEvent = error_messenger
+burnerProcess.ThreadExecutedEvent = lightsensor_messenger
 iocard.CardActionInvoked = log_messenger
+
 
 def run_dev_server():
     app.debug = True

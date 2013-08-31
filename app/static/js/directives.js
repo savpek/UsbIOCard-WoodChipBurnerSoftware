@@ -54,10 +54,10 @@ directives.errorMessage = function () {
         link: function (scope) {
             scope.$watch('errorMessage', function () {
                 if (scope.errorMessage === undefined) {
-                    scope.visible = "ng-cloak";
+                    scope.visible = "fade";
                 }
                 else {
-                    scope.visible = "";
+                    scope.visible = "in";
                 }
             });
         }
