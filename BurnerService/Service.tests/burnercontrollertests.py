@@ -1,7 +1,6 @@
 # coding=utf-8
 import unittest
 import mock
-from Service import Burner
 from Service.burnercontroller import BurnerController
 
 

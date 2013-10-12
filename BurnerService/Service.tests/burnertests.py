@@ -1,7 +1,7 @@
 # coding=utf-8
 import unittest
 from mock import Mock, call
-from Service.Burner import Burner
+from Service.burner import Burner
 from Service.usbcard import UsbCard
 
 

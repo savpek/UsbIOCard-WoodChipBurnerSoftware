@@ -20,7 +20,7 @@ class UsbCard:
     READ_MAX_COUNT = 200
 
     def __init__(self, port, speed, serialInterface=None):
-        if serialInterface != None:
+        if serialInterface is not None:
             self.serial_con = serialInterface.Serial(port, speed, timeout=self.TIMEOUT)
         else:
             self.serial_con = serial.Serial(port, speed, timeout=self.TIMEOUT)

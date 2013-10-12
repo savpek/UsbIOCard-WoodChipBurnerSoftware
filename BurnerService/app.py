@@ -1,11 +1,20 @@
 import web
+import logging
 
 from Service.burnerprocess import BurnerProcess
 from Service.burnercontroller import BurnerController
-from Service.Burner import Burner
+from Service.burner import Burner
 from Service.usbcard_simulator import UsbCardSimulator
 
-iocard = UsbCardSimulator("/dev/ttyUSB0", 9600)
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+def writer(message):
+    logging.debug(message)
+
+
+iocard = UsbCardSimulator(writer)
+
 
 def get_burner_process(iocard):
     burner = Burner(iocard, ScrewTerminal="2.T2", FanTerminal="2.T1", FireWatchTerminal="7.T0.ADC0")
@@ -26,7 +35,10 @@ urls = (
 )
 
 
-class ListUsers:
+class CurrentBurnerStatus:
+    def __init__(self):
+        pass
+
     def GET(self):
         return "Foo"
 
