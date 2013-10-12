@@ -1,6 +1,8 @@
 'use strict';
 
 var controllers = {};
+
+
 controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory, Sockets) {
     var settings = BurnerSettingsApiFactory;
     var sockets = Sockets;

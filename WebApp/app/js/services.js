@@ -13,7 +13,6 @@ factories.BurnerSettingsApiFactory = function($resource) {
 };
 
 factories.Sockets = function ($rootScope) {
-    /*
     var socket = io.connect('/sockets');
     var factory = {
         on: function (eventName, callback) {
@@ -34,7 +33,7 @@ factories.Sockets = function ($rootScope) {
                 });
             });
         }
-    };*/
+    };
     return factory;
 };
 burnerApp.factory(factories);

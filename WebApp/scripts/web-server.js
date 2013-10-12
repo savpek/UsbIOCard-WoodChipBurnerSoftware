@@ -34,8 +34,16 @@ function createServlet(Class) {
  * @param {Object} Map of method => Handler function
  */
 function HttpServer(handlers) {
-  this.handlers = handlers;
-  this.server = http.createServer(this.handleRequest_.bind(this));
+    this.handlers = handlers;
+    this.server = http.createServer(this.handleRequest_.bind(this));
+    this.io = io = require('socket.io').listen(this.server);
+
+    io.sockets.on('connection', function (socket) {
+        socket.emit('news', { hello: 'world' });
+        socket.on('my other event', function (data) {
+            console.log(data);
+        });
+    });
 }
 
 HttpServer.prototype.start = function(port) {
