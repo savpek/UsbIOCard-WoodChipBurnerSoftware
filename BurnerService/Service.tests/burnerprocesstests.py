@@ -1,8 +1,8 @@
 # coding=utf-8
 import unittest
 from mock import Mock, call
-from burner.burnercontroller import BurnerController
-from burner.burnerprocess import BurnerProcess
+from Service.burnercontroller import BurnerController
+from Service.burnerprocess import BurnerProcess
 
 
 class BurnerTests(unittest.TestCase):

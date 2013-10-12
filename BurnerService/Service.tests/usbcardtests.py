@@ -1,6 +1,7 @@
 import unittest
 from mock import MagicMock
-from burner.usbcard import UsbCard, IoCardException
+from Service.usbcard import UsbCard, IoCardException
+
 
 class UsbIoCardConnection_InitTests(unittest.TestCase):
     def test_connection_is_opened_with_correct_arguments(self):

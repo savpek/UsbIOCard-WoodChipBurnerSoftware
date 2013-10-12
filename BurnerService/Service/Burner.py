@@ -1,5 +1,6 @@
 # coding=utf-8
 
+
 class Burner():
     _screw_terminal = None
     _fan_terminal = None

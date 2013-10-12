@@ -1,8 +1,8 @@
 # coding=utf-8
 import unittest
 from mock import Mock, call
-from burner.burner import Burner
-from burner.usbcard import UsbCard
+from Service.Burner import Burner
+from Service.usbcard import UsbCard
 
 
 class BurnerTests(unittest.TestCase):
