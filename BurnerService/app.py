@@ -1,3 +1,4 @@
+import json
 import web
 import logging
 
@@ -16,8 +17,8 @@ def writer(message):
 iocard = UsbCardSimulator(writer)
 
 
-def get_burner_process(iocard):
-    burner = Burner(iocard, ScrewTerminal="2.T2", FanTerminal="2.T1", FireWatchTerminal="7.T0.ADC0")
+def get_burner_process(iodriver):
+    burner = Burner(iodriver, ScrewTerminal="2.T2", FanTerminal="2.T1", FireWatchTerminal="7.T0.ADC0")
     controller = BurnerController(burner)
     process = BurnerProcess(controller)
 
@@ -31,7 +32,8 @@ burnerProcess = get_burner_process(iocard)
 burnerProcess.start()
 
 urls = (
-    '/', 'ListUsers'
+    '/status/', 'CurrentBurnerStatus',
+    '/update/', 'CurrentBurnerStatus'
 )
 
 
@@ -40,7 +42,17 @@ class CurrentBurnerStatus:
         pass
 
     def GET(self):
-        return "Foo"
+        return {"ScrewSec": burnerProcess.ScrewSec,
+                "DelaySec": burnerProcess.DelaySec,
+                "Enabled": burnerProcess.Enabled,
+                "LightSensor": BurnerProcess.LightSensor}
+
+    def PUT(self):
+        data = json.loads(web.data())
+        burnerProcess.ScrewSec = data["ScrewSec"]
+        burnerProcess.DelaySec = data["DelaySec"]
+        burnerProcess.Enabled = data["Enabled"]
+        return web.ok()
 
 
 if __name__ == "__main__":

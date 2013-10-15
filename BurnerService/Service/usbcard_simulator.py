@@ -8,13 +8,6 @@ class IoCardException(Exception):
 class UsbCardSimulator:
     AdcValueFake = 50
 
-    _message_writer = None
-
-    def _do_nothing(self, message):
-        pass
-
-    CardActionInvoked = _do_nothing
-
     def __init__(self, message_writer):
         self._message_writer = message_writer
 
@@ -24,7 +17,6 @@ class UsbCardSimulator:
 
     def set_terminal_high(self, terminal_name):
         self._send_action_information("set_terminal_high", terminal_name)
-
 
     def set_terminal_low(self, terminal_name):
         self._send_action_information("set_terminal_low", terminal_name)

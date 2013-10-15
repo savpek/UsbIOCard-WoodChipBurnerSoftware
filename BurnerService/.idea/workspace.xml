@@ -22,7 +22,7 @@
     <SUITE FILE_PATH="coverage/UsbIOCard-WoodChipBurnerSoftware$Unittests_in_burnertests.coverage" NAME="Unittests in burnertests Coverage Results" MODIFIED="1381569985468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Service.tests" />
     <SUITE FILE_PATH="coverage/UsbIOCard-WoodChipBurnerSoftware$Unittests_in_C__Users_savpek_Documents_GitHub_UsbIOCard_WoodChipBurnerSoftware_BurnerService.coverage" NAME="Unittests in C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\BurnerService Coverage Results" MODIFIED="1381586155099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UsbIOCard-WoodChipBurnerSoftware$Unittests_in_burnercontrollertests.coverage" NAME="Unittests in burnercontrollertests Coverage Results" MODIFIED="1381569990714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Service.tests" />
-    <SUITE FILE_PATH="coverage/UsbIOCard-WoodChipBurnerSoftware$app.coverage" NAME="app Coverage Results" MODIFIED="1381586785160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UsbIOCard-WoodChipBurnerSoftware$app.coverage" NAME="app Coverage Results" MODIFIED="1381864075720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UsbIOCard-WoodChipBurnerSoftware$Unittests_in_usbcardtests.coverage" NAME="Unittests in usbcardtests Coverage Results" MODIFIED="1381569987850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Service.tests" />
     <SUITE FILE_PATH="coverage/UsbIOCard-WoodChipBurnerSoftware$Unittests_in_burnertests__1_.coverage" NAME="Unittests in burnertests (1) Coverage Results" MODIFIED="1381569353062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Service.tests" />
     <SUITE FILE_PATH="coverage/UsbIOCard-WoodChipBurnerSoftware$Unittest_BurnerControllerTests_test_tick_gets_burner_value_and_adds_it_to_history.coverage" NAME="Unittest BurnerControllerTests.test_tick_gets_burner_value_and_adds_it_to_history Coverage Results" MODIFIED="1381569715153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Service.tests" />
@@ -47,7 +47,7 @@
       <file leaf-file-name="burnerprocess.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Service/burnerprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="8" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+            <state line="8" column="0" selection-start="109" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="918">
               <folding>
                 <element signature="e#15#31#0" expanded="true" />
               </folding>
@@ -82,15 +82,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usbcard_simulator.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Service/usbcard_simulator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="burnerprocesstests.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Service.tests/burnerprocesstests.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,24 +111,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usbcardtests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Service.tests/usbcardtests.py">
+      <file leaf-file-name="burnertests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Service.tests/burnertests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="23" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
+            <state line="19" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#15#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="burnertests.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Service.tests/burnertests.py">
+      <file leaf-file-name="app.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="20" selection-start="228" selection-end="228" vertical-scroll-proportion="0.27868852" vertical-offset="0" max-vertical-offset="671">
+            <state line="53" column="47" selection-start="1385" selection-end="1385" vertical-scroll-proportion="1.342772" vertical-offset="0" max-vertical-offset="1105">
               <folding>
-                <element signature="e#15#30#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usbcard_simulator.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Service/usbcard_simulator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,9 +174,9 @@
         <option value="$PROJECT_DIR$/Service.tests/burnerprocesstests.py" />
         <option value="$PROJECT_DIR$/Service.tests/burnertests.py" />
         <option value="$PROJECT_DIR$/Service.tests/burnercontrollertests.py" />
+        <option value="$PROJECT_DIR$/Service/usbcard.py" />
         <option value="$PROJECT_DIR$/Service/usbcard_simulator.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/Service/usbcard.py" />
       </list>
     </option>
   </component>
@@ -581,9 +581,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719395" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32694152" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.66830707" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26977247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26941514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33173537" sideWeight="0.5046875" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.32743362" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -591,7 +591,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26894343" sideWeight="0.33235005" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15520833" sideWeight="0.6682646" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33173537" sideWeight="0.4953125" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869988" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3978907" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -613,29 +613,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="172" />
+      <option name="time" value="175" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Service/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Service/usbcard_simulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
           <folding />
         </state>
       </provider>
@@ -656,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Service.tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Service/burnercontroller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="26" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="850">
@@ -674,15 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="34" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Service/burnerprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="918">
-          <folding>
-            <element signature="e#15#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,9 +672,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Service.tests/burnertests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="228" selection-end="228" vertical-scroll-proportion="0.27868852" vertical-offset="0" max-vertical-offset="671">
+        <state line="19" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <folding>
             <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Service.tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Service/usbcard_simulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Service/burnerprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="109" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="918">
+          <folding>
+            <element signature="e#15#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="47" selection-start="1385" selection-end="1385" vertical-scroll-proportion="1.342772" vertical-offset="0" max-vertical-offset="1105">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
