@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5126e73-47e6-4c17-a595-7ce5c3bc821e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/UsbIOCard-WoodChipBurnerSoftware.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp\scripts\web-server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp\test\e2e\runner.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp\test\e2e\scenarios.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp\test\unit\controllersSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp\test\unit\directivesSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp\test\unit\filtersSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp\test\unit\servicesSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\app.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\img\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\img\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\js\controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\js\directives.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\js\services.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\partials\iolog.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\partials\settings.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\static\partials\statistics.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\app\templates\index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/base64id/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/base64id/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/.npmignore" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/.travis.yml" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/.travis.yml" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/.travis.yml" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/speed/00" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/speed/00" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/269.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/269.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/BufferPool.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/BufferPool.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/History.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/History.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/History.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/History.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/LICENSE" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/LICENSE" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/LICENSE" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/LICENSE" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/Makefile" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/Makefile" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/Makefile" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/Makefile" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/Makefile" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/Makefile" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/README.html" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/README.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/base64id/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/base64id/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/README.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/README.org" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/README.org" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/README" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/Readme.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/Readme.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/Readme.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Receiver.hixie.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Receiver.hixie.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Receiver.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Receiver.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Sender.hixie.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Sender.hixie.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Sender.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Sender.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Validation.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/Validation.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocket.integration.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocket.integration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocket.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocket.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocketServer.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/WebSocketServer.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/agent1-cert.pem" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/agent1-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/agent1-key.pem" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/agent1-key.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/app.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/app.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BurnerService/app.py" afterPath="$PROJECT_DIR$/BurnerService/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array1.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array1.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array2.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array2.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array3.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array3.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array4.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/array4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array4.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/array4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/assignment.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/assignment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/auth.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/autobahn-server.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/autobahn-server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/autobahn.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/autobahn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/autotest.watchr" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/autotest.watchr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/backpressure_drain.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/backpressure_drain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/examples/basic.fallback.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/examples/basic.fallback.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/examples/basic.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/examples/basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/beautify.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/beautify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/binding.gyp" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/binding.gyp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/buffer_bench.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/buffer_bench.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/src/bufferutil.cc" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/src/bufferutil.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.common.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/builderror.log" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/builderror.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/ca1-cert.pem" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/ca1-cert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/ca1-key.pem" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/ca1-key.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/certificate.pem" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/certificate.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/changelog.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/changelog.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/codec.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/codec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-bind/component.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-bind/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-emitter/component.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-emitter/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-json/component.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-json/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-json-fallback/component.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-json-fallback/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/component.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-socket.io-protocol/component.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-socket.io-protocol/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/timoxley-to-array/component.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/timoxley-to-array/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/component.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/concatstring.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/concatstring.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/app/js/controllers.js" afterPath="$PROJECT_DIR$/WebApp/app/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/debug.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/benchmarks/decode.bench.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/benchmarks/decode.bench.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/example/demo.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/example/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/diff_multi_bench_output.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/diff_multi_bench_output.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/docstyle.css" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/docstyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/embed-tokens.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/embed-tokens.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/empty-blocks.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/empty-blocks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/benchmarks/encode.bench.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/benchmarks/encode.bench.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/eval.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/eval.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/events.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/events.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/example.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/extend.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/extend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/file.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/file.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/forstatement.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/forstatement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/generate_commands.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/generate_commands.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/goto.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/goto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/goto2.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/goto2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/hiredis_parser.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/hiredis_parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/hoist.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/hoist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/hybi-common.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/hybi-common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/ifreturn2.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/ifreturn2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/app/index.html" afterPath="$PROJECT_DIR$/WebApp/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/doc/index.html" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/doc/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/index.html" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/public/index.html" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/public/index.html" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-bind/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-bind/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-emitter/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-emitter/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-json/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-json/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-json-fallback/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/component-json-fallback/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-socket.io-protocol/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-socket.io-protocol/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/timoxley-to-array/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/timoxley-to-array/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/components/visionmedia-debug/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/instrument.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/instrument.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/instrument2.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/instrument2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/io.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/io.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue11.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue11.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue14.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue14.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue17.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue17.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue20.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue20.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue21.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue21.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue25.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue25.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue25.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue25.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue278.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue278.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue278.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue278.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue28.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue28.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue30.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue30.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue34.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue34.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue4.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue50.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue50.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue50.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue50.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue53.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue53.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue53.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue53.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue54.1.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue54.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue54.1.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue54.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue68.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue68.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue68.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue68.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue69.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/issue69.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue69.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue69.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue9.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/issue9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/key.pem" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/key.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/liftvars.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/liftvars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/mangle.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/mangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/mangle.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/mangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/mem.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/mem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/mget.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/mget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/monitor.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/monitor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/multi.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/multi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/multi2.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/multi2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/multi_bench.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/multi_bench.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/nan.h" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/nan.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/test/options.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/test/options.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/package.json" afterPath="$PROJECT_DIR$/WebApp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/base64id/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/base64id/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/parser.benchmark.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/parser.benchmark.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/parser.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/parser.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/speed/plot" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/speed/plot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/psubscribe.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/psubscribe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/pub.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/pub.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/pub.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/pub.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/pub_sub.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/pub_sub.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/re_sub_test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/re_sub_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/reconnect_test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/reconnect_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/request.pem" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/request.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/run" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/run" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/run" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/run" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/benchmarks/runner.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/benchmarks/runner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/scripts.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/sender.benchmark.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/sender.benchmark.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/server.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/server.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/server.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/server.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/server.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/serverstats-express_3/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/app/js/services.js" afterPath="$PROJECT_DIR$/WebApp/app/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/simple.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/simple.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/socket.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/socket.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/sort.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/sort.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/speed/speed.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/stress/speed/speed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/speed.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/speed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.crt" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.crt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/ssl.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/ssl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.private.key" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/tests/ssl/ssl.private.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/strict-equals.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/strict-equals.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/sub_quit_test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/benches/sub_quit_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/subqueries.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/subqueries.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/subquery.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/subquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-constants.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-events.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-exceptions.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-exceptions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-headers.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-headers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-methods.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-protocols.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-protocols.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/test/fixtures/test.conf" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/test/fixtures/test.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/testdata.txt" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/testdata.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/testparser.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/testparser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/tests.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/testserver.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/testserver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/textfile" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/test/fixtures/textfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/tinycolor.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/tinycolor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/uglify-hangs.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/uglify-hangs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/uglify-hangs2.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/uglify-hangs2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/uglify-js.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/uglify-js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/tests/unit.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/policyfile/tests/unit.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/unix_socket.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/unix_socket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/uploader.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/examples/fileapi/public/uploader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/util.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bench/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/util.test.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/util.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/src/validation.cc" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/src/validation.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/web_server.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/redis/examples/web_server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/whitespace.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/whitespace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/whitespace.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/whitespace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/with.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/expected/with.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/with.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/compress/test/with.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/worker.js" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/test/worker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/doc/ws.md" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/doc/ws.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/wscat" afterPath="$PROJECT_DIR$/WebApp/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/wscat" />
+    </list>
+    <ignored path="UsbIOCard-WoodChipBurnerSoftware.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="UsbIOCard-WoodChipBurnerSoftware" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.4615383" vertical-offset="95" max-vertical-offset="816">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/app/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/app/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="4284">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BurnerService/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38688084" vertical-offset="0" max-vertical-offset="1088">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/app/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/app/js/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/WebApp/node_modules/socket.io/index.js" />
+        <option value="$PROJECT_DIR$/WebApp/scripts/web-server.js" />
+        <option value="$PROJECT_DIR$/WebApp/package.json" />
+        <option value="$PROJECT_DIR$/WebApp/app/index.html" />
+        <option value="$PROJECT_DIR$/WebApp/app.js" />
+        <option value="$PROJECT_DIR$/WebApp/app/js/services.js" />
+        <option value="$PROJECT_DIR$/WebApp/app/js/controllers.js" />
+        <option value="$PROJECT_DIR$/BurnerService/app.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UsbIOCard-WoodChipBurnerSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BurnerService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="settings.nodejs" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebApp" />
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="false" name="web-server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="$PROJECT_DIR$/WebApp/app.js" working-dir="$PROJECT_DIR$/WebApp/app">
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/WebApp">
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.web-server.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.web-server.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5126e73-47e6-4c17-a595-7ce5c3bc821e" name="Default" comment="" />
+      <created>1398071775703</created>
+      <updated>1398071775703</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23697917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2755389" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WebApp/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="799">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6613">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="272">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/node_modules/socket.io/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="125477">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="747">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6613">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4615383" vertical-offset="95" max-vertical-offset="816">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="747">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="4284">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BurnerService/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38688084" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

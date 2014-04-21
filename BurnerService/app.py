@@ -16,13 +16,12 @@ def writer(message):
 
 iocard = UsbCardSimulator(writer)
 
-
 def get_burner_process(iodriver):
     burner = Burner(iodriver, ScrewTerminal="2.T2", FanTerminal="2.T1", FireWatchTerminal="7.T0.ADC0")
     controller = BurnerController(burner)
     process = BurnerProcess(controller)
 
-    # Initial values ...
+    # Initial values
     process.ScrewSec = 1
     process.DelaySec = 4
     return process

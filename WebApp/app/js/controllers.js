@@ -3,9 +3,9 @@
 var controllers = {};
 
 
-controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory, Sockets) {
+controllers.BurnerSettingsController = function ($scope, BurnerSettingsApiFactory, SocketService) {
     var settings = BurnerSettingsApiFactory;
-    var sockets = Sockets;
+    var sockets = SocketService;
 
     sockets.on('error', function (message) {
             if ($scope.error === undefined) {

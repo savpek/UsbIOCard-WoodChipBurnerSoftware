@@ -12,7 +12,7 @@ factories.BurnerSettingsApiFactory = function($resource) {
     return factory;
 };
 
-factories.Sockets = function ($rootScope) {
+factories.SocketService = function ($rootScope) {
     var socket = io.connect('/sockets');
     var factory = {
         on: function (eventName, callback) {
