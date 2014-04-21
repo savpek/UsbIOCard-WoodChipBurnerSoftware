@@ -3,6 +3,12 @@
   "description": "A starter project for angular js",
   "devDependencies": {
         "phantomjs" : "*",
-        "socket.io" : "*"
-    }
+        "socket.io" : "*",
+        "express" : "*",
+        "routes" : "*",
+        "morgan" : "*",
+        "body-parser" : "*",
+        "method-override" : "*",
+        "errorhandler" : "*"
+  }
 }
