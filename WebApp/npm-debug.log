@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'C:\\Users\\savpek\\Documents\\GitHub\\UsbIOCard-WoodChipBurnerSoftware\\WebApp',
+6 verbose install   [ 'phantomjs',
+6 verbose install     'socket.io',
+6 verbose install     'express',
+6 verbose install     'routes',
+6 verbose install     'morgan',
+6 verbose install     'body-parser',
+6 verbose install     'method-override',
+6 verbose install     'errorhandler',
+6 verbose install     'mocha',
+6 verbose install     'node-serialport' ] ]
+7 info preinstall woodchipburnerwebapp@
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping phantomjs@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+10 verbose already installed skipping socket.io@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+11 verbose already installed skipping express@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+12 verbose already installed skipping routes@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+13 verbose already installed skipping morgan@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+14 verbose already installed skipping body-parser@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+15 verbose already installed skipping method-override@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+16 verbose already installed skipping errorhandler@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+17 verbose already installed skipping mocha@* C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+18 verbose cache add [ 'node-serialport@*', null ]
+19 verbose cache add name=undefined spec="node-serialport@*" args=["node-serialport@*",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'node-serialport@*',
+20 verbose parsed url   path: 'node-serialport@*',
+20 verbose parsed url   href: 'node-serialport@*' }
+21 verbose cache add name="node-serialport" spec="*" args=["node-serialport","*"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '*',
+22 verbose parsed url   path: '*',
+22 verbose parsed url   href: '*' }
+23 verbose addNamed [ 'node-serialport', '*' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile 0d626b92-node-serialport node-serialport@*
+26 verbose lock node-serialport@* C:\Users\savpek\AppData\Roaming\npm-cache\0d626b92-node-serialport.lock
+27 silly addNameRange { name: 'node-serialport', range: '*', hasData: false }
+28 verbose url raw node-serialport
+29 verbose url resolving [ 'https://registry.npmjs.org/', './node-serialport' ]
+30 verbose url resolved https://registry.npmjs.org/node-serialport
+31 info trying registry request attempt 1 at 09:43:42
+32 http GET https://registry.npmjs.org/node-serialport
+33 http 404 https://registry.npmjs.org/node-serialport
+34 silly registry.get cb [ 404,
+34 silly registry.get   { date: 'Sat, 10 May 2014 06:43:36 GMT',
+34 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+34 silly registry.get     'content-type': 'application/json',
+34 silly registry.get     via: '1.1 varnish',
+34 silly registry.get     'cache-control': 'max-age=0',
+34 silly registry.get     'content-length': '52',
+34 silly registry.get     'accept-ranges': 'bytes',
+34 silly registry.get     age: '0',
+34 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-fra1220-FRA',
+34 silly registry.get     'x-cache': 'MISS, MISS',
+34 silly registry.get     'x-cache-hits': '0, 0',
+34 silly registry.get     'x-timer': 'S1399704216.403179169,VS0,VS44,VE54,VE99',
+34 silly registry.get     'keep-alive': 'timeout=10, max=50',
+34 silly registry.get     connection: 'Keep-Alive' } ]
+35 silly lockFile 0d626b92-node-serialport node-serialport@*
+36 silly lockFile 0d626b92-node-serialport node-serialport@*
+37 error 404 'node-serialport' is not in the npm registry.
+37 error 404 You should bug the author to publish it
+37 error 404 It was specified as a dependency of 'woodchipburnerwebapp'
+37 error 404
+37 error 404 Maybe try 'npm search serialport'
+37 error 404
+37 error 404 Note that you can also install from a
+37 error 404 tarball, folder, or http url, or git url.
+38 error System Windows_NT 6.2.9200
+39 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+40 error cwd C:\Users\savpek\Documents\GitHub\UsbIOCard-WoodChipBurnerSoftware\WebApp
+41 error node -v v0.10.26
+42 error npm -v 1.4.3
+43 error code E404
+44 verbose exit [ 1, true ]
