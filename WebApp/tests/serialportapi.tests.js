@@ -1,56 +1,54 @@
 var assert = require("assert");
 
-var com = "COM3"
+var burnerPortApi = function(port, error, result) {
+    var commands = {
+        "FAN_ENABLE" : "SET 2.T2 HIGH",
+        "FAN_DISABLE" : "SET 2.T2 LOW",
+        "SCREW_ENABLE" : "SET 2.T1 HIGH",
+        "SCREW_DISABLE" : "SET 2.T1 LOW"
+    };
 
-var serialPortApi = function(port) {
     var self = this;
 
-    var driver = require("serialport").SerialPort;
-    var port = new driver(port, { baudrate: 9600 }, false);
+    var serialPort = require("serialport");
+    var driver = serialPort.SerialPort;
 
-    self.Write = function (command, success, error) {
-        port.open(function (){
-            port.write(command, function(err, result) {
-                console.log("error: " + err);
-                console.log("result: " + result)
+    var port = new driver("COM3", { baudrate: 9600,
+        parser: serialPort.parsers.readline("\n")
+    }, false);
+
+    self.call = function(command) {
+        port.open(function(){
+            port.on('data', function (data) {
+                console.log('Received from IO-card: ' + data);
+
+                var response = { 'command' : command, 'response': data }
+                result(response)
+            });
+
+            console.log('Writing to IO-card: ' + commands[command])
+            port.write(commands[command]+"\n", function(err, result) {
+                if(err) {
+                    error(err)
+                }
             })
         });
     }
     return self;
 };
 
-describe('Testers: IO card responds', function() {
-    it('When reset watchdog is called, return ok.', function(done) {
-        var serialPort = require("serialport");
-        var driver = serialPort.SerialPort;
-
-        var port = new driver("COM3", { baudrate: 9600,
-            parser: serialPort.parsers.readline("\n")
-        }, false);
-
-        port.open(function (){
-            console.log("open");
-            port.on('data', function(data) {
-                console.log('data received: ' + data);
-                done();
-            });
-            port.write("testi\n", function(err, result) {
-                console.log(err)
-            })
-        });
-    });
-
-    /*
-    it('When reset watchdog is called, return ok. 2', function(done) {
-        var serialPort = require("serialport");
-        serialPort.list(function (err, ports) {
-            ports.forEach(function(port) {
-                console.log(port.comName);
-                console.log(port.pnpId);
-                console.log(port.manufacturer);
-            });
+describe('Testers: IO card connectivity', function() {
+    it('Enable screw relay.', function (done) {
+        var port = burnerPortApi("COM3", function(err) {
+            done();
+        },
+        function (data) {
             done();
         });
+
+        port.call("SCREW_ENABLE");
     });
-    */
+
+    it('Read light meter value.', function() {
+    });
 });
