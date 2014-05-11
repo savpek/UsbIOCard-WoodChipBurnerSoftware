@@ -1,4 +1,4 @@
-var burnerPortApi = (function() {
+var IOCard = function(portOpenedCallback) {
     var commands = {
         "FAN_ENABLE" : "SET 2.T2 HIGH",
         "FAN_DISABLE" : "SET 2.T2 LOW",
@@ -7,7 +7,7 @@ var burnerPortApi = (function() {
         "READ_LIGHTMETER" : "ADC 7.T0.ADC0"
     };
 
-    var that = this;
+    var usableApi = {};
 
     var responseCallBack = function(response) {};
     var errorCallBack = function(error) {};
@@ -16,9 +16,9 @@ var burnerPortApi = (function() {
 
     var serialPort = new serialPortFactory.SerialPort("COM3", { baudrate: 9600,
         parser: serialPortFactory.parsers.readline("\n")
-    }, false);
+    });
 
-    that.on = function(action, callback) {
+    usableApi.on = function(action, callback) {
         switch (action) {
             case 'error':
                 errorCallBack = callback;
@@ -34,61 +34,59 @@ var burnerPortApi = (function() {
 
     serialPort.on('open', function() {
         console.log("Serial port opened.");
-
-        serialPort.on('close', function() {
-            console.log("connection closed.")
-        });
-
-        serialPort.on('error', function(err) {
-            console.log("vitunvittu." + err);
-            throw "eivitunvittu " + err;
-        });
+        portOpenedCallback(usableApi)
     });
 
-    that.write = function(command) {
+    serialPort.on('error', function(err) {
+        console.log("Seriaport raised error: " + err);
+    });
+
+    serialPort.on('close', function() {
+        console.log("Serialport closed.")
+    });
+
+    serialPort.on('data', function (data) {
+        console.log('Received from IO-card: ' + data);
+
+        var response = { 'command': "abc", 'response': data.replace('\r', '').replace('\n', ''), 'isEcho': false };
+
+        /*
+        if (data.indexOf(commands[command]) > -1) {
+            response.isEcho = true;
+        }
+        */
+
+        console.log("Response: ", response);
+        responseCallBack(response)
+    });
+
+    usableApi.write = function(command) {
         if(!commands[command]) {
             console.log("Invalid parameter given for call, returning.");
             errorCallBack("Invalid command parameter for IO card, invalid command was '" + command + "'");
             return;
         }
 
-        serialPort.open(function() {
-            serialPort.on('data', function (data) {
-                console.log('Received from IO-card: ' + data);
-
-                var response = { 'command': command, 'response': data.replace('\r', '').replace('\n', ''), 'isEcho': false };
-
-                if (data.indexOf(commands[command]) > -1) {
-                    response.isEcho = true;
-                }
-
-                console.log("Response: ", response);
-                responseCallBack(response)
-            });
-
-            console.log('Writing to IO-card: ' + commands[command]);
-            serialPort.write(commands[command] + "\n");
-        });
+        console.log('Writing to IO-card: ' + commands[command]);
+        serialPort.write(commands[command] + "\n");
     };
-
-    return that;
-})();
+    return this;
+};
 
 describe('Testers: IO card connectivity', function() {
-    this.timeout(9000);
+    this.timeout(1000);
 
-    it('Enable screw relay.', function (done) {
-        setTimeout(done, 3000);
-        burnerPortApi.write("SCREW_ENABLE");
-    });
+    it('Test card communication.', function (done) {
+        setTimeout(done, 500);
+        IOCard(function(io) {
+            io.on('response', function(data) {
+            });
 
-    it('Reading lightmeter returns value.', function(done) {
-        setTimeout(done, 3000);
-        burnerPortApi.write("READ_LIGHTMETER");
-    });
-
-    it('Invalid command should cause error.', function(done) {
-        setTimeout(done, 3000);
-        burnerPortApi.write("INVALID_COMMAND_HERE");
+            io.on('error', function(error) {
+                throw "Failed, reason: " + error;
+            });
+            io.write("SCREW_ENABLE");
+            io.write("READ_LIGHTMETER");
+        });
     });
 });
