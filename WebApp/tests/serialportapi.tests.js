@@ -48,13 +48,18 @@ var IOCard = function(portOpenedCallback) {
     serialPort.on('data', function (data) {
         console.log('Received from IO-card: ' + data);
 
-        var response = { 'command': "abc", 'response': data.replace('\r', '').replace('\n', ''), 'isEcho': false };
-
-        /*
-        if (data.indexOf(commands[command]) > -1) {
-            response.isEcho = true;
+        if (data.indexOf("ERROR") > -1) {
+            errorCallBack("Received error from io card, message: " + data);
+            return;
         }
-        */
+
+        var response = { 'response': data.replace('\r', '').replace('\n', ''), 'isEcho': false };
+
+        for(var key in commands) {
+            if (data.indexOf(commands[key]) > -1) {
+                response.isEcho = true;
+            }
+        }
 
         console.log("Response: ", response);
         responseCallBack(response)
@@ -74,10 +79,10 @@ var IOCard = function(portOpenedCallback) {
 };
 
 describe('Testers: IO card connectivity', function() {
-    this.timeout(1000);
+    this.timeout(10000);
 
     it('Test card communication.', function (done) {
-        setTimeout(done, 500);
+        setTimeout(done, 1000);
         IOCard(function(io) {
             io.on('response', function(data) {
             });
